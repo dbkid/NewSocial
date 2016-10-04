@@ -5,7 +5,6 @@ ID,
 name,
 email address,
 password digest,
-image url?,
 “has many: stories”,
 “has many: bookmarks”,
 "has many: bookmarked_stories, through: bookmarks"
