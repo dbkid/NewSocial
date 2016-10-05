@@ -43,7 +43,7 @@ If time:
 Implementation Timeline:
 
 Tuesday/Wednesday:
-- review plan, set up backend, auth, sign in/sign out pages, header (not bottom nav bar)
+- review plan, set up backend, auth, header (not bottom nav bar), sign in/sign out pages
 
 Thursday/Friday:
 - story boxes (display as list on main feed)
