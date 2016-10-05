@@ -1,7 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import configureStore from './store/store';
+import Root from './components/root';
+import * as ACTION from './actions/session_actions';
+
+window.SIGNUP = ACTION.SIGNUP;
+window.signup = ACTION.signup;
+window.LOGIN = ACTION.LOGIN;
+window.login = ACTION.login;
+window.LOGOUT = ACTION.LOGOUT;
+window.logout = ACTION.logout;
+
+let store = configureStore();
+window.store = store;
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById("root");
-    ReactDOM.render(<h1>New Social</h1>, root);
+    ReactDOM.render(<Root store={store}/>, root);
 });

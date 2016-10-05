@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "./node_modules/.bin/webpack",
+    "webpack": "./node_modules/.bin/webpack -w"
   },
   "keywords": [],
   "author": "",
@@ -27,12 +28,7 @@
     "webpack": "^1.13.2"
   },
   "engines": {
-  "node": "5.1.0",
-  "npm": "3.3.12"
-},
-
-"scripts": {
-  "postinstall": "./node_modules/.bin/webpack"
-}
-
+    "node": "5.1.0",
+    "npm": "3.3.12"
+  }
 }

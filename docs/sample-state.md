@@ -55,10 +55,11 @@ author: {
 
 
 session: {
-    current user:    {
-        name:   ,
-        id:     
-	  }
+    currentUser:    {
+        id:   ,
+        name:     
+	  },
+    errors: []
   }
 
 }
