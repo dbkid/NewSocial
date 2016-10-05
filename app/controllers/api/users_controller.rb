@@ -11,12 +11,23 @@ class Api::UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.find(user_params[:id].to_i)
+    if @user
+      logout
+      @user.delete
+      render json: ["user deleted"]
+    else
+      render(
+        json: ["Nobody signed in"],
+        status: 404
+      )
+    end
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:id, :name, :email, :password)
   end
 
 

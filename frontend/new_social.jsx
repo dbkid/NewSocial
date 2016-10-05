@@ -10,6 +10,8 @@ window.LOGIN = ACTION.LOGIN;
 window.login = ACTION.login;
 window.LOGOUT = ACTION.LOGOUT;
 window.logout = ACTION.logout;
+window.DELETE_USER = ACTION.DELETE_USER;
+window.deleteUser = ACTION.deleteUser;
 
 let store = configureStore();
 window.store = store;

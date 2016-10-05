@@ -28,3 +28,13 @@ export const login = (user, success, error) => {
     }
   );
 };
+
+export const deleteUser = (user, success) => {
+  $.ajax({
+    method: "DELETE",
+    url: "/api/user",
+    data: { user: {id: user.id } },
+    success
+    }
+  );
+};

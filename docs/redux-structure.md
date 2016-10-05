@@ -52,12 +52,14 @@ selected story actions:
 
 
 session actions:
-- create user [middleware - make API request to database to create user, on success: receive current user]
-- create session [middleware - make API request to database to create session, on success: receive current user]
-- receive current user [reducer - receive info on created current user from database, update current user in state, display logged in main feed]
-- destroy session [middleware - make API request to database to destroy session, on success: receive destroyed session]
-- receive destroyed session [reducer - update state to clear current user, display not logged in main feed]
-- destroy user [middleware - make API request to database to destroy user, on success: receive destroyed session]
+- signup [middleware - make API request to database to create user, on success: receiveCurrentUser]
+- login [middleware - make API request to database to create session, on success: receiveCurrentUser]
+- receiveCurrentUser [reducer - receive info on created current user from database, update current user in state, display logged in main feed]
+- logout [middleware - make API request to database to destroy session, on success: logout]
+- logout [reducer - update state to clear current user]
+- deleteUser [middleware - make API request to database to destroy user, on success: receiveUserDeletion]
+- receiveUserDeletion [reducer - update state to clear current user, display not logged in main feed]
+
 
 
 author actions:
