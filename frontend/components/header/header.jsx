@@ -11,29 +11,33 @@ class Header extends React.Component {
     if (this.props.currentUser === null){
 
       return(
-        <div>
-          <ul>
-            <li><img className="logo"></img></li>
-            <li className="newsocial">NewSocial</li>
-          </ul>
+        <div className="group homepageheader">
+          <div className="group topbar">
+            <ul className="group logolist">
+              <li className="newsocial">NewSocial</li>
+            </ul>
 
-          <ul>
-            <li><Link to="/#/signup" className="greenlink">Sign Up</Link></li>
-            <li><Link to="/#/login" className="greenlink">Sign In</Link></li>
-          </ul>
+            <ul className="group loginlist">
+              <li className="greywritestory loginbutton"><Link to="/#/signup">Write a story</Link></li>
+              <li className="greenlink loginbutton"><Link to="/#/login">Sign in /</Link></li>
+              <li className="greenlink loginbutton signup"><Link to="/#/signup">Sign up</Link></li>
+            </ul>
+          </div>
         </div>
       );
     } else {
 
       return(
-        <div>
-          <ul>
-            <li><img className="logo"></img></li>
-            <li className="NewSocial">NewSocial</li>
-          </ul>
-          <ul>
-            <li><Link to="/#/writestory" className="greenlink">Write Story</Link></li>
-          </ul>
+        <div className="group homepageheader">
+          <div className="group topbar">
+            <ul className="group logolist">
+              <li><img className="logo"></img></li>
+              <li className="NewSocial">NewSocial</li>
+            </ul>
+            <ul className="group loginlist">
+              <li><Link to="/#/writestory" className="greenlink">Write a story</Link></li>
+            </ul>
+          </div>
         </div>
       );
 
