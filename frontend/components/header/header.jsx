@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Modal from 'react-modal';
+import SignInForm from './sign_in_form';
 
 
 class Header extends React.Component {
