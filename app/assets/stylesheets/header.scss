@@ -71,9 +71,7 @@
 }
 
 .popup{
-  width: 520px;
-  height: 715px;
-  margin: 0 auto;
+
 }
 
 .popuptopbar{
@@ -87,7 +85,9 @@
 .popup{
   width: 520px;
   height: 715px;
-  border: 1px solid rgba(0,0,0,.6);
+  margin: 0 auto;
+  background: white;
+  border: 1px solid black;
 }
 
 .popupdescription{
@@ -134,4 +134,12 @@
   float: none;
   padding-top: 57px;
   font-size: 22px;
+}
+
+.modaloverlay{
+  background: black;
+}
+
+.modalX{
+
 }

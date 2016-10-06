@@ -17,11 +17,11 @@ Main Feed Container:
 
 if logged in:
 
-    - topic display page
+    - topic display page ??
       - topic header
-      - story index
-        - story box (multiple)
-          - author detail
+      - story index [get selected partial stories passed as prop from main feed]
+        - story box (multiple) [get one story passed as prop from story index]
+          - author detail [get author passed as prop from story box]
       - side bar
           - topic box (2)
             - topic button (multiple)
@@ -29,16 +29,16 @@ if logged in:
 if not logged in:
 
     - welcome pic
-    - story index
-      - story box (multiple)
+    - story index [get selected partial stories passed as prop from main feed]
+      - story box (multiple) [get one story passed as prop from story index]
         - author detail
 
 
 Author Display Container:
 - author display page
   - author header  
-  - story index
-    - story box (multiple)
+  - story index [get selected partial stories passed as prop from author display]
+    - story box (multiple) [get one story passed as prop from story index]
       - author detail
 
 

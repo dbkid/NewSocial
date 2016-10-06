@@ -5,7 +5,7 @@ STATE:
       { id:  ,
         author: { id:   , name:    , image url:    },
         title:   ,
-        first sentence:    ,
+        splice:    ,
         like count:   ,
         response count:   ,
         bookmarked:

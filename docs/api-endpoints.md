@@ -5,6 +5,7 @@ story model:
 - find_by_topic(topic_id)
 - find_bookmarked(user_id)
 - generate random(number)
+- generate splice 
 
 topic model:
 - exist?(topic_title)

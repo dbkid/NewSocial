@@ -67,16 +67,16 @@ class SignUpForm extends React.Component {
       <li className="greenlink loginbutton signup"><a href="#" onClick={this.openModal}>Sign up</a>
         <Modal
             isOpen={this.state.modalIsOpen}
-            onRequestClose={this.closeModal}>
+            onRequestClose={this.closeModal} >
 
-            <a href="#" onClick={this.closeModal}>X</a>
+            <a href="#" onClick={this.closeModal} className="modalX">X</a>
 
             <div className="popup">
               <div className="popuptopbar">
                     <h2 className="newsocial popuplogo">NewSocial</h2>
               </div>
 
-              <p className="popupdescription">Sign in to NewSocial to connect with voices and perspectives that matter.</p>
+              <p className="popupdescription">Sign up for NewSocial to connect with voices and perspectives that matter.</p>
 
               <form>
                 <input className="signupinput" type="text" placeholder="Name" onChange={this.handleName}></input>

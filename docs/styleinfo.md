@@ -6,3 +6,15 @@ green: #00ab6b
 pop up background font color: rgba(0,0,0,.8);
 
 bottom white background pop up: rgba(255,255,255,.97);
+
+- animate sign up form
+- medium based modal
+
+- add session token
+
+
+TO DO:
+- overlay background for modal
+- index session token
+- switch "login" action to "signin"
+- make signin/signup buttons on popup switch popups

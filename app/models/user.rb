@@ -8,6 +8,11 @@ class User < ActiveRecord::Base
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
 
+  has_many :stories,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: "Story"
+
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)
     @password = password
