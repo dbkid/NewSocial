@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
-import SignInForm from './sign_in_form';
+import SignInFormContainer from './sign_in_form_container';
+import SignUpFormContainer from './sign_up_form_container';
 
 
 
@@ -23,8 +24,8 @@ class Header extends React.Component {
 
             <ul className="group loginlist">
               <li className="greywritestory loginbutton"><Link to="/#/writestory">Write a story</Link></li>
-              <SignInForm/>
-              <li className="greenlink loginbutton signup"><a href="#" onClick={this.openModal}>Sign up</a></li>
+              <SignInFormContainer/>
+              <SignUpFormContainer/>
             </ul>
           </div>
         </div>

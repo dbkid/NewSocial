@@ -22,7 +22,7 @@ export const login = (user, success, error) => {
   $.ajax({
     method: "POST",
     url: "/api/session",
-    data: { user: {name: user.name, email: user.email, password: user.password} },
+    data: { user: {email: user.email, password: user.password} },
     success,
     error
     }

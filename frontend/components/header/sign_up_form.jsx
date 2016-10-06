@@ -3,13 +3,14 @@ import { Link } from 'react-router';
 import Modal from 'react-modal';
 
 
-class SignInForm extends React.Component {
+class SignUpForm extends React.Component {
   constructor(props){
     super(props);
 
     this.state = {
       modalIsOpen: false,
       user: {
+        name: null,
         email: null,
         password: null
       }
@@ -19,7 +20,8 @@ class SignInForm extends React.Component {
     this.closeModal = this.closeModal.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePassword = this.handlePassword.bind(this);
-    this.signIn = this.signIn.bind(this);
+    this.handleName = this.handleName.bind(this);
+    this.signUp = this.signUp.bind(this);
 
   }
 
@@ -35,7 +37,7 @@ class SignInForm extends React.Component {
     e.preventDefault();
     let email = e.target.value;
     return this.setState({
-        ['user']: { ["email"]: email, ["password"]: this.state.user.password }
+        ['user']: { ['name']: this.state.user.name, ["email"]: email, ["password"]: this.state.user.password }
       });
   }
 
@@ -43,18 +45,26 @@ class SignInForm extends React.Component {
     e.preventDefault();
     let password = e.target.value;
     return this.setState({
-      ['user']: { ["email"]: this.state.user.email, ['password']: password }
+      ['user']: { ['name']: this.state.user.name, ["email"]: this.state.user.email, ['password']: password }
     });
   }
 
-  signIn(e){
+  handleName(e){
     e.preventDefault();
-    this.props.signIn(this.state.user);
+    let name = e.target.value;
+    return this.setState({
+      ['user']: { ["name"]: name, ["email"]: this.state.user.email, ['password']: this.state.user.password }
+    });
+  }
+
+  signUp(e){
+    e.preventDefault();
+    this.props.signUp(this.state.user);
   }
 
   render(){
     return(
-      <li className="greenlink loginbutton"><a href="#" onClick={this.openModal}>Sign in /</a>
+      <li className="greenlink loginbutton signup"><a href="#" onClick={this.openModal}>Sign up</a>
         <Modal
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}>
@@ -69,11 +79,12 @@ class SignInForm extends React.Component {
               <p className="popupdescription">Sign in to NewSocial to connect with voices and perspectives that matter.</p>
 
               <form>
+                <input className="signupinput" type="text" placeholder="Name" onChange={this.handleName}></input>
                 <input className="signupinput" type="text" placeholder="Email" onChange={this.handleEmail}></input>
                 <input className="signupinput" type="password" placeholder="Password" onChange={this.handlePassword}></input>
                 <ul className="group">
-                  <li className="greenlink popupsignin"><a href="#" onClick={this.signIn}>Sign in</a></li>
-                  <li className="greenlink popupsignup"><a href="#">Sign up</a></li>
+                  <li className="greenlink popupsignin"><a href="#">Sign in</a></li>
+                  <li className="greenlink popupsignup"><a href="#" onClick={this.signUp}>Sign up</a></li>
                 </ul>
             </form>
             </div>
@@ -86,4 +97,4 @@ class SignInForm extends React.Component {
 
 }
 
-export default SignInForm;
+export default SignUpForm;
