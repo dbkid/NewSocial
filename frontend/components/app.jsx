@@ -5,7 +5,7 @@ import MainFeed from "./main_feed/main_feed_container";
 const App = ({ children }) => (
   <div>
     <Header/>
-    <MainFeed/>
+    <MainFeed className="main-feed"/>
     { children }
   </div>
 );
