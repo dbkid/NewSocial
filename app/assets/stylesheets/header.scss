@@ -81,6 +81,7 @@
   height: 136px;
   padding: 24px;
   background: #f0f0f0;
+  text-align: center;
 }
 
 .popup{
@@ -126,4 +127,11 @@
   float: right;
   margin-right: 40px;
   margin-top: 10px;
+}
+
+.popuplogo{
+  text-align: center;
+  float: none;
+  padding-top: 57px;
+  font-size: 22px;
 }
