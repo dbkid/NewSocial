@@ -1,5 +1,4 @@
 json.array! @stories do |story|
-
   json.id story.id
   json.author do
     json.id story.author.id

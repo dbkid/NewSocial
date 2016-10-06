@@ -5,7 +5,6 @@ import { fetchRandomStories } from '../util/partial_story_api_util.js'
 
 export default ({ getState, dispatch }) => next => action => {
 
-
     const success = (stories) => dispatch(receivePartialStories(stories));
     const error = (errors) => dispatch(receiveErrors(errors));
 
@@ -16,8 +15,6 @@ export default ({ getState, dispatch }) => next => action => {
       default:
         return next(action);
     }
-
-
 
 
 };

@@ -57,7 +57,10 @@ class SignInForm extends React.Component {
       <li className="greenlink loginbutton"><a href="#" onClick={this.openModal}>Sign in /</a>
         <Modal
             isOpen={this.state.modalIsOpen}
-            onRequestClose={this.closeModal}>
+            onRequestClose={this.closeModal}
+            className="popupcontent"
+            overlayClassName="overlay"
+            >
 
             <a href="#" onClick={this.closeModal}>X</a>
 

@@ -18,3 +18,5 @@ TO DO:
 - index session token
 - switch "login" action to "signin"
 - make signin/signup buttons on popup switch popups
+
+- pop up box modal component 
