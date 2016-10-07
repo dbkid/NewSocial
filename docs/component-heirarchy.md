@@ -31,7 +31,7 @@ if not logged in:
     - welcome pic
     - story index [get selected partial stories passed as prop from main feed]
       - story box (multiple) [get one story passed as prop from story index]
-        - author detail
+        - author detail [gets author info and story date passed in as props from story box]
 
 
 Author Display Container:
@@ -39,7 +39,7 @@ Author Display Container:
   - author header[get author info passed as prop from author display]
   - story index [get selected partial stories passed as prop from author display]
     - story box (multiple) [get one story passed as prop from story index]
-      - author detail
+      - author detail [gets author info and story date passed in as props from story box]
 
 
 Story Display Container:

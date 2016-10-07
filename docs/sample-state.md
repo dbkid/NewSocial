@@ -9,7 +9,7 @@ STATE:
         like count:   ,
         response count:   ,
         bookmarked:
-        timestamp:
+        created_at:
   	  },
       { id:  ,
         author: { id:  , name:    , image url:    },
@@ -18,7 +18,7 @@ STATE:
         like count:   ,
         response count:   ,
         bookmarked:
-        timestamp:
+        created_at:
   	  }
     ],
 
