@@ -49,13 +49,16 @@ Thursday/Friday:
 - story boxes (display as list on main feed)
 - author detail (part of story box)
 - story display (no responses)
+- author display
 
 Weekend:
 - story form
-- author display
+- author own form
+- author detail
 
 Monday/Tuesday:
 - responses
+- story form
 - catch up
 
 Wednesday/Thursday:

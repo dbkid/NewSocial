@@ -6,6 +6,8 @@ class Api::StoriesController < ApplicationController
   end
 
   def show
+    @story = Story.find(params[:id].to_i)
+    render "api/stories/show"
   end
 
 

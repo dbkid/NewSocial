@@ -43,8 +43,10 @@ Author Display Container:
 
 
 Story Display Container:
-- story display page
+- story display page [gets selected stories passed as prop from container]
+  - header 
   - author detail
+  - selected story [gets selected story passed as prop from story display page]
   - topic button (multiple)
   - author footer
   - response form
