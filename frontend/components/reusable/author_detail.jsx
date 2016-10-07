@@ -7,7 +7,7 @@ const AuthorDetail = ({ author, storyDate }) => {
 
   return (
     <div>
-      <a href="#">{author.name}</a>
+      <Link to={`/authors/${author.id}`} className="greenlink">{author.name}</Link>
     </div>
   );
 
