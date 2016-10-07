@@ -1,7 +1,7 @@
 export const signup = (user, success, error) => {
   $.ajax({
     method: "POST",
-    url: "/api/user",
+    url: "/api/users",
     data: { user: {name: user.name, email: user.email, password: user.password} },
     success,
     error
@@ -32,7 +32,7 @@ export const login = (user, success, error) => {
 export const deleteUser = (user, success) => {
   $.ajax({
     method: "DELETE",
-    url: "/api/user",
+    url: `/api/users/${user.id}`,
     data: { user: {id: user.id } },
     success
     }

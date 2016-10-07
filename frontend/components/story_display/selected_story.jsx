@@ -4,8 +4,8 @@ const SelectedStory = ({ selectedStory }) => {
 
   return (
     <div>
-      <h1>{selectedStory.title}</h1>
-      <p>{selectedStory.content}</p>
+      <h1 className="selected-story-title">{selectedStory.title}</h1>
+      <p className="selected-story-content">{selectedStory.content}</p>
     </div>
   );
 

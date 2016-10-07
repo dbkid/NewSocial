@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 
 class StoryBox extends React.Component {
@@ -13,8 +14,10 @@ class StoryBox extends React.Component {
 
     return(
       <div className="story-box-box">
-        <h1 className = "story-box-title">{this.props.title}</h1>
-        <p className="story-box-splice">{this.props.splice}</p>
+         <Link to={`/stories/${this.props.id}`} >
+            <h1 className = "story-box-title">{this.props.title}</h1>
+            <p className="story-box-splice">{this.props.splice}</p>
+          </Link>
       </div>
     );
 

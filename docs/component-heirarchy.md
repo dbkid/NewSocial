@@ -36,7 +36,7 @@ if not logged in:
 
 Author Display Container:
 - author display page
-  - author header  
+  - author header[get author info passed as prop from author display]
   - story index [get selected partial stories passed as prop from author display]
     - story box (multiple) [get one story passed as prop from story index]
       - author detail
@@ -44,7 +44,7 @@ Author Display Container:
 
 Story Display Container:
 - story display page [gets selected stories passed as prop from container]
-  - header 
+  - header
   - author detail
   - selected story [gets selected story passed as prop from story display page]
   - topic button (multiple)

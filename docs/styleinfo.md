@@ -11,7 +11,9 @@ bottom white background pop up: rgba(255,255,255,.97);
 - medium based modal
 
 - add session token
-- word wrap break word 
+- word wrap break word
+
+- error message if put in wrong login
 
 TO DO:
 - overlay background for modal

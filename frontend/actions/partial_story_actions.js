@@ -7,6 +7,7 @@ export const fetchRandomStories = (number) => ({
   number: number
 });
 
+
 export const receivePartialStories = (stories) => ({
   type: RECEIVE_PARTIAL_STORIES,
   stories: stories

@@ -47,7 +47,6 @@ topics: {
 author: {
     name:   ,
     id:   ,
-    image url:   ,
     followers:   ,
     follows:    ,
     followed:

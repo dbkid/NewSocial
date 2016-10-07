@@ -10,5 +10,4 @@ class Api::StoriesController < ApplicationController
     render "api/stories/show"
   end
 
-
 end

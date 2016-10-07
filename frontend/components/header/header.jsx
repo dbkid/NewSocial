@@ -19,7 +19,9 @@ class Header extends React.Component {
         <div className="group homepageheader">
           <div className="group topbar">
             <ul className="group logolist">
-              <li className="newsocial">NewSocial</li>
+              <Link to="/">
+                <li className="newsocial">NewSocial</li>
+              </Link>
             </ul>
 
             <ul className="group loginlist">
@@ -28,6 +30,7 @@ class Header extends React.Component {
               <SignUpFormContainer/>
             </ul>
           </div>
+          <div className="nav-bar"></div>
         </div>
       );
     } else {
@@ -37,12 +40,15 @@ class Header extends React.Component {
           <div className="group topbar">
             <ul className="group logolist">
               <li><img className="logo"></img></li>
-              <li className="NewSocial">NewSocial</li>
+                <Link to="/">
+                  <li className="NewSocial">NewSocial</li>
+                </Link>
             </ul>
             <ul className="group loginlist">
               <li><Link to="/#/writestory" className="greenlink">Write a story</Link></li>
             </ul>
           </div>
+          <div className="nav-bar"></div>
         </div>
       );
 

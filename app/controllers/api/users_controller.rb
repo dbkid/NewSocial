@@ -24,6 +24,12 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = User.find(params[:id].to_i)
+    @stories = @user.stories
+    render "api/users/show"
+  end
+
   private
 
   def user_params

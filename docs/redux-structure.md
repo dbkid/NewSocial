@@ -17,7 +17,6 @@ ACTIONS:
 partial story actions:
 - request partial stories [middleware - make API request to database, on success: receive partial stories]
 - receive partial stories [reducer - receive partial story info, update stories in state, display story boxes]
-- fetch stories by author(authorID) [middleware - make API request to database, on success: receive partial stories]
 - fetch stories by topic(topicID) [middleware - make API request to database, on success: receive partial stories]
 - fetch bookmarked stories(userID) [middleware - make API request to database, on success: receive partial stories]
 - fetch random stories(number) [middleware - make API request to database, on success: receive partial stories]
@@ -63,8 +62,8 @@ session actions:
 
 
 author actions:
-- request author info(authorID) [middleware - make API request to database for user info]
 - receive author info [reducer - receive user info from database, update author in state, display author page]
+- fetchAuthorShow [middleware - make API request to database for author info&partial stories by author. on success: receivePartialStories, receiveAuthorInfo]
 
 
 topic actions:
