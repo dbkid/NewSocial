@@ -12,9 +12,9 @@ class StoryBox extends React.Component {
   render(){
 
     return(
-      <div>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.splice}</p>
+      <div className="story-box-box">
+        <h1 className = "story-box-title">{this.props.title}</h1>
+        <p className="story-box-splice">{this.props.splice}</p>
       </div>
     );
 

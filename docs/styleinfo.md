@@ -11,7 +11,7 @@ bottom white background pop up: rgba(255,255,255,.97);
 - medium based modal
 
 - add session token
-
+- word wrap break word 
 
 TO DO:
 - overlay background for modal
@@ -19,4 +19,4 @@ TO DO:
 - switch "login" action to "signin"
 - make signin/signup buttons on popup switch popups
 
-- pop up box modal component 
+- pop up box modal component

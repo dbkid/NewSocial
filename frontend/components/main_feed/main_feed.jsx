@@ -26,7 +26,9 @@ class MainFeed extends React.Component {
 
   render(){
     return(
-      <StoryIndex partialStories={this.props.partialStories}/>
+      <div className="main-feed">
+        <StoryIndex partialStories={this.props.partialStories}/>
+      </div>
     );
 
   }

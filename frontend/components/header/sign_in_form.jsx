@@ -62,7 +62,7 @@ class SignInForm extends React.Component {
             overlayClassName="overlay"
             >
 
-            <a href="#" onClick={this.closeModal}>X</a>
+            <a href="#" onClick={this.closeModal} className="modalX">x</a>
 
             <div className="popup">
               <div className="popuptopbar">

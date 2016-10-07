@@ -67,9 +67,11 @@ class SignUpForm extends React.Component {
       <li className="greenlink loginbutton signup"><a href="#" onClick={this.openModal}>Sign up</a>
         <Modal
             isOpen={this.state.modalIsOpen}
-            onRequestClose={this.closeModal} >
+            onRequestClose={this.closeModal}
+            className="popupcontent"
+            overlayClassName="overlay" >
 
-            <a href="#" onClick={this.closeModal} className="modalX">X</a>
+            <a href="#" onClick={this.closeModal} className="modalX">x</a>
 
             <div className="popup">
               <div className="popuptopbar">
