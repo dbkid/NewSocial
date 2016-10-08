@@ -41,14 +41,18 @@ Author Display Container:
     - story box (multiple) [get one story passed as prop from story index]
       - author detail [gets author info and story date passed in as props from story box]
 
+[for own user page]
+- author form header [with edit button, on click render author form]
+  - author form
+
 
 Story Display Container:
 - story display page [gets selected stories passed as prop from container]
   - header
   - author detail
   - selected story [gets selected story passed as prop from story display page]
-  - topic button (multiple)
-  - author footer
+  -   topic button (multiple)
+  -   author footer
   - response form
     - author detail
   - response display (multiple)

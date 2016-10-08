@@ -4,13 +4,13 @@ import merge from 'lodash/merge';
 
 const defaultState = [{
   id: null,
-  author: { id: null, name: null },
+  author: { id: null, name: null, imageUrl: null },
   title: null,
   splice: null,
   like_count: null,
   response_count: null,
   bookmarked: false,
-  timestamp: null
+  created_at: null
 }];
 
 export const PartialStoryReducer = (state = defaultState, action) => {

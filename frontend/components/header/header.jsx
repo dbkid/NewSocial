@@ -12,7 +12,6 @@ class Header extends React.Component {
   }
 
   render(){
-    console.log(this.state);
     if (this.props.currentUser === null){
 
       return(

@@ -56,10 +56,14 @@ Weekend:
 - author own form
 - author detail
 
+- toggle pop up
+- put x on overlay
+
 Monday/Tuesday:
 - responses
 - story form
 - catch up
+- settle on non changing font for NewSocial/decide on logo (homework)
 
 Wednesday/Thursday:
 - topics

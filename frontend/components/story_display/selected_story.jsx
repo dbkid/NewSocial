@@ -3,7 +3,7 @@ import React from 'react';
 const SelectedStory = ({ selectedStory }) => {
 
   return (
-    <div>
+    <div className="selected-story-background">
       <h1 className="selected-story-title">{selectedStory.title}</h1>
       <p className="selected-story-content">{selectedStory.content}</p>
     </div>

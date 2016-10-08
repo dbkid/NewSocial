@@ -26,8 +26,10 @@ class MainFeed extends React.Component {
 
   render(){
     return(
-      <div className="main-feed">
-        <StoryIndex partialStories={this.props.partialStories}/>
+      <div className = "main-feed-border">
+        <div className="main-feed">
+          <StoryIndex partialStories={this.props.partialStories}/>
+        </div>
       </div>
     );
 
