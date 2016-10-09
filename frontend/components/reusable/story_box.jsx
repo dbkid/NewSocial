@@ -15,7 +15,7 @@ class StoryBox extends React.Component {
 
     return(
       <div className="story-box-box group">
-         <AuthorDetail author={this.props.story.author} storyDate={this.props.story.date}/>
+         <AuthorDetail author={this.props.story.author} storyDate={this.props.story.date} storyId={this.props.story.id}/>
          <Link to={`/stories/${this.props.story.id}`} >
             <h1 className = "story-box-title">{this.props.story.title}</h1>
             <p className="story-box-splice">{this.props.story.splice}</p>

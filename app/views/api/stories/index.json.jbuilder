@@ -7,6 +7,6 @@ json.array! @stories do |story|
   end
   json.title story.title
   json.splice story.splice
-  json.date story.date
+  json.date story.created_at.strftime("%b %d")
 
 end

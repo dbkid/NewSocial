@@ -22,9 +22,32 @@
 
 }
 
-.author-name{
+.name-date-container{
   float: left;
+  height: 36px;
+}
+
+
+.author-detail-name{
   margin-left: 10px;
   vertical-align: middle;
+  display: block;
+  line-height: 1.4;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.date{
+  display: block;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  line-height: 1.4;
+  fill: rgba(0,0,0,.44);
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
