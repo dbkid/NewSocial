@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import  StoryIndex  from '../reusable/story_index';
+import Header from "./../header/header_container";
+
 
 
 
@@ -26,9 +28,11 @@ class MainFeed extends React.Component {
 
   render(){
     return(
-      <div className = "main-feed-border">
-        <div className="main-feed">
-          <StoryIndex partialStories={this.props.partialStories}/>
+      <div>
+        <div className = "main-feed-border">
+          <div className="main-feed">
+            <StoryIndex partialStories={this.props.partialStories}/>
+          </div>
         </div>
       </div>
     );

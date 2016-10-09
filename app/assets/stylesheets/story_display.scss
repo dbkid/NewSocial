@@ -1,26 +1,30 @@
 .selected-story-title{
   color: rgba(0,0,0,.8);
   width: 231px;
-  margin: 0 auto;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.04;
   letter-spacing: -.028em;
   font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  text-align: left;
 
 }
 
 .selected-story-content{
-  width: 700px;
-  margin: 0 auto;
   margin-top: 10px;
   font-size: 21px;
   font-weight: 400;
   line-height: 1.58;
   letter-spacing: -.003em;
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  text-align: left;
 }
 
 .selected-story-background{
   background: #fff!important;
+}
+
+.selected-story-box{
+  width: 700px;
+  margin: 0 auto;
 }

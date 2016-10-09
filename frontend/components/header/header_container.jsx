@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Header from './header';
+import { withRouter } from 'react-router';
 
 
 const mapStateToProps = state => ({

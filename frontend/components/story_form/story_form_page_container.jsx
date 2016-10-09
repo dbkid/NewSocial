@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import StoryFormPage from './story_form';
+import StoryFormPage from './story_form_page';
 import { createStory, passStory } from '../../actions/selected_story_actions';
 
 

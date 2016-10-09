@@ -1,0 +1,45 @@
+.story-form{
+  width: 700px;
+  margin: 0 auto;
+
+}
+
+.story-form-title{
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-size: 40px;
+  display: block;
+  border: none;
+  outline: none;
+  width: 700px;
+  height: 48px;
+  float: left;
+  resize: none;
+  margin: 0;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+
+}
+
+.story-form-content{
+  display: block;
+  font-size: 21px;
+  color: rgba(0,0,0,.8);
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  width: 700px;
+  resize: none;
+  overflow: hidden;
+  height: 100vh;
+  float: left;
+  margin-top: 10px;
+}
+
+.story-form-background{
+  background: #fff!important;
+  height: 100vh;
+  width: 100vw;
+}

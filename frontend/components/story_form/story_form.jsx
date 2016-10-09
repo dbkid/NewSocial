@@ -36,9 +36,9 @@ class StoryForm extends React.Component {
 
     return(
       <div>
-        <form>
-          <h1 placeholder="Title" onChange={this.updateTitle}></h1>
-          <textarea placeholder="Tell your story..." onChange={this.updateContent}></textarea>
+        <form className="story-form group">
+              <textarea placeholder="Title" onChange={this.updateTitle} className="story-form-title"></textarea>
+              <textarea placeholder="Tell your story..." onChange={this.updateContent} className="story-form-content"></textarea>
         </form>
       </div>
     );

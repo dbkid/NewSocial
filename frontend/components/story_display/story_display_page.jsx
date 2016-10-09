@@ -1,5 +1,7 @@
 import React from 'react';
 import SelectedStory from './selected_story';
+import Header from "./../header/header_container";
+
 
 
 class StoryDisplayPage extends React.Component {

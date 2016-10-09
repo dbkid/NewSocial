@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import  StoryIndex  from '../reusable/story_index';
 import AuthorHeader from './author_header';
+import Header from "./../header/header_container";
+
 
 
 class AuthorDisplayPage extends React.Component {
