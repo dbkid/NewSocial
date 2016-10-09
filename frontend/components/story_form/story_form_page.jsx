@@ -18,6 +18,9 @@ class StoryFormPage extends React.Component {
     return(
       <div className="story-form-background">
         <StoryFormHeader session={this.props.session} story={this.props.selectedStory} createStory={this.props.createStory}/>
+        <div className="story-form-author-detail">
+          <StoryFormAuthorDetail author={this.props.session.currentUser}/>
+        </div>
         <StoryForm story={this.props.selectedStory} passStory={this.props.passStory} author={this.props.session.currentUser}/ >
       </div>
     );

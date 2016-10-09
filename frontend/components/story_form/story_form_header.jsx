@@ -9,7 +9,7 @@ class StoryFormHeader extends React.Component {
   render(){
 
       return(
-        <div className="group homepageheader">
+        <div className="group story-form-header">
           <div className="group topbar">
             <ul className="group logolist">
               <li><img className="logo"></img></li>

@@ -1,3 +1,9 @@
+.story-form-header{
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+
 .story-form{
   width: 700px;
   margin: 0 auto;
@@ -40,6 +46,12 @@
 
 .story-form-background{
   background: #fff!important;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+
+}
+
+.story-form-author-detail{
+  width: 700px;
+  margin: 0 auto;
 }

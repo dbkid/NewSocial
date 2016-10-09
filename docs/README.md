@@ -56,9 +56,12 @@ Weekend:
 - author own form
 - author detail
 
+
 - toggle pop up
 - put x on overlay
 - round out profile pics  
+- validate uniqueness of email
+- why logged out upon refresh 
 
 Monday/Tuesday:
 - responses
