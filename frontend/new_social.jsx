@@ -19,6 +19,9 @@ window.fetchRandomStories = PARTIAL_STORY_ACTION.fetchRandomStories;
 window.FETCH_RANDOM_STORIES = PARTIAL_STORY_ACTION.FETCH_RANDOM_STORIES;
 window.FETCH_SELECTED_STORY = SELECTED_STORY_ACTION.FETCH_SELECTED_STORY;
 window.fetchSelectedStory = SELECTED_STORY_ACTION.fetchSelectedStory;
+window.createStory = SELECTED_STORY_ACTION.createStory;
+window.CREATE_STORY = SELECTED_STORY_ACTION.CREATE_STORY;
+
 
 let store = configureStore();
 window.store = store;

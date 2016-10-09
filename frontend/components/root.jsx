@@ -7,6 +7,7 @@ import { fetchSelectedStory } from './../actions/selected_story_actions';
 import { fetchAuthorShow } from './../actions/author_actions';
 import MainFeed from "./main_feed/main_feed_container";
 import AuthorDisplayPageContainer from "./author_display/author_display_page_container";
+import StoryFormPageContainer from './story_form/story_form_page_container';
 
 
 
@@ -29,6 +30,7 @@ const Root = ({ store }) => {
             <IndexRoute component={MainFeed}/>
               <Route path="stories/:storyId" component={StoryDisplayPageContainer} onEnter={fetchSelectedStoryOnEnter}></Route>
               <Route path="authors/:authorId" component={AuthorDisplayPageContainer} onEnter={fetchAuthorShowOnEnter}></Route>
+              <Route path="/writestory" component={StoryFormPageContainer}></Route>
         </Route>
       </Router>
     </Provider>

@@ -24,7 +24,7 @@ class Header extends React.Component {
             </ul>
 
             <ul className="group loginlist">
-              <li className="greywritestory loginbutton"><Link to="/#/writestory">Write a story</Link></li>
+              <li className="greywritestory loginbutton"><Link to="/writestory">Write a story</Link></li>
               <SignInFormContainer/>
               <SignUpFormContainer/>
             </ul>
@@ -44,7 +44,7 @@ class Header extends React.Component {
                 </Link>
             </ul>
             <ul className="group loginlist">
-              <li><Link to="/#/writestory" className="greenlink">Write a story</Link></li>
+              <li><Link to="/writestory" className="greenlink">Write a story</Link></li>
             </ul>
           </div>
           <div className="nav-bar"></div>

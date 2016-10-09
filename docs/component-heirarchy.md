@@ -59,10 +59,12 @@ Story Display Container:
     - author detail
 
 
-Story Form Container:
-- story form
-  - author detail
-  - add tags drop down
+Story Form Page Container:
+- story form page
+    - story form header
+    - story form author detail
+    - story form
+    - add tags drop down
 
 
 

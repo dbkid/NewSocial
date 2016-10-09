@@ -24,7 +24,7 @@ STATE:
 
     selected story: {
       id:  ,
-      author:  { name:   , image url:  , followed:  },
+      author:  { id:  ,name:   , image url:  , followed:  },
       title:    ,
       content:   ,
       like count:   ,

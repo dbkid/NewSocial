@@ -58,6 +58,7 @@ Weekend:
 
 - toggle pop up
 - put x on overlay
+- round out profile pics  
 
 Monday/Tuesday:
 - responses
