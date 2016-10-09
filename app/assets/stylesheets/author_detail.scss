@@ -1,0 +1,30 @@
+
+.author-detail{
+  height: 35px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(0,0,0,.44);
+  margin-top: 32px;
+}
+
+.image-thumb{
+  border-radius: 100%;
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+}
+
+.image-thumb-container{
+
+}
+
+.author-name{
+  float: left;
+  margin-left: 10px;
+  vertical-align: middle;
+
+}

@@ -1,5 +1,3 @@
-debugger
-
 json.array! @stories do |story|
   json.id story.id
   json.author do
@@ -9,6 +7,6 @@ json.array! @stories do |story|
   end
   json.title story.title
   json.splice story.splice
-  json.created_at story.created_at
+  json.date story.date
 
 end

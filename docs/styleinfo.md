@@ -1,6 +1,9 @@
 border-color green: #02b875
 green: #00ab6b
 
+
+#02b875
+
   // <li><img className="logo"></img></li>
 
 pop up background font color: rgba(0,0,0,.8);

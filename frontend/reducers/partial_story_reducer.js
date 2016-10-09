@@ -10,7 +10,7 @@ const defaultState = [{
   like_count: null,
   response_count: null,
   bookmarked: false,
-  created_at: null
+  date: null
 }];
 
 export const PartialStoryReducer = (state = defaultState, action) => {

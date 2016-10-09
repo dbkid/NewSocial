@@ -14,8 +14,9 @@ class AuthorHeader extends React.Component {
 
     return(
       <div className="author-header">
-        <div className="author-box">
+        <div className="author-box group">
           <h1 className="author-name">{this.props.author.name}</h1>
+          <img src={this.props.author.imageUrl} className = "image-profile"></img>
         </div>
       </div>
 
