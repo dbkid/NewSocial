@@ -61,7 +61,8 @@ Weekend:
 - put x on overlay
 - round out profile pics  
 - validate uniqueness of email
-- why logged out upon refresh 
+- why logged out upon refresh
+- make author header shorter (match mine)
 
 Monday/Tuesday:
 - responses

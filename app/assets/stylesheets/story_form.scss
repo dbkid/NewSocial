@@ -20,9 +20,10 @@
   height: 48px;
   float: left;
   resize: none;
-  margin: 0;
+  margin-top: 20px;
   line-height: 1.04;
   letter-spacing: -.028em;
+  font-weight: 700;
 
 }
 
@@ -54,4 +55,40 @@
 .story-form-author-detail{
   width: 700px;
   margin: 0 auto;
+  margin-top: 35px;
+  padding-left: 20px;
+  height: 41px;
+}
+
+.story-form-author-detail-name{
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  color: rgba(0,0,0,.8);
+  margin-left: 15px;
+  vertical-align: middle;
+  display: block;
+
+}
+
+.story-form-image-thumb{
+  border-radius: 100%;
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.story-form-author-detail-draft{
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 2px;
+  color: rgba(0,0,0,.44);
+  display: block;
+  margin-left: 15px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+
 }

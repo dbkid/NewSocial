@@ -7,11 +7,12 @@ const StoryFormAuthorDetail = ({ author }) => {
     <div className="author-detail group">
       <div className="image-thumb-container">
         <Link to={`/authors/${author.id}`}>
-          <img src={author.imageUrl} className = "image-thumb"></img>
+          <img src={author.imageUrl} className = "story-form-image-thumb"></img>
         </Link>
       </div>
       <div className="name-date-container">
-          <Link to={`/authors/${author.id}`} className="greenlink author-detail-name">{author.name}</Link>
+          <Link to={`/authors/${author.id}`} className="story-form-author-detail-name">{author.name}</Link>
+          <text className="story-form-author-detail-draft">Draft</text>
       </div>
     </div>
   );
