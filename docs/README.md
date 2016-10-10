@@ -58,11 +58,13 @@ Weekend:
 
 
 - toggle pop up
+- pop up error 
 - put x on overlay
 - round out profile pics  
 - validate uniqueness of email
 - why logged out upon refresh
 - make author header shorter (match mine)
+- fingerprint images
 
 Monday/Tuesday:
 - responses
