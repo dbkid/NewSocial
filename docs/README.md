@@ -66,6 +66,8 @@ Weekend:
 - fingerprint images
 - add error message for wrong/invalid credentials
 
+- header: if own story, render: edit. else: render write story 
+
 Monday/Tuesday:
 - responses
 - story form

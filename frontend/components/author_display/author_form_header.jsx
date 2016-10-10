@@ -24,16 +24,17 @@ class AuthorFormHeader extends React.Component {
       return(
         <div className="author-header">
           <div className="author-box">
-            <h1 className="author-name">{this.props.author.name}</h1>
-            <button onClick={this.toggleForm}>Edit</button>
+              <h1 className="author-name">{this.props.author.name}</h1>
+              <img src={this.props.author.imageUrl} className = "image-profile"></img>
+              <button onClick={this.toggleForm} className = "round-button">Edit</button>
           </div>
         </div>
 
       );
     } else {
       return(
-        <AuthorForm/>
-      )
+        <AuthorForm author={this.props.author}/>
+      );
     }
 
   }

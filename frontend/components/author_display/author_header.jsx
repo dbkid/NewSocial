@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import AuthorFormHeader from "./author_form_header";
 
 
 class AuthorHeader extends React.Component {
@@ -12,7 +13,13 @@ class AuthorHeader extends React.Component {
 
   render(){
 
-    return(
+    if (this.props.currentUser.id === this.props.author.id) {
+      return(
+        <AuthorFormHeader author={this.props.author}/>
+      );
+    }
+
+    else return(
       <div className="author-header">
         <div className="author-box group">
           <h1 className="author-name">{this.props.author.name}</h1>

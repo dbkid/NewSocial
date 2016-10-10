@@ -9,7 +9,6 @@ class StoryFormHeader extends React.Component {
   }
 
   createStory(e){
-    debugger
     e.preventDefault();
     this.props.createStory(this.props.story);
   }

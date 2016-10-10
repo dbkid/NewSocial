@@ -53,6 +53,7 @@ class AuthorForm extends React.Component {
         <div className="author-header">
           <div className="author-box">
             <h1 className="author-name">{this.props.author.name}</h1>
+            <img src={this.props.author.imageUrl} className = "image-profile"></img>
             <input type="file" onChange={this.updateFile}></input>
             <img src={this.state.imageUrl}/>
             <button onClick={this.handleSubmit}>Save</button>

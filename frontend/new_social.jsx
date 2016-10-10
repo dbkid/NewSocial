@@ -22,18 +22,16 @@ window.fetchSelectedStory = SELECTED_STORY_ACTION.fetchSelectedStory;
 window.createStory = SELECTED_STORY_ACTION.createStory;
 window.CREATE_STORY = SELECTED_STORY_ACTION.CREATE_STORY;
 
-
-let store = configureStore();
-window.store = store;
-
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.currentUser) {
+  let store;
+  if (window.currentUser) {
     const initialState = {session: {currentUser: window.currentUser}};
     store = configureStore(initialState);
   } else {
     store = configureStore();
   }
-    const root = document.getElementById("root");
-    Modal.setAppElement(root);
-    ReactDOM.render(<Root store={store}/>, root);
+  window.store = store;
+  const root = document.getElementById("root");
+  Modal.setAppElement(root);
+  ReactDOM.render(<Root store={store}/>, root);
 });
