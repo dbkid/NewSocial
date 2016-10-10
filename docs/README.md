@@ -65,8 +65,9 @@ Weekend:
 - make author header shorter (match mine)
 - fingerprint images
 - add error message for wrong/invalid credentials
+- boolean for fetching to author display page to prevent flicker 
 
-- header: if own story, render: edit. else: render write story 
+- header: if own story, render: edit. else: render write story
 
 Monday/Tuesday:
 - responses
