@@ -28,10 +28,10 @@ const Root = ({ store }) => {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={MainFeed}/>
-              <Route path="stories/:storyId" component={StoryDisplayPageContainer} onEnter={fetchSelectedStoryOnEnter}></Route>
-              <Route path="authors/:authorId" component={AuthorDisplayPageContainer} onEnter={fetchAuthorShowOnEnter}></Route>
-              <Route path="/writestory" component={StoryFormPageContainer}></Route>
+            <Route path="stories/:storyId" component={StoryDisplayPageContainer} onEnter={fetchSelectedStoryOnEnter}></Route>
+            <Route path="authors/:authorId" component={AuthorDisplayPageContainer} onEnter={fetchAuthorShowOnEnter}></Route>
         </Route>
+        <Route path="/writestory" component={StoryFormPageContainer}></Route>
       </Router>
     </Provider>
   )

@@ -3,13 +3,16 @@ import Header from './header';
 import { withRouter } from 'react-router';
 
 
-const mapStateToProps = state => ({
-  currentUser: state.session.currentUser
+const mapStateToProps = (state, ownProps) => {
+  return ({
+  currentUser: state.session.currentUser,
+  loggedIn: Boolean(state.session.currentUser)
 });
+};
 
 const mapDispatchToProps = dispatch => ({
   login: (user) => dispatch(login(user)),
   signup: (user) => dispatch(signup(user))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));

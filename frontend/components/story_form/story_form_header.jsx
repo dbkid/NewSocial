@@ -4,6 +4,14 @@ import { Link } from 'react-router';
 class StoryFormHeader extends React.Component {
   constructor(props){
     super(props);
+
+    this.createStory = this.createStory.bind(this);
+  }
+
+  createStory(e){
+    debugger
+    e.preventDefault();
+    this.props.createStory(this.props.story);
   }
 
   render(){
@@ -17,7 +25,7 @@ class StoryFormHeader extends React.Component {
                 </Link>
             </ul>
             <ul className="group loginlist">
-              <li><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+              <li onClick={this.createStory}><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
             </ul>
           </div>
         </div>

@@ -14,14 +14,9 @@ class Header extends React.Component {
 
   render(){
 
-    if (window.location.hash.slice(2,12) === "writestory"){
-      return(
-        <div></div>
-      );
-    }
 
 
-    else if (this.props.currentUser === null){
+     if (this.props.currentUser === null){
 
       return(
         <div className="group homepageheader">
