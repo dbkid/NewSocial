@@ -27,6 +27,12 @@ let store = configureStore();
 window.store = store;
 
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.currentUser) {
+    const initialState = {session: {currentUser: window.currentUser}};
+    store = configureStore(initialState);
+  } else {
+    store = configureStore();
+  }
     const root = document.getElementById("root");
     Modal.setAppElement(root);
     ReactDOM.render(<Root store={store}/>, root);
