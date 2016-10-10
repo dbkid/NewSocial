@@ -29,7 +29,7 @@ STATE:
       content:   ,
       like count:   ,
       topics:  [ { id:  , title:  }, {id:  , title:  }],
-      responses: [  { id:  , title:  , content:  , author:  {id:  , name:  , image url:   } } ],
+      responses: [  { id:  , content:  , author:  {id:  , name:  , image url:   } } ],
       liked:
       bookmarked:
       timestamp:

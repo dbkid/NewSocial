@@ -1,5 +1,5 @@
-import { FETCH_AUTHOR_SHOW } from '../actions/author_actions';
-import { fetchAuthorShow } from '../util/author_api_util.js';
+import { FETCH_AUTHOR_SHOW, EDIT_USER } from '../actions/author_actions';
+import { fetchAuthorShow, editUser } from '../util/author_api_util.js';
 import { receivePartialStories } from '../actions/partial_story_actions';
 import { receiveAuthorInfo } from '../actions/author_actions';
 
@@ -18,6 +18,9 @@ export default ({ getState, dispatch }) => next => action => {
     switch(action.type){
       case(FETCH_AUTHOR_SHOW):
         fetchAuthorShow(action.authorId, success, error);
+        return next(action);
+      case(EDIT_USER):
+        editUser(action.formData, action.authorId, success);
         return next(action);
       default:
         return next(action);

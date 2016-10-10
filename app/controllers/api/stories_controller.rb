@@ -7,11 +7,13 @@ class Api::StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id].to_i)
+    @responses = @story.responses
     render "api/stories/show"
   end
 
   def create
     @story = Story.new(story_params)
+    @responses = @story.responses
     if @story.save
       render "api/stories/show"
     else

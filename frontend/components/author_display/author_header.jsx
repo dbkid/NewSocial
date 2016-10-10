@@ -15,7 +15,7 @@ class AuthorHeader extends React.Component {
 
     if (this.props.currentUser.id === this.props.author.id) {
       return(
-        <AuthorFormHeader author={this.props.author}/>
+        <AuthorFormHeader author={this.props.author} editUser={this.props.editUser}/>
       );
     }
 

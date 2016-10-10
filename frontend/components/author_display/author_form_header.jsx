@@ -33,7 +33,7 @@ class AuthorFormHeader extends React.Component {
       );
     } else {
       return(
-        <AuthorForm author={this.props.author}/>
+        <AuthorForm author={this.props.author} editUser={this.props.editUser}/>
       );
     }
 

@@ -18,7 +18,7 @@ class AuthorDisplayPage extends React.Component {
   render(){
     return(
       <div>
-        <AuthorHeader author={this.props.author} currentUser={this.props.session.currentUser}/>
+        <AuthorHeader author={this.props.author} currentUser={this.props.session.currentUser} editUser={this.props.editUser}/>
         <div className="latest-container group">
           <h3 className="latest">Latest</h3>
         </div>

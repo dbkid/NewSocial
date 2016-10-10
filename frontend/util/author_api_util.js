@@ -6,3 +6,16 @@ export const fetchAuthorShow = (authorId, success) => {
     }
   );
 };
+
+export const editUser = (formData, authorId, success) => {
+  $.ajax({
+     url: `/api/users/${authorId}`,
+     type: 'PATCH',
+     processData: false,
+     contentType: false,
+     dataType: 'json',
+     data: formData,
+     success
+     }
+   );
+};

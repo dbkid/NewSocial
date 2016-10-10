@@ -8,7 +8,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchSelectedStory: (storyId) => dispatch(fetchSelectedStory(storyId))
+  fetchSelectedStory: (storyId) => dispatch(fetchSelectedStory(storyId)),
+  createResponse: (response) => dispatch(createResponse(response))
 
 });
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import SelectedStory from './selected_story';
 import Header from "./../header/header_container";
+import ResponseForm from "./response_form";
+import ResponseIndex from './response_index';
 
 
 
@@ -18,6 +20,7 @@ class StoryDisplayPage extends React.Component {
     return(
       <div>
         <SelectedStory selectedStory = {this.props.selectedStory}/>
+        <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
       </div>
     );
 

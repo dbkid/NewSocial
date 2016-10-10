@@ -34,7 +34,7 @@ RESPONSES:
 ID,
 content,
 story ID “belongs to: story”,
-user ID “belongs to: user”,
+author ID “belongs to: user”,
 timestamp
 
 TOPICS:

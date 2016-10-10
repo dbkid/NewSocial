@@ -38,6 +38,9 @@ If time:
   - logged in users can select "for you" on home page navigation bar which displays random stories from their followed topics / authors
 
 
+  <ResponseForm story={this.props.selectedStory} currentUser={this.props.session.currentUser} createResponse={this.props.createResponse}/>
+  # json.extract! @story, :id, :author, :title, :content
+
 
 
 Implementation Timeline:
@@ -65,7 +68,9 @@ Weekend:
 - make author header shorter (match mine)
 - fingerprint images
 - add error message for wrong/invalid credentials
-- boolean for fetching to author display page to prevent flicker 
+- boolean for fetching to author display page to prevent flicker
+- check if current user on author show on enter
+- make write a story make an ajax request (not updating current user)
 
 - header: if own story, render: edit. else: render write story
 

@@ -6,12 +6,16 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   after_initialize :ensure_session_token
-  before_validation :ensure_session_token_uniqueness
 
   has_many :stories,
     primary_key: :id,
     foreign_key: :author_id,
     class_name: "Story"
+
+  has_many :responses,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: "Response"
 
   has_attached_file :image, default_url: "default-avatar.png"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
@@ -33,7 +37,6 @@ class User < ActiveRecord::Base
 
   def reset_session_token!
     self.session_token = generate_session_token
-    ensure_session_token_uniqueness
     self.save
     self.session_token
   end
@@ -46,12 +49,6 @@ class User < ActiveRecord::Base
 
   def generate_session_token
     SecureRandom.base64
-  end
-
-  def ensure_session_token_uniqueness
-    while User.find_by(session_token: self.session_token)
-      self.session_token = generate_session_token
-    end
   end
 
 end

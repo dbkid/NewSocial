@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import editUser from '../../actions/author_actions';
 import AuthorFormHeader from './author_form_header';
 
 
@@ -24,7 +23,7 @@ class AuthorForm extends React.Component {
     e.preventDefault();
     let formData = new FormData();
     formData.append("user[image]", this.state.imageFile);
-    editUser(formData);
+    this.props.editUser(formData, this.props.author.id);
 
   }
 
@@ -36,9 +35,9 @@ class AuthorForm extends React.Component {
     }.bind(this);
     if (file) {
       fileReader.readAsDataURL(file);
+    } else {
+      this.setState({ imageUrl: this.props.author.imageUrl, imageFile: null });
     }
-
-
   }
 
   toggleForm(e){
@@ -54,9 +53,11 @@ class AuthorForm extends React.Component {
         <div className="author-header">
           <div className="author-box">
             <h1 className="author-name">{this.props.author.name}</h1>
-            <img src={this.state.imageUrl} className = "image-profile"></img>
 
-            <input type="file" onChange={this.updateFile} className="camera-button"></input>
+            <label className="camera-button image-profile" >
+              <img src={this.state.imageUrl} className = "image-profile"></img>
+              <input type="file" onChange={this.updateFile} className="photo-form-input"></input>
+            </label>
             <button onClick={this.handleSubmit} className="round-button save-button">Save</button>
             <button onClick={this.toggleForm} className="round-button">Cancel</button>
           </div>

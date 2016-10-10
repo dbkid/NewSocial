@@ -1,14 +1,14 @@
-class Story < ActiveRecord::Base
+class Response < ActiveRecord::Base
 
   belongs_to :author,
     primary_key: :id,
     foreign_key: :author_id,
     class_name: "User"
 
-  has_many :responses,
+  belongs_to :story,
     primary_key: :id,
     foreign_key: :story_id,
-    class_name: "Response"
+    class_name: "Story"
 
   attr_accessor :splice
   after_initialize :generate_splice

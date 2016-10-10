@@ -30,10 +30,20 @@ class Api::UsersController < ApplicationController
     render "api/users/show"
   end
 
+  def update
+    @user = User.find(params[:id].to_i)
+    @stories = @user.stories
+    if @user.update(user_params)
+      render "api/users/show"
+    else
+      render json: @user.errors.full_messages, status: 422
+    end
+  end
+
   private
 
   def user_params
-    params.require(:user).permit(:id, :name, :email, :password)
+    params.require(:user).permit(:id, :name, :email, :password, :image)
   end
 
 

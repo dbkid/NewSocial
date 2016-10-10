@@ -6,6 +6,7 @@ import * as ACTION from './actions/session_actions';
 import * as PARTIAL_STORY_ACTION from './actions/partial_story_actions';
 import Modal from 'react-modal';
 import * as SELECTED_STORY_ACTION from "./actions/selected_story_actions";
+import * as AUTHOR_ACTIONS from './actions/author_actions';
 
 window.SIGNUP = ACTION.SIGNUP;
 window.signup = ACTION.signup;
@@ -21,6 +22,8 @@ window.FETCH_SELECTED_STORY = SELECTED_STORY_ACTION.FETCH_SELECTED_STORY;
 window.fetchSelectedStory = SELECTED_STORY_ACTION.fetchSelectedStory;
 window.createStory = SELECTED_STORY_ACTION.createStory;
 window.CREATE_STORY = SELECTED_STORY_ACTION.CREATE_STORY;
+window.EDIT_USER = AUTHOR_ACTIONS.EDIT_USER;
+window.editUser = AUTHOR_ACTIONS.editUser;
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;

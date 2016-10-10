@@ -25,5 +25,10 @@
 }
 
 .camera-button{
-  background: "./images/camera-outline";
+  background-image: image-url("camera-outline.png");
+
+}
+
+.photo-form-input{
+  visibility: hidden;
 }
