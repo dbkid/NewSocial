@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import Modal from 'react-modal';
 import SignInFormContainer from './sign_in_form_container';
 import SignUpFormContainer from './sign_up_form_container';
+import AvatarDropdown from './avatar_dropdown';
 
 
 
@@ -48,7 +49,7 @@ class Header extends React.Component {
             </ul>
             <ul className="group logged-in-list">
               <li><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
-              <img src={this.props.currentUser.imageUrl} className = "image-thumb dropdown-thumb"></img>
+              <AvatarDropdown currentUser={this.props.currentUser}/>
             </ul>
           </div>
           <div className="nav-bar"></div>
