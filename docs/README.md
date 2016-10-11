@@ -40,6 +40,9 @@ If time:
 
   <ResponseForm story={this.props.selectedStory} currentUser={this.props.session.currentUser} createResponse={this.props.createResponse}/>
 
+  <button className="save-button round-button publish-dropdown-button" onClick={this.createStory}><Link to={`/stories/${this.props.story.id}`}></Link>Publish</button>
+
+
 
 put back in not signd in :
 <li className="greywritestory loginbutton"><Link to="/writestory">Write a story</Link></li>

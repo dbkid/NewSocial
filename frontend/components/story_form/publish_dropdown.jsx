@@ -44,7 +44,7 @@ class PublishDropdown extends React.Component {
                 <div className="avatar-dropdown-arrow"></div>
                 <h2 className="ready-to-publish">Ready to publish?</h2>
                 <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
-                <button className="save-button round-button publish-dropdown-button" onClick={this.createStory}>Publish</button>
+                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
             </Modal>
         </Link>
       </li>
