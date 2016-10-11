@@ -26,7 +26,7 @@ class StoryFormHeader extends React.Component {
                 </Link>
             </ul>
             <ul className="group loginlist">
-              <PublishDropdown/>
+              <PublishDropdown createStory={this.props.createStory} story={this.props.story}/>
             </ul>
           </div>
         </div>

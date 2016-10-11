@@ -8,7 +8,7 @@ class Api::SessionsController < ApplicationController
 
     if @user
       login(@user)
-      render "api/users/current_user"
+      render "api/users/user.json.jbuilder", user: @user
     else
       render(
         json: ["Invalid username/password combination"],
