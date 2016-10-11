@@ -74,6 +74,9 @@ Weekend:
 
 - header: if own story, render: edit. else: render write story
 
+
+- responses: if checking current user id : logged in state 
+
 MORNING:
 - finish styling responses
 - toggle sign up / sign in pop ups
@@ -88,7 +91,7 @@ DAY:
 - finish author form (camera pop up), fix entering issue
 
 NIGHT:
-- add error message if wrong credentials 
+- add error message if wrong credentials
 
 Monday/Tuesday:
 - responses
