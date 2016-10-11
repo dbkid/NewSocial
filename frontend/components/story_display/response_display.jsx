@@ -14,7 +14,7 @@ class ResponseDisplay extends React.Component {
   render(){
 
     return(
-      <div className="story-box-box group">
+      <div className="story-box-box group" id="response-box">
          <AuthorDetail author={this.props.response.author} storyDate={this.props.response.date} storyId={this.props.storyId}/>
             <p className="story-box-splice">{this.props.response.content}</p>
       </div>

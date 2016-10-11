@@ -10,5 +10,6 @@
       json.name response.author.name
       json.imageUrl asset_path(response.author.image.url(:original))
     end
+    json.date response.created_at.strftime("%b %d")
   end
   json.date @story.created_at.strftime("%b %d")

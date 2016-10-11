@@ -74,6 +74,22 @@ Weekend:
 
 - header: if own story, render: edit. else: render write story
 
+MORNING:
+- finish styling responses
+- toggle sign up / sign in pop ups
+
+DAY:
+[before lunch]
+- sign out drop down
+- add topics drop down
+[after lunch]
+- response count to partial stories
+- add static image to not signed in main feed
+- finish author form (camera pop up), fix entering issue
+
+NIGHT:
+- add error message if wrong credentials 
+
 Monday/Tuesday:
 - responses
 - story form

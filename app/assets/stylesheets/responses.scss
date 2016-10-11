@@ -1,3 +1,42 @@
-// Place all the styles related to the responses controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.response-form{
+
+
+
+}
+
+.response-form-text{
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  width: 598px;
+  height: 160px;
+  font-size: 18px;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  letter-spacing: .01rem;
+  line-height: 36px;
+  border: none;
+}
+
+#response-form-box{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#publish-button{
+  margin: 0;
+}
+
+.response-form-author-detail{
+  height: 35px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(0,0,0,.44);
+  margin-top: 0;
+}
+
+#response-box{
+  margin-bottom: 20px;
+  padding: 10px 20px 15px 20px;
+}
