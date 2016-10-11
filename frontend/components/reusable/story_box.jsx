@@ -13,13 +13,22 @@ class StoryBox extends React.Component {
 
   render(){
 
+    let response = "";
+    if ( this.props.story.response_count === 1 ){
+      response = "response";
+    } else {
+      response = "responses";
+    }
+
     return(
       <div className="story-box-box group">
          <AuthorDetail author={this.props.story.author} storyDate={this.props.story.date} storyId={this.props.story.id}/>
          <Link to={`/stories/${this.props.story.id}`} >
             <h1 className = "story-box-title">{this.props.story.title}</h1>
             <p className="story-box-splice">{this.props.story.splice}</p>
+            <text className="response-count">{this.props.story.response_count} {response}</text>
           </Link>
+
       </div>
     );
 

@@ -82,6 +82,8 @@ Weekend:
 
 - responses: if checking current user id : logged in state
 
+- fixed position of drop down
+
 MORNING:
 - finish styling responses
 - toggle sign up / sign in pop ups

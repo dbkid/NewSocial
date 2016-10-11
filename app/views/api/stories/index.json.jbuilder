@@ -8,5 +8,5 @@ json.array! @stories do |story|
   json.title story.title
   json.splice story.splice
   json.date story.created_at.strftime("%b %d")
-
+  json.response_count story.responses.count
 end
