@@ -23,7 +23,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 /* remember to define focus styles! */
 :focus {
