@@ -14,9 +14,6 @@ export default ({ getState, dispatch }) => next => action => {
       case(FETCH_RANDOM_STORIES):
         fetchRandomStories(action.number, success, error);
         return next(action);
-      case(CREATE_LIKE):
-        createLike(action.storyId, action.userId, success);
-        return next(action);
       default:
         return next(action);
     }

@@ -76,7 +76,7 @@ Weekend:
 - boolean for fetching to author display page to prevent flicker
 - check if current user on author show on enter
 - make write a story make an ajax request (not updating current user)
-- make avatar/publish modals drop downs : fix triangles and positioning 
+- make avatar/publish modals drop downs : fix triangles and positioning
 
 - header: if own story, render: edit. else: render write story
 
@@ -117,3 +117,11 @@ Friday/Weekend:
 - likes
 - bookmarks
 - follows
+
+<div className="like-container">
+  <label> <img src={window.newSocialAssets.heart} className="heart"></img>
+    <button onClick={this.createLike} className="like-button">Like</button>
+  </label>
+  <img src={window.newSocialAssets.likedHeart} className="heart"></img>
+  <text className="like-count">{this.props.likeCount}</text>
+</div>

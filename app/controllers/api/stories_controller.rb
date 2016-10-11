@@ -8,6 +8,12 @@ class Api::StoriesController < ApplicationController
   def show
     @story = Story.find(params[:id].to_i)
     @responses = @story.responses
+    @liked = false
+    if logged_in?
+      if (current_user.likes.find_by(story_id: @story.id))
+        @liked = true
+      end
+    end
     render "api/stories/show"
   end
 

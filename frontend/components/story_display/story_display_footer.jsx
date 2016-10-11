@@ -1,5 +1,5 @@
 import React from 'react';
-
+import LikeButton from "./../reusable/like_button";
 
 class StoryDisplayFooter extends React.Component {
   constructor(props){
@@ -24,8 +24,12 @@ class StoryDisplayFooter extends React.Component {
     }
     else{
       return(
-        <div>
-          <button onClick={this.createLike}>Like</button>
+        <div className="story-display-footer">
+          <div className="story-display-footer-content">
+            <div className="like-container">
+              <LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/>
+            </div>
+          </div>
         </div>
       );
 

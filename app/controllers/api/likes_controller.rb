@@ -5,6 +5,7 @@ class Api::LikesController < ApplicationController
     if @like.save
       @story = @like.story
       @responses = @story.responses
+      @liked = true
       render "api/stories/show"
     else
       render json: @user.errors.full_messages, status: 422
