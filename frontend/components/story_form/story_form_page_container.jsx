@@ -10,7 +10,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   createStory: (story) => dispatch(createStory(story)),
-  passStory: (story) => dispatch(passStory(story))
+  passStory: (story) => dispatch(passStory(story)),
+  logout: () => dispatch(logout())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StoryFormPage);

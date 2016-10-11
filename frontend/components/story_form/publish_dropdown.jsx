@@ -28,13 +28,14 @@ class PublishDropdown extends React.Component {
 
 
   createStory(e){
+    debugger
     e.preventDefault();
     this.props.createStory(this.props.story);
   }
 
   render(){
     return(
-      <li onClick={this.openModal}><Link className="greenlink">Publish
+      <li onClick={this.openModal}><Link className="greenlink writestory">Publish
             <Modal
               isOpen={this.state.modalIsOpen}
               onRequestClose={this.closeModal}

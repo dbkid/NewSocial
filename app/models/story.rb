@@ -10,6 +10,11 @@ class Story < ActiveRecord::Base
     foreign_key: :story_id,
     class_name: "Response"
 
+  has_many :likes,
+    primary_key: :id,
+    foreign_key: :story_id,
+    class_name: "Like"
+
   attr_accessor :splice
   after_initialize :generate_splice
 

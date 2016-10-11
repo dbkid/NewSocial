@@ -202,9 +202,9 @@
   border-radius: 3px;
   color: rgba(0,0,0,.8);
   font-size: 12px;
-  position: fixed!important;
+  position: absolute;
   top: 62px;
-  left: 1302.5px;
+  left: 1125.5px;
   border: 1px solid #eee;
   box-shadow: -1px -1px 1px -1px rgba(0,0,0,.44);
 }
@@ -224,14 +224,14 @@
 .avatar-dropdown-arrow{
   width: 0;
   height: 0;
-  border-left: 10px solid #eee;
-  border-right: 10px solid #eee;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   position: fixed!important;
 
 
-  border-bottom: 10px solid transparent;
+  border-bottom: 10px solid #eee;
   top: 52px;
-  left: 1425.5px;
+  left: 1245.5px;
 }
 
 .type-arrow{

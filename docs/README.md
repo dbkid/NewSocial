@@ -76,11 +76,15 @@ Weekend:
 - boolean for fetching to author display page to prevent flicker
 - check if current user on author show on enter
 - make write a story make an ajax request (not updating current user)
+- make avatar/publish modals drop downs : fix triangles and positioning 
 
 - header: if own story, render: edit. else: render write story
 
 
 - responses: if checking current user id : logged in state
+
+
+- need to make linking to story page a call back
 
 - fixed position of drop down
 

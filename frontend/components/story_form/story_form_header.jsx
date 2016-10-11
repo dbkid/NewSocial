@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import PublishDropdown from './publish_dropdown';
 import Modal from 'react-modal';
+import AvatarDropdown from './../header/avatar_dropdown';
 
 class StoryFormHeader extends React.Component {
   constructor(props){
@@ -25,8 +26,9 @@ class StoryFormHeader extends React.Component {
                   <li className="NewSocial">NewSocial</li>
                 </Link>
             </ul>
-            <ul className="group loginlist">
+            <ul className="group publish-list">
               <PublishDropdown createStory={this.props.createStory} story={this.props.story}/>
+              <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>
         </div>
