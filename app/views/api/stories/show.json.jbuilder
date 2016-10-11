@@ -13,3 +13,4 @@
     json.date response.created_at.strftime("%b %d")
   end
   json.date @story.created_at.strftime("%b %d")
+  json.likeCount @story.likes.count

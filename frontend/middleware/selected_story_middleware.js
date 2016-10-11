@@ -3,6 +3,8 @@ import { receiveSelectedStory } from '../actions/selected_story_actions';
 import { fetchSelectedStory, createStory } from '../util/selected_story_api_util.js';
 import { createResponse } from '../util/response_api_util';
 import { CREATE_RESPONSE } from '../actions/response_actions';
+import { createLike } from '../util/like_api_util';
+import { CREATE_LIKE } from '../actions/like_actions';
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -19,6 +21,9 @@ export default ({ getState, dispatch }) => next => action => {
         return next(action);
       case(CREATE_RESPONSE):
         createResponse(action.response, action.response.storyId, success);
+        return next(action);
+      case(CREATE_LIKE):
+        createLike(action.storyId, action.userId, success);
         return next(action);
       default:
         return next(action);

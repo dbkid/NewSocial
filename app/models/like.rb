@@ -1,4 +1,4 @@
-class Response < ActiveRecord::Base
+class Like < ActiveRecord::Base
 
   belongs_to :user,
     primary_key: :id,
@@ -9,5 +9,8 @@ class Response < ActiveRecord::Base
     primary_key: :id,
     foreign_key: :story_id,
     class_name: "Story"
+
+  def new
+  end 
 
 end
