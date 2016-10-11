@@ -93,8 +93,6 @@ DAY:
 - sign out drop down
 - add topics drop down
 [after lunch]
-- response count to partial stories
-- add static image to not signed in main feed
 - finish author form (camera pop up), fix entering issue
 
 NIGHT:

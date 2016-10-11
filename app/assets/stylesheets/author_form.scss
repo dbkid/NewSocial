@@ -25,7 +25,9 @@
 }
 
 .camera-button{
-  background-image: image-url("camera-outline.png");
+  position: absolute;
+  top: 0;
+  color: rgba(255,255,255,.65);
 
 }
 

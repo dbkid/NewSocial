@@ -54,8 +54,9 @@ class AuthorForm extends React.Component {
           <div className="author-box">
             <h1 className="author-name">{this.props.author.name}</h1>
 
-            <label className="camera-button image-profile" >
+            <label className="image-profile" >
               <img src={this.state.imageUrl} className = "image-profile"></img>
+              <img src={window.newSocialAssets.cameraImage} className = "camera-button"></img>
               <input type="file" onChange={this.updateFile} className="photo-form-input"></input>
             </label>
             <button onClick={this.handleSubmit} className="round-button save-button">Save</button>
