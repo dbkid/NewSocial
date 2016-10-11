@@ -1,7 +1,7 @@
 class Api::LikesController < ApplicationController
 
   def create
-    @like.new(like_params)
+    @like = Like.new(like_params)
     if @like.save
       @story = @like.story
       @responses = @story.responses
