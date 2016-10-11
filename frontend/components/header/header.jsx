@@ -49,7 +49,7 @@ class Header extends React.Component {
             </ul>
             <ul className="group logged-in-list">
               <li><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
-              <AvatarDropdown currentUser={this.props.currentUser}/>
+              <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>
           <div className="nav-bar"></div>

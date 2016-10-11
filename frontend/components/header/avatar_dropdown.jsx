@@ -36,7 +36,15 @@ class AvatarDropdown extends React.Component {
               className="avatar-dropdown-popup"
               overlayClassName="avatar-dropdown-overlay"
               >
-              <div></div>
+                <div className="avatar-dropdown-arrow"></div>
+                <ul>
+                  <li className="dropdown-list-item" onClick={this.closeModal}><Link to={`/authors/${this.props.currentUser.id}`}>Profile</Link></li>
+                  <li className="dropdown-list-item" onClick={this.closeModal}><Link>Bookmarks</Link></li>
+                  <li className="dropdown-list-item" onClick={this.closeModal}><Link>Topics</Link></li>
+                  <li className="dropdown-list-item" onClick={this.closeModal}><Link>Follows</Link></li>
+                  <li className="dropdown-list-item" onClick={this.props.logout}><Link>Sign Out</Link></li>
+                </ul>
+
             </Modal>
           </button>
       </label>
