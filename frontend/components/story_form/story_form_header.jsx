@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import PublishDropdown from './publish_dropdown';
+import Modal from 'react-modal';
 
 class StoryFormHeader extends React.Component {
   constructor(props){
@@ -24,7 +26,7 @@ class StoryFormHeader extends React.Component {
                 </Link>
             </ul>
             <ul className="group loginlist">
-              <li onClick={this.createStory}><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+              <PublishDropdown/>
             </ul>
           </div>
         </div>

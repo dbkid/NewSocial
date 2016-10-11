@@ -4,7 +4,7 @@
   margin: 0 auto;
   font-weight: bold;
   height: 65px;
-  border-bottom: 1px solid #eee;
+
 
 }
 
@@ -232,7 +232,14 @@
   border-bottom: 10px solid transparent;
   top: 52px;
   left: 1425.5px;
+}
 
+.type-arrow{
+  width: 0;
+  height: 0;
+  font-size: 24px;
+  top: 52px;
+  left: 1425.5px;
 }
 
 .dropdown-list-item{
