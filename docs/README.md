@@ -39,8 +39,10 @@ If time:
 
 
   <ResponseForm story={this.props.selectedStory} currentUser={this.props.session.currentUser} createResponse={this.props.createResponse}/>
-  # json.extract! @story, :id, :author, :title, :content
 
+
+put back in not signd in :
+<li className="greywritestory loginbutton"><Link to="/writestory">Write a story</Link></li>
 
 
 Implementation Timeline:
@@ -75,7 +77,7 @@ Weekend:
 - header: if own story, render: edit. else: render write story
 
 
-- responses: if checking current user id : logged in state 
+- responses: if checking current user id : logged in state
 
 MORNING:
 - finish styling responses

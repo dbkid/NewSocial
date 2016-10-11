@@ -28,7 +28,6 @@ class Header extends React.Component {
             </ul>
 
             <ul className="group loginlist">
-              <li className="greywritestory loginbutton"><Link to="/writestory">Write a story</Link></li>
               <SignInFormContainer/>
               <SignUpFormContainer/>
             </ul>
@@ -47,8 +46,9 @@ class Header extends React.Component {
                   <li className="NewSocial">NewSocial</li>
                 </Link>
             </ul>
-            <ul className="group loginlist">
-              <li><Link to="/writestory" className="greenlink">Write a story</Link></li>
+            <ul className="group logged-in-list">
+              <li><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
+              <img src={this.props.currentUser.imageUrl} className = "image-thumb dropdown-thumb"></img>
             </ul>
           </div>
           <div className="nav-bar"></div>
