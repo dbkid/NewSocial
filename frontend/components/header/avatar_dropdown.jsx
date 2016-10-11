@@ -33,8 +33,8 @@ class AvatarDropdown extends React.Component {
             <Modal
               isOpen={this.state.modalIsOpen}
               onRequestClose={this.closeModal}
-              className="popupcontent"
-              overlayClassName="overlay"
+              className="avatar-dropdown-popup"
+              overlayClassName="avatar-dropdown-overlay"
               >
               <div></div>
             </Modal>

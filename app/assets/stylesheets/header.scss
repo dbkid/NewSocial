@@ -193,3 +193,29 @@
 .avatar-dropdown-button{
   visibility: hidden;
 }
+
+.avatar-dropdown-popup{
+  width: 230px;
+  height: 289px;
+  padding: 15px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 3px;
+  color: rgba(0,0,0,.8);
+  font-size: 12px;
+  position: fixed!important;
+  top: 52px;
+  left: 1302.5px;
+  border: 1px solid #eee;
+}
+
+.avatar-dropdown-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  padding: 24px;
+
+}
