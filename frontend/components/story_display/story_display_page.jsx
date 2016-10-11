@@ -20,7 +20,7 @@ class StoryDisplayPage extends React.Component {
     return(
       <div>
         <SelectedStory selectedStory = {this.props.selectedStory}/>
-        <ResponseForm currentUser={this.props.session.currentUser} storyId={this.props.selectedStory.id}/>
+        <ResponseForm currentUser={this.props.session.currentUser} storyId={this.props.selectedStory.id} createResponse={this.props.createResponse}/>
         <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
       </div>
     );

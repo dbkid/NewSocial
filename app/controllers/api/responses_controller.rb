@@ -3,7 +3,8 @@ class Api::ResponsesController < ApplicationController
   def create
     @response = Response.new(response_params)
     if @response.save
-      @story = Story.find(:story_id)
+      debugger
+      @story = Story.find(@response.story_id)
       @responses = @story.responses
       render "api/stories/show"
     else

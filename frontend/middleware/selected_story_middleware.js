@@ -1,6 +1,8 @@
-import { FETCH_SELECTED_STORY, CREATE_STORY, CREATE_RESPONSE } from '../actions/selected_story_actions';
+import { FETCH_SELECTED_STORY, CREATE_STORY } from '../actions/selected_story_actions';
 import { receiveSelectedStory } from '../actions/selected_story_actions';
-import { fetchSelectedStory, createStory, createResponse } from '../util/selected_story_api_util.js';
+import { fetchSelectedStory, createStory } from '../util/selected_story_api_util.js';
+import { createResponse } from '../util/response_api_util';
+import { CREATE_RESPONSE } from '../actions/response_actions';
 
 
 export default ({ getState, dispatch }) => next => action => {
