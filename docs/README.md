@@ -90,6 +90,8 @@ Weekend:
 
 - fixed position of drop down
 
+- look at nesting of like / bookmark routes 
+
 MORNING:
 - finish styling responses
 - toggle sign up / sign in pop ups

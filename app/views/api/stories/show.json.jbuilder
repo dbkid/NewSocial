@@ -16,3 +16,4 @@
   json.likeCount @story.likes.count
   json.liked @liked
   json.authorPic asset_path(@story.author.image.url(:original))
+  json.bookmarked @bookmarked

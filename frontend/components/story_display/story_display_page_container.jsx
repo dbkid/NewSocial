@@ -4,6 +4,7 @@ import { fetchSelectedStory } from '../../actions/selected_story_actions';
 
 import { createResponse } from '../../actions/response_actions';
 import { createLike } from '../../actions/like_actions';
+import { createBookmark } from '../../actions/bookmark_actions';
 
 
 const mapStateToProps = state => ({
@@ -14,7 +15,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   fetchSelectedStory: (storyId) => dispatch(fetchSelectedStory(storyId)),
   createResponse: (response) => dispatch(createResponse(response)),
-  createLike: (storyId, userId) => dispatch(createLike(storyId, userId))
+  createLike: (storyId, userId) => dispatch(createLike(storyId, userId)),
+  createBookmark: (storyId, userId) => dispatch(createBookmark(storyId, userId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StoryDisplayPage);

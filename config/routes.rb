@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :stories, only: [:create, :destroy, :show, :update, :index] do
       resources :responses, only: [:create, :destroy, :update]
       resources :likes, only: [:create]
+      resources :bookmarks, only: [:create]
     end
   end
 

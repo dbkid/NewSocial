@@ -1,5 +1,6 @@
 import React from 'react';
 import LikeButton from "./../reusable/like_button";
+import BookmarkButton from "./../reusable/bookmark_button";
 
 class StoryDisplayFooter extends React.Component {
   constructor(props){
@@ -29,6 +30,9 @@ class StoryDisplayFooter extends React.Component {
             <ul className="like-container">
               <li><LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/></li>
               <li><text className="like-count">{this.props.likeCount}</text></li>
+            </ul>
+            <ul className="bookmark-container">
+              <li><BookmarkButton storyId={this.props.storyId} user={this.props.user} bookmarked={this.props.bookmarked} createBookmark={this.props.createBookmark}/></li>
             </ul>
           </div>
         </div>

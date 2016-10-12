@@ -9,9 +9,13 @@ class Api::StoriesController < ApplicationController
     @story = Story.find(params[:id].to_i)
     @responses = @story.responses
     @liked = false
+    @bookmarked = false
     if logged_in?
       if (current_user.likes.find_by(story_id: @story.id))
         @liked = true
+      end
+      if (current_user.bookmarks.find_by(story_id: @story.id))
+        @bookmarked = true
       end
     end
     render "api/stories/show"
