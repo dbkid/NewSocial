@@ -24,7 +24,7 @@ class BookmarkButton extends React.Component {
     else if (this.props.bookmarked === true ){
       return(
         <div>
-          <img src={window.newSocialAssets.bookmark} className="heart"></img>
+          <img src={window.newSocialAssets.selectedBookmark} className="heart"></img>
         </div>
       );
     }

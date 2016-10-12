@@ -6,6 +6,11 @@ class Api::LikesController < ApplicationController
       @story = @like.story
       @responses = @story.responses
       @liked = true
+      if logged_in?
+        if (current_user.bookmarks.find_by(story_id: @story.id))
+          @bookmarked = true
+        end
+      end 
       render "api/stories/show"
     else
       render json: @user.errors.full_messages, status: 422
