@@ -10,12 +10,15 @@ class Api::BookmarksController < ApplicationController
         if (current_user.likes.find_by(story_id: @story.id))
           @liked = true
         end
-      end 
+      end
       render "api/stories/show"
     else
       render json: @user.errors.full_messages, status: 422
     end
   end
+
+  def destroy
+  end 
 
   private
 
