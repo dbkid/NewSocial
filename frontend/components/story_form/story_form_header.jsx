@@ -27,7 +27,7 @@ class StoryFormHeader extends React.Component {
                 </Link>
             </ul>
             <ul className="group publish-list">
-              <PublishDropdown createStory={this.props.createStory} story={this.props.story} createTopicTag={this.props.createTopicTag}/>
+              <PublishDropdown createStory={this.props.createStory} story={this.props.story} createTopicTags={this.props.createTopicTags}/>
               <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>

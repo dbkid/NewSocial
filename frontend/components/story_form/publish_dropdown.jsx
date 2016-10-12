@@ -29,6 +29,7 @@ class PublishDropdown extends React.Component {
     this.updateTopicTitle5 = this.updateTopicTitle5.bind(this);
 
     this.submitTopicTitle = this.submitTopicTitle.bind(this);
+    this.topicArray = this.topicArray.bind(this);
   }
 
   openModal(){
@@ -39,14 +40,20 @@ class PublishDropdown extends React.Component {
     this.setState({modalIsOpen: false});
   }
 
+  topicArray(){
+    let topicArray = [this.state.topicTitle1, this.state.topicTitle2, this.state.topicTitle3, this.state.topicTitle4, this.state.topicTitle5];
+    topicArray = topicArray.slice(0,this.state.submit);
+    return topicArray;
+  }
+
   createStory(e){
     e.preventDefault();
-    this.props.createStory(this.props.story);
+    this.props.createStory(this.props.story, this.topicArray());
   }
 
   createTopicTag(e){
     e.preventDefault();
-    this.props.createTopicTag(this.props.story.id, e.target.value);
+
   }
 
   submitTopicTitle(e){

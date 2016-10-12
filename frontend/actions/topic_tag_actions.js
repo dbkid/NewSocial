@@ -1,13 +1,13 @@
-export const CREATE_TOPIC_TAG = "CREATE_TOPIC_TAG";
+export const CREATE_TOPIC_TAGS = "CREATE_TOPIC_TAGS";
 export const RECEIVE_TOPIC_TAGS = "RECEIVE_TOPIC_TAGS";
 
-export const createTopicTag = (storyId, topicTitle) => ({
-  type: CREATE_TOPIC_TAG,
+export const createTopicTags = (storyId, topicTitles) => ({
+  type: CREATE_TOPIC_TAGS,
   storyId: storyId,
-  topicTitle: topicTitle
+  topicTitles: topicTitles
 });
 
 export const receiveTopicTags = (topics) => ({
   type: RECEIVE_TOPIC_TAGS,
-  topics: topics 
+  topics: topics
 });

@@ -7,8 +7,8 @@ import { createLike } from '../util/like_api_util';
 import { CREATE_LIKE } from '../actions/like_actions';
 import { createBookmark } from '../util/bookmark_api_util';
 import { CREATE_BOOKMARK } from '../actions/bookmark_actions';
-import { CREATE_TOPIC_TAG, receiveTopicTags } from '../actions/topic_tag_actions';
-import { createTopicTag } from '../util/topic_tag_api_util';
+import { CREATE_TOPIC_TAGS, receiveTopicTags } from '../actions/topic_tag_actions';
+import { createTopicTags } from '../util/topic_tag_api_util';
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -23,7 +23,7 @@ export default ({ getState, dispatch }) => next => action => {
         fetchSelectedStory(action.storyId, success, error);
         return next(action);
       case(CREATE_STORY):
-        createStory(action.story, success, error);
+        createStory(action.story, action.topicTitles, success, error);
         return next(action);
       case(CREATE_RESPONSE):
         createResponse(action.response, action.response.storyId, success);
@@ -34,8 +34,8 @@ export default ({ getState, dispatch }) => next => action => {
       case(CREATE_BOOKMARK):
         createBookmark(action.storyId, action.userId, success);
         return next(action);
-      case(CREATE_TOPIC_TAG):
-        createTopicTag(action.storyId, action.topicTitle, topicTagSuccess);
+      case(CREATE_TOPIC_TAGS):
+        createTopicTags(action.storyId, action.topicTitles, topicTagSuccess);
         return next(action);
       default:
         return next(action);

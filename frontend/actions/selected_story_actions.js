@@ -15,9 +15,10 @@ export const receiveSelectedStory = (story) => ({
   story: story
 });
 
-export const createStory = (story) => ({
+export const createStory = (story, topicTitles) => ({
   type: CREATE_STORY,
-  story: story
+  story: story,
+  topicTitles: topicTitles
 });
 
 export const passStory = (story) => ({

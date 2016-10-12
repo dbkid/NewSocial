@@ -25,7 +25,7 @@ window.createStory = SELECTED_STORY_ACTION.createStory;
 window.CREATE_STORY = SELECTED_STORY_ACTION.CREATE_STORY;
 window.EDIT_USER = AUTHOR_ACTIONS.EDIT_USER;
 window.editUser = AUTHOR_ACTIONS.editUser;
-window.createTopicTag = TOPIC_TAG_ACTIONS.createTopicTag;
+window.createTopicTags = TOPIC_TAG_ACTIONS.createTopicTags;
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
