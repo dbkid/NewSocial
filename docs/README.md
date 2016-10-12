@@ -100,7 +100,9 @@ Weekend:
 - fix log out so clears state (clear other states)
 - only see likes/bookmarks if logged in
 
-- fix sign up 
+- fix sign up
+
+- delete topics
 
 MORNING:
 - finish styling responses

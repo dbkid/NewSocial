@@ -1,6 +1,7 @@
 import React from 'react';
 import LikeButton from "./../reusable/like_button";
 import BookmarkButton from "./../reusable/bookmark_button";
+import { Link } from 'react-router';
 
 class StoryDisplayFooter extends React.Component {
   constructor(props){
@@ -20,6 +21,14 @@ class StoryDisplayFooter extends React.Component {
 
   render(){
 
+    let topicLinks = [];
+    if (this.props.topics){
+
+      this.props.topics.forEach((topic) => {
+        topicLinks.push(<Link to="#">{topic}</Link>);
+      });
+    }
+
     if (this.props.user === null){
       return(<div></div>);
     }
@@ -27,6 +36,11 @@ class StoryDisplayFooter extends React.Component {
       return(
         <div className="story-display-footer">
           <div className="story-display-footer-content group">
+
+            <ul className="topic-container">
+              {topicLinks}
+            </ul>
+
             <ul className="like-container">
               <li><LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/></li>
               <li><text className="like-count">{this.props.likeCount}</text></li>

@@ -25,7 +25,7 @@ class StoryDisplayPage extends React.Component {
           <div>
             <StoryDisplayAuthorHeader author={this.props.selectedStory.author} authorPic={this.props.selectedStory.authorPic} date={this.props.selectedStory.date}/>
             <SelectedStory selectedStory = {this.props.selectedStory}/>
-            <StoryDisplayFooter storyId={this.props.selectedStory.id} user={this.props.session.currentUser} createLike={this.props.createLike} likeCount={this.props.selectedStory.likeCount} liked={this.props.selectedStory.liked} createBookmark={this.props.createBookmark} bookmarked={this.props.selectedStory.bookmarked}/>
+            <StoryDisplayFooter storyId={this.props.selectedStory.id} user={this.props.session.currentUser} createLike={this.props.createLike} likeCount={this.props.selectedStory.likeCount} liked={this.props.selectedStory.liked} createBookmark={this.props.createBookmark} bookmarked={this.props.selectedStory.bookmarked} topics={this.props.selectedStory.topics}/>
             <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
           </div>);
       } else{

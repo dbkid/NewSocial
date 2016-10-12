@@ -49,6 +49,7 @@ class PublishDropdown extends React.Component {
   createStory(e){
     e.preventDefault();
     this.props.createStory(this.props.story, this.topicArray());
+
   }
 
   createTopicTag(e){
@@ -107,7 +108,7 @@ class PublishDropdown extends React.Component {
                     <input type="text" onChange={this.updateTopicTitle1}></input>
                   </form>
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
               </Modal>
           </Link>
         </li>
@@ -136,7 +137,7 @@ class PublishDropdown extends React.Component {
                   <input type="text" onChange={this.updateTopicTitle2}></input>
                 </form>
 
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
             </Modal>
         </Link>
       </li>
@@ -172,7 +173,7 @@ class PublishDropdown extends React.Component {
                     <input type="text" onChange={this.updateTopicTitle3}></input>
                   </form>
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
               </Modal>
           </Link>
         </li>
@@ -212,7 +213,7 @@ class PublishDropdown extends React.Component {
                 </form>
 
 
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
             </Modal>
         </Link>
       </li>
@@ -257,7 +258,7 @@ class PublishDropdown extends React.Component {
                 </form>
 
 
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
             </Modal>
         </Link>
       </li>
@@ -301,7 +302,7 @@ class PublishDropdown extends React.Component {
                   <text className="button-x">x</text>
                 </button>
 
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button"><Link to={`/stories/${this.props.story.id}`} className="greenlink">Publish</Link></li>
+                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
             </Modal>
         </Link>
       </li>

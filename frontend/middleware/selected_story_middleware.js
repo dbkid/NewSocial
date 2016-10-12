@@ -9,12 +9,18 @@ import { createBookmark } from '../util/bookmark_api_util';
 import { CREATE_BOOKMARK } from '../actions/bookmark_actions';
 import { CREATE_TOPIC_TAGS, receiveTopicTags } from '../actions/topic_tag_actions';
 import { createTopicTags } from '../util/topic_tag_api_util';
+import { hashHistory } from 'react-router';
 
 
 export default ({ getState, dispatch }) => next => action => {
 
     const success = (story) => dispatch(receiveSelectedStory(story));
     const error = (errors) => dispatch(receiveErrors(errors));
+
+    const reroutesuccess = (story) => {
+      dispatch(receiveSelectedStory(story));
+      hashHistory.push(`/stories/${story.id}`);
+    }
 
     const topicTagSuccess = (topics) => dispatch(receiveTopicTags(topics));
 
@@ -23,7 +29,7 @@ export default ({ getState, dispatch }) => next => action => {
         fetchSelectedStory(action.storyId, success, error);
         return next(action);
       case(CREATE_STORY):
-        createStory(action.story, action.topicTitles, success, error);
+        createStory(action.story, action.topicTitles, reroutesuccess, error);
         return next(action);
       case(CREATE_RESPONSE):
         createResponse(action.response, action.response.storyId, success);
