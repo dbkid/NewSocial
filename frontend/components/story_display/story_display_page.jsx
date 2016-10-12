@@ -20,17 +20,29 @@ class StoryDisplayPage extends React.Component {
 
   render(){
 
-    return(
-      <div>
-        <StoryDisplayAuthorHeader author={this.props.selectedStory.author} authorPic={this.props.selectedStory.authorPic} date={this.props.selectedStory.date}/>
-        <SelectedStory selectedStory = {this.props.selectedStory}/>
-        <StoryDisplayFooter storyId={this.props.selectedStory.id} user={this.props.session.currentUser} createLike={this.props.createLike} likeCount={this.props.selectedStory.likeCount} liked={this.props.selectedStory.liked} createBookmark={this.props.createBookmark} bookmarked={this.props.selectedStory.bookmarked}/>
-        <ResponseForm currentUser={this.props.session.currentUser} storyId={this.props.selectedStory.id} createResponse={this.props.createResponse}/>
-        <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
-      </div>
-    );
+      if(this.props.session.currentUser === null){
+        return(
+          <div>
+            <StoryDisplayAuthorHeader author={this.props.selectedStory.author} authorPic={this.props.selectedStory.authorPic} date={this.props.selectedStory.date}/>
+            <SelectedStory selectedStory = {this.props.selectedStory}/>
+            <StoryDisplayFooter storyId={this.props.selectedStory.id} user={this.props.session.currentUser} createLike={this.props.createLike} likeCount={this.props.selectedStory.likeCount} liked={this.props.selectedStory.liked} createBookmark={this.props.createBookmark} bookmarked={this.props.selectedStory.bookmarked}/>
+            <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
+          </div>);
+      } else{
+        return(
+          <div>
+            <StoryDisplayAuthorHeader author={this.props.selectedStory.author} authorPic={this.props.selectedStory.authorPic} date={this.props.selectedStory.date}/>
+            <SelectedStory selectedStory = {this.props.selectedStory}/>
+            <StoryDisplayFooter storyId={this.props.selectedStory.id} user={this.props.session.currentUser} createLike={this.props.createLike} likeCount={this.props.selectedStory.likeCount} liked={this.props.selectedStory.liked} createBookmark={this.props.createBookmark} bookmarked={this.props.selectedStory.bookmarked}/>
+            <ResponseForm currentUser={this.props.session.currentUser} storyId={this.props.selectedStory.id} createResponse={this.props.createResponse}/>
+            <ResponseIndex responses={this.props.selectedStory.responses} storyId={this.props.selectedStory.id}/>
+          </div>
+        );
+      }
+
 
   }
+
 
 }
 

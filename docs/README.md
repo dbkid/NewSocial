@@ -96,6 +96,12 @@ Weekend:
 
 - look at nesting of like / bookmark routes
 
+
+- fix log out so clears state (clear other states)
+- only see likes/bookmarks if logged in
+
+- fix sign up 
+
 MORNING:
 - finish styling responses
 - toggle sign up / sign in pop ups
@@ -136,3 +142,16 @@ Friday/Weekend:
       </div>
 
     );
+
+    <form onSubmit={this.updateTopicTitle2}>
+      <input type="text" ></input>
+    </form>
+    <form onSubmit={this.updateTopicTitle3}>
+      <input type="text" ></input>
+    </form>
+    <form onSubmit={this.updateTopicTitle4}>
+      <input type="text" ></input>
+    </form>
+    <form onSubmit={this.updateTopicTitle5}>
+      <input type="text" ></input>
+    </form>

@@ -12,8 +12,18 @@ class AuthorHeader extends React.Component {
   }
 
   render(){
+    if (this.props.currentUser === null) {
+      return(
+        <div className="author-header">
+          <div className="author-box group">
+            <h1 className="author-name">{this.props.author.name}</h1>
+            <img src={this.props.author.imageUrl} className = "image-profile"></img>
+          </div>
+        </div>
+      );
+    }
 
-    if (this.props.currentUser.id === this.props.author.id) {
+    else if (this.props.currentUser.id === this.props.author.id) {
       return(
         <AuthorFormHeader author={this.props.author} editUser={this.props.editUser}/>
       );

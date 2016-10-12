@@ -17,7 +17,7 @@ class PublishDropdown extends React.Component {
 
     this.createStory = this.createStory.bind(this);
     this.createTopicTag = this.createTopicTag.bind(this);
-    this.updateTopicTitle = this.updateTopicTitle.bind(this);
+    this.updateTopicTitle1 = this.updateTopicTitle1.bind(this);
   }
 
   openModal(){
