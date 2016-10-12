@@ -20,6 +20,15 @@ class Story < ActiveRecord::Base
     foreign_key: :story_id,
     class_name: "Bookmark"
 
+  has_many :topic_tags,
+    primary_key: :id,
+    foreign_key: :story_id,
+    class_name: "TopicTag"
+
+  has_many :topics,
+    through: :topic_tags,
+    source: :topic
+
   attr_accessor :splice
   after_initialize :generate_splice
 

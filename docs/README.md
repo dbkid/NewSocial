@@ -71,12 +71,15 @@ Weekend:
 - round out profile pics  
 - validate uniqueness of email
 - make author header shorter (match mine)
-- fingerprint images
+- fingerprint images - think this is already happening
 - add error message for wrong/invalid credentials
 - boolean for fetching to author display page to prevent flicker
 - check if current user on author show on enter
 - make write a story make an ajax request (not updating current user)
 - make avatar/publish modals drop downs : fix triangles and positioning
+
+- sign out [ re route to not logged in home page, set up protections against being signed in ]
+
 
 - header: if own story, render: edit. else: render write story
 
@@ -84,13 +87,14 @@ Weekend:
 
 
 - responses: if checking current user id : logged in state
+- story page: if checking current user id: logged in state
 
 
-- need to make linking to story page a call back
+- need to make linking to story page a call back (after publish to prevent dropping of last letter?)
 
 - fixed position of drop down
 
-- look at nesting of like / bookmark routes 
+- look at nesting of like / bookmark routes
 
 MORNING:
 - finish styling responses

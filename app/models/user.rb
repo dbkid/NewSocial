@@ -27,6 +27,16 @@ class User < ActiveRecord::Base
     foreign_key: :user_id,
     class_name: "Bookmark"
 
+  has_many :topic_follows,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: "TopicFollow"
+
+  has_many :topics,
+    through: :topic_follows,
+    source: :topic
+
+
   has_attached_file :image, default_url: "default-avatar.png"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 

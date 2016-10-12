@@ -18,7 +18,7 @@ class Api::BookmarksController < ApplicationController
   end
 
   def destroy
-  end 
+  end
 
   private
 
