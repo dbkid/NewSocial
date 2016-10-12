@@ -7,6 +7,7 @@ import * as PARTIAL_STORY_ACTION from './actions/partial_story_actions';
 import Modal from 'react-modal';
 import * as SELECTED_STORY_ACTION from "./actions/selected_story_actions";
 import * as AUTHOR_ACTIONS from './actions/author_actions';
+import * as TOPIC_TAG_ACTIONS from './actions/topic_tag_actions';
 
 window.SIGNUP = ACTION.SIGNUP;
 window.signup = ACTION.signup;
@@ -24,6 +25,7 @@ window.createStory = SELECTED_STORY_ACTION.createStory;
 window.CREATE_STORY = SELECTED_STORY_ACTION.CREATE_STORY;
 window.EDIT_USER = AUTHOR_ACTIONS.EDIT_USER;
 window.editUser = AUTHOR_ACTIONS.editUser;
+window.createTopicTag = TOPIC_TAG_ACTIONS.createTopicTag;
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;

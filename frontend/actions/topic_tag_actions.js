@@ -9,5 +9,5 @@ export const createTopicTag = (storyId, topicTitle) => ({
 
 export const receiveTopicTags = (topics) => ({
   type: RECEIVE_TOPIC_TAGS,
-  topics: topics
+  topics: topics 
 });

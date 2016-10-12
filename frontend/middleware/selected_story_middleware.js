@@ -7,7 +7,7 @@ import { createLike } from '../util/like_api_util';
 import { CREATE_LIKE } from '../actions/like_actions';
 import { createBookmark } from '../util/bookmark_api_util';
 import { CREATE_BOOKMARK } from '../actions/bookmark_actions';
-import { CREATE_TOPIC_TAG } from '../actions/topic_tag_actions';
+import { CREATE_TOPIC_TAG, receiveTopicTags } from '../actions/topic_tag_actions';
 import { createTopicTag } from '../util/topic_tag_api_util';
 
 
@@ -15,6 +15,8 @@ export default ({ getState, dispatch }) => next => action => {
 
     const success = (story) => dispatch(receiveSelectedStory(story));
     const error = (errors) => dispatch(receiveErrors(errors));
+
+    const topicTagSuccess = (topics) => dispatch(receiveTopicTags(topics));
 
     switch(action.type){
       case(FETCH_SELECTED_STORY):
@@ -33,7 +35,7 @@ export default ({ getState, dispatch }) => next => action => {
         createBookmark(action.storyId, action.userId, success);
         return next(action);
       case(CREATE_TOPIC_TAG):
-        createTopicTag(action.storyId, action.topicTitle, success);
+        createTopicTag(action.storyId, action.topicTitle, topicTagSuccess);
         return next(action);
       default:
         return next(action);
