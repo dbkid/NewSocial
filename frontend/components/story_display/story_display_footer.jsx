@@ -25,7 +25,7 @@ class StoryDisplayFooter extends React.Component {
     if (this.props.topics){
 
       this.props.topics.forEach((topic) => {
-        topicLinks.push(<Link to="#">{topic}</Link>);
+        topicLinks.push(<Link to="#" className="story-display-topic">{topic.title}</Link>);
       });
     }
 
@@ -37,7 +37,7 @@ class StoryDisplayFooter extends React.Component {
         <div className="story-display-footer">
           <div className="story-display-footer-content group">
 
-            <ul className="topic-container">
+            <ul className="story-display-topic-bar">
               {topicLinks}
             </ul>
 
