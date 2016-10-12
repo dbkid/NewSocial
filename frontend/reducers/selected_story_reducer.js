@@ -1,4 +1,4 @@
-import { RECEIVE_SELECTED_STORY, PASS_STORY } from '../actions/selected_story_actions';
+import { RECEIVE_SELECTED_STORY, PASS_STORY, CLEAR_SELECTED_STORY } from '../actions/selected_story_actions';
 
 import merge from 'lodash/merge';
 
@@ -16,11 +16,14 @@ const defaultState = {
 };
 
 export const SelectedStoryReducer = (state = defaultState, action) => {
+
   switch(action.type){
     case(RECEIVE_SELECTED_STORY):
       return action.story;
     case(PASS_STORY):
       return merge(state, action.story);
+    case(CLEAR_SELECTED_STORY):
+      return defaultState;
     default:
       return state;
   }

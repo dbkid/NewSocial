@@ -8,8 +8,9 @@ STATE:
         splice:    ,
         like count:   ,
         response count:   ,
-        bookmarked:
-        created_at:
+        bookmarked: ,
+        created_at: ,
+        liked:
   	  },
       { id:  ,
         author: { id:  , name:    , image url:    },
@@ -17,8 +18,9 @@ STATE:
         first sentence:    ,
         like count:   ,
         response count:   ,
-        bookmarked:
-        created_at:
+        bookmarked: ,
+        created_at: ,
+        liked: 
   	  }
     ],
 

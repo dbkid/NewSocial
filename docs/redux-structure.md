@@ -38,8 +38,8 @@ selected story actions:
 - create bookmark [middleware - make API request to database, on success: receive bookmark]
 - receive bookmark [reducer - receive bookmark, update selected story/bookmarked in state]
 
-- process topics([topicTitle, topicTitle]) [middleware - make API request to database (backend checks to see if topics exist, creates topics if not, creates topic tags), on success: receive topic tags]
-- receive topic tags(topics) [reducer - receive topic tags, update state: selected story/topics]
+- createTopicTag [process topics]([topicTitle, topicTitle]) [middleware - make API request to database (backend checks to see if topics exist, creates topics if not, creates topic tags), on success: receive topic tags]
+- receive topic tags(topics) [reducer - receive topic tags, update state: selected story]
 
 - create response(storyID) [middleware — make API request to database, on success: receive response]
 - receive response [reducer — receive created response from database, update selected story/responses in state, display selected story w new response]

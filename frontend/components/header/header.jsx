@@ -11,7 +11,15 @@ import AvatarDropdown from './avatar_dropdown';
 class Header extends React.Component {
   constructor(props){
     super(props);
+
+    this.clearSelectedStory = this.clearSelectedStory.bind(this);
   }
+
+  clearSelectedStory(e){
+    e.preventDefault();
+    this.props.clearSelectedStory();
+  }
+
 
   render(){
 
@@ -48,7 +56,7 @@ class Header extends React.Component {
                 </Link>
             </ul>
             <ul className="group logged-in-list">
-              <li><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
+              <li onClick={this.clearSelectedStory}><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
               <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>
