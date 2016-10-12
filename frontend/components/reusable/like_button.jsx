@@ -23,14 +23,14 @@ class LikeButton extends React.Component {
     }
     else if (this.props.liked === true ){
       return(
-        <div className="like-button">
+        <div>
           <img src={window.newSocialAssets.likedHeart} className="heart"></img>
         </div>
       );
     }
     else{
       return(
-        <div className="like-button">
+        <div>
           <label> <img src={window.newSocialAssets.heart} className="heart"></img>
             <button onClick={this.createLike} className="hidden-like-button">Like</button>
           </label>

@@ -47,13 +47,71 @@
   line-height: 35px;
   height: 37px;
   font-size: 14px;
+  float: right;
+  display: block;
 }
 
 .heart{
   width: 29px;
   height: 29px;
+  float: right;
 }
+
 
 .hidden-like-button{
   visibility: hidden;
+  float: right;
+  display: block;
+}
+
+.like-container{
+  height: 40px;
+  float: left;
+  display: block;
+}
+
+.story-display-image-thumb{
+  border-radius: 100%;
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.story-display-author-name{
+  color: rgba(0,0,0,.8);
+  cursor: pointer;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  line-height: 1.4;
+  font-size: 15px;
+  vertical-align: middle;
+  display: block;
+}
+
+.story-display-date{
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 2px;
+  font-weight: 400;
+  color: rgba(0,0,0,.44);
+  display: block;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+
+.story-display-author-header{
+  width: 700px;
+  height: 61px;
+  margin: 0 auto;
+  padding-top: 35px;
+  height: 41px;
+  margin-bottom: 50px;
+}
+
+.story-display-image-thumb-container{
+
+
 }

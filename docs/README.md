@@ -80,6 +80,8 @@ Weekend:
 
 - header: if own story, render: edit. else: render write story
 
+- fix like button formatting
+
 
 - responses: if checking current user id : logged in state
 
@@ -118,10 +120,13 @@ Friday/Weekend:
 - bookmarks
 - follows
 
-<div className="like-container">
-  <label> <img src={window.newSocialAssets.heart} className="heart"></img>
-    <button onClick={this.createLike} className="like-button">Like</button>
-  </label>
-  <img src={window.newSocialAssets.likedHeart} className="heart"></img>
-  <text className="like-count">{this.props.likeCount}</text>
-</div>
+
+    return(
+      <div className="author-header">
+        <div className="author-box group">
+          <h1 className="author-name">{this.props.author.name}</h1>
+          <img src={this.props.authorPic} className = "image-profile"></img>
+        </div>
+      </div>
+
+    );

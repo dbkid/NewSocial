@@ -25,10 +25,11 @@ class StoryDisplayFooter extends React.Component {
     else{
       return(
         <div className="story-display-footer">
-          <div className="story-display-footer-content">
-            <div className="like-container">
-              <LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/>
-            </div>
+          <div className="story-display-footer-content group">
+            <ul className="like-container">
+              <li><LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/></li>
+              <li><text className="like-count">{this.props.likeCount}</text></li>
+            </ul>
           </div>
         </div>
       );
