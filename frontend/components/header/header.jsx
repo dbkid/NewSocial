@@ -13,6 +13,7 @@ class Header extends React.Component {
     super(props);
 
     this.clearSelectedStory = this.clearSelectedStory.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
   }
 
   clearSelectedStory(e){
@@ -20,10 +21,12 @@ class Header extends React.Component {
     this.props.clearSelectedStory();
   }
 
+  guestLogin(e){
+    this.props.login({email: "guest@guest.com", password: "password"});
+  }
+
 
   render(){
-
-
 
      if (this.props.currentUser === null){
 
@@ -37,6 +40,7 @@ class Header extends React.Component {
             </ul>
 
             <ul className="group loginlist">
+              <li className="greenlink loginbutton guest" onClick={this.guestLogin}>Guest / </li>
               <SignInFormContainer/>
               <SignUpFormContainer/>
             </ul>
