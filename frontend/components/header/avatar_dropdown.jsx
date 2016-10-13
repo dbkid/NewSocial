@@ -27,13 +27,14 @@ class AvatarDropdown extends React.Component {
 
 
   render(){
-
-    if(this.state.dropdown === true){
+    // </button>
+    // <button  className="avatar-dropdown-button">
+    const visibility = this.state.dropdown === true ? "" : "invisible";
+    // if(this.state.dropdown === true){
       return(
-      <label>
-        <img src={this.props.currentUser.imageUrl} className = "image-thumb dropdown-thumb"></img>
-          <button onClick={this.toggleDropdown} className="avatar-dropdown-button">
-            <div className="avatar-dropdown-popup group">
+      <li>
+        <img src={this.props.currentUser.imageUrl} onClick={this.toggleDropdown} className = "image-thumb dropdown-thumb"></img>
+            <div className={`avatar-dropdown-popup group ${visibility}`}>
                 <div className="avatar-dropdown-arrow"></div>
                 <ul>
                   <li className="dropdown-list-item"><Link to={`/authors/${this.props.currentUser.id}`}>Profile</Link></li>
@@ -43,18 +44,17 @@ class AvatarDropdown extends React.Component {
                   <li className="dropdown-list-item" onClick={this.props.logout}><Link>Sign Out</Link></li>
                 </ul>
             </div>
-          </button>
-      </label>
+      </li>
       );
-    } else {
-      return(
-      <label>
-        <img src={this.props.currentUser.imageUrl} className = "image-thumb dropdown-thumb"></img>
-          <button onClick={this.toggleDropdown} className="avatar-dropdown-button">
-          </button>
-      </label>
-      );
-    }
+    // // } else {
+    //   return(
+    //   <li>
+    //     <img src={this.props.currentUser.imageUrl} onClick={this.toggleDropdown} className = "image-thumb dropdown-thumb"></img>
+    //   </li>
+    //   );
+    // }
+    // <button  className="avatar-dropdown-button">
+    // </button>
   }
 
 

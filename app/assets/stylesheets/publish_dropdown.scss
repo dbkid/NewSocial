@@ -18,6 +18,7 @@
   padding-top: 14px;
   display: block;
   margin-bottom: 11px;
+  font-weight: 400;
 }
 
 .publish-dropdown-button{
@@ -48,4 +49,40 @@
   top: 0;
   right: 7px;
   margin-left: 5px;
+}
+
+.publish-dropdown-popup{
+  width: 230px;
+  height: 300px;
+  padding: 15px;
+  background: white;
+  border-radius: 3px;
+  color: rgba(0,0,0,.8);
+  font-size: 12px;
+  border: 1px solid #eee;
+  box-shadow: -1px -1px 1px -1px rgba(0,0,0,.44);
+  visibility: visible;
+  position: absolute;
+  margin-top: 5px;
+  z-index: 100;
+  left: -111px;
+}
+
+.publish-dropdown-button{
+    visibility: hidden;
+    z-index: 100;
+    position: absolute;
+}
+
+
+.publish-dropdown-arrow{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -10px;
+  left: 120px;
+  border-bottom: 10px solid #eee;
+
 }

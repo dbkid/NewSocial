@@ -96,31 +96,37 @@ class PublishDropdown extends React.Component {
 
       if(this.state.submit === 0){
 
+        // <label>
+        // <button type="button" className="publish-dropdown-button">
+        // </button>
+        // </label>
         return(
-          <div>
-            <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
-              <div className="avatar-dropdown-group">
-                  <div className="avatar-dropdown-arrow"></div>
-                  <h2 className="ready-to-publish">Ready to publish?</h2>
-                  <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
-                  <form onSubmit={this.submitTopicTitle}>
-                    <input type="text" onChange={this.updateTopicTitle1}></input>
-                  </form>
+            <li >
+              <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+              <div className="publish-dropdown-popup group">
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                    <div className="publish-dropdown-arrow"></div>
+                    <h2 className="ready-to-publish">Ready to publish?</h2>
+                    <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
+                    <form onSubmit={this.submitTopicTitle}>
+                      <input type="text" onChange={this.updateTopicTitle1}></input>
+                    </form>
+
+                    <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
                 </div>
-          </div>
-
+              </li>
 
       );
 
     }
     else if (this.state.submit === 1){
       return(
-        <div>
-          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish </Link></li>
-          <div className="avatar-dropdown-group">
-                  <div className="avatar-dropdown-arrow"></div>
+        <label>
+          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
+          <button type="button" className="publish-dropdown-button">
+            <div className="publish-dropdown-popup group">
+
+                  <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
@@ -134,7 +140,8 @@ class PublishDropdown extends React.Component {
 
                   <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
               </div>
-          </div>
+            </button>
+        </label>
 
 
       );
@@ -145,10 +152,12 @@ class PublishDropdown extends React.Component {
       else if(this.state.submit === 2){
 
         return(
-          <div>
-            <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
-            <div className="avatar-dropdown-group">
-                    <div className="avatar-dropdown-arrow"></div>
+          <label>
+            <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
+            <button type="button" className="publish-dropdown-button">
+              <div className="publish-dropdown-popup group">
+
+                    <div className="publish-dropdown-arrow"></div>
                     <h2 className="ready-to-publish">Ready to publish?</h2>
                     <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
@@ -166,7 +175,8 @@ class PublishDropdown extends React.Component {
 
                     <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
                 </div>
-            </div>
+              </button>
+          </label>
 
 
       );
@@ -176,11 +186,12 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 3){
 
       return(
-        <div>
-          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
-          <div className="avatar-dropdown-group">
+        <label>
+          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
+          <button type="button" className="publish-dropdown-button">
+            <div className="publish-dropdown-popup group">
 
-                  <div className="avatar-dropdown-arrow"></div>
+                  <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
@@ -202,7 +213,8 @@ class PublishDropdown extends React.Component {
 
                   <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
               </div>
-          </div>
+            </button>
+        </label>
 
 
     );
@@ -212,10 +224,12 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 4){
 
       return(
-        <div>
-          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish  </Link></li>
-          <div className="avatar-dropdown-group">
-                  <div className="avatar-dropdown-arrow"></div>
+        <label>
+          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
+          <button type="button" className="publish-dropdown-button">
+            <div className="publish-dropdown-popup group">
+
+                  <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
@@ -243,7 +257,8 @@ class PublishDropdown extends React.Component {
 
                   <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
               </div>
-          </div>
+            </button>
+        </label>
 
 
     );
@@ -254,10 +269,12 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 5){
 
       return(
-        <div>
-          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
-              <div className="avatar-dropdown-group">
-                  <div className="avatar-dropdown-arrow"></div>
+        <label>
+          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
+          <button type="button" className="publish-dropdown-button">
+            <div className="publish-dropdown-popup group">
+
+                  <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
@@ -281,10 +298,10 @@ class PublishDropdown extends React.Component {
                     <text className="button-x">x</text>
                   </button>
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                  <li onClick={this.createStory} className="save-butt on round-button publish-dropdown-button greenlink">Publish</li>
               </div>
-            </div>
-
+            </button>
+        </label>
 
 
         );

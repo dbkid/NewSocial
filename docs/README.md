@@ -65,7 +65,6 @@ Weekend:
 - author detail
 
 
-- toggle pop up
 - pop up error
 - put x on overlay
 - round out profile pics  
@@ -78,7 +77,7 @@ Weekend:
 - make write a story make an ajax request (not updating current user)
 - make avatar/publish modals drop downs : fix triangles and positioning
 
-- sign out [ re route to not logged in home page, set up protections against being signed in ]
+- sign out [set up protections against being signed in ]
 
 
 - header: if own story, render: edit. else: render write story

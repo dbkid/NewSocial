@@ -26,9 +26,11 @@ class StoryFormHeader extends React.Component {
                   <li className="NewSocial">NewSocial</li>
                 </Link>
             </ul>
-            <ul className="group publish-list">
+            <ul className="group logged-in-list">
               <PublishDropdown createStory={this.props.createStory} story={this.props.story} createTopicTags={this.props.createTopicTags} currentUser={this.props.currentUser}/>
+
               <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
+
             </ul>
           </div>
         </div>

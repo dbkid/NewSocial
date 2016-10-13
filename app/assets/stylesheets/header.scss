@@ -57,15 +57,18 @@
 
 .logged-in-list{
   float: right;
-  padding: 0px 0px 20px 0px;
   height: 65px;
-  width: 140px;
+  position: relative;
+}
+
+.logged-in-list li{
+  float: left;
+  margin: 0 15px;
   position: relative;
 }
 
 .writestory{
-  float: left;
-  padding: 20px 0px 20px 0px;
+  line-height: 65px;
 }
 
 .newsocial{
@@ -184,9 +187,13 @@
 
 }
 
+.invisible{
+  display: none;
+}
+
 .dropdown-thumb{
-  float: right;
-  margin-top: 13px;
+  float: none;
+  padding: 15px 0px;
 
 }
 
@@ -205,8 +212,10 @@
   border: 1px solid #eee;
   box-shadow: -1px -1px 1px -1px rgba(0,0,0,.44);
   visibility: visible;
-  position: relative;
+  position: absolute;
   margin-top: 5px;
+  left: -111px;
+
 }
 
 .avatar-dropdown-overlay{
