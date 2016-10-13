@@ -112,7 +112,7 @@ class PublishDropdown extends React.Component {
                       <input type="text" onChange={this.updateTopicTitle1}></input>
                     </form>
 
-                    <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                    <button onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</button>
                 </div>
               </li>
 
@@ -121,10 +121,9 @@ class PublishDropdown extends React.Component {
     }
     else if (this.state.submit === 1){
       return(
-        <label>
-          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
-          <button type="button" className="publish-dropdown-button">
-            <div className="publish-dropdown-popup group">
+        <li >
+          <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+          <div className="publish-dropdown-popup group">
 
                   <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
@@ -138,10 +137,9 @@ class PublishDropdown extends React.Component {
                     <input type="text" onChange={this.updateTopicTitle2}></input>
                   </form>
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                  <button onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</button>
               </div>
-            </button>
-        </label>
+            </li>
 
 
       );
@@ -152,10 +150,9 @@ class PublishDropdown extends React.Component {
       else if(this.state.submit === 2){
 
         return(
-          <label>
-            <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
-            <button type="button" className="publish-dropdown-button">
-              <div className="publish-dropdown-popup group">
+          <li >
+            <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+            <div className="publish-dropdown-popup group">
 
                     <div className="publish-dropdown-arrow"></div>
                     <h2 className="ready-to-publish">Ready to publish?</h2>
@@ -173,10 +170,9 @@ class PublishDropdown extends React.Component {
                       <input type="text" onChange={this.updateTopicTitle3}></input>
                     </form>
 
-                    <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                    <button onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</button>
                 </div>
-              </button>
-          </label>
+              </li>
 
 
       );
@@ -186,10 +182,9 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 3){
 
       return(
-        <label>
-          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
-          <button type="button" className="publish-dropdown-button">
-            <div className="publish-dropdown-popup group">
+        <li >
+          <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+          <div className="publish-dropdown-popup group">
 
                   <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
@@ -211,10 +206,9 @@ class PublishDropdown extends React.Component {
                     <input type="text" onChange={this.updateTopicTitle4}></input>
                   </form>
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                  <button onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</button>
               </div>
-            </button>
-        </label>
+            </li>
 
 
     );
@@ -224,10 +218,9 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 4){
 
       return(
-        <label>
-          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
-          <button type="button" className="publish-dropdown-button">
-            <div className="publish-dropdown-popup group">
+        <li >
+          <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+          <div className="publish-dropdown-popup group">
 
                   <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
@@ -255,10 +248,9 @@ class PublishDropdown extends React.Component {
                   </form>
 
 
-                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                  <button onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</button>
               </div>
-            </button>
-        </label>
+            </li>
 
 
     );
@@ -269,10 +261,9 @@ class PublishDropdown extends React.Component {
     else if(this.state.submit === 5){
 
       return(
-        <label>
-          <li onClick={this.toggleDropdown} ><Link className="greenlink writestory publish">Publish</Link></li>
-          <button type="button" className="publish-dropdown-button">
-            <div className="publish-dropdown-popup group">
+        <li >
+          <Link onClick={this.toggleDropdown} className="greenlink writestory publish">Publish</Link>
+          <div className="publish-dropdown-popup group">
 
                   <div className="publish-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
@@ -298,10 +289,9 @@ class PublishDropdown extends React.Component {
                     <text className="button-x">x</text>
                   </button>
 
-                  <li onClick={this.createStory} className="save-butt on round-button publish-dropdown-button greenlink">Publish</li>
+                  <button onClick={this.createStory} className="save-butt on round-button publish-dropdown-button greenlink">Publish</button>
               </div>
-            </button>
-        </label>
+            </li>
 
 
         );

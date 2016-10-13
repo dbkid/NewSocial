@@ -22,8 +22,10 @@
 }
 
 .publish-dropdown-button{
-  float: right;
+  position: absolute;
   list-style: none;
+  bottom: 15px;
+  right: 10px;
 
 }
 
@@ -69,9 +71,9 @@
 }
 
 .publish-dropdown-button{
-    visibility: hidden;
-    z-index: 100;
-    position: absolute;
+    // visibility: hidden;
+    // z-index: 100;
+    // position: absolute;
 }
 
 
