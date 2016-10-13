@@ -38,7 +38,7 @@ class Story < ActiveRecord::Base
 
 
   def generate_splice
-    sentence_array = self.content.split(".")
+    sentence_array = self.content.split(/(?<=[?.!])/)
     @splice = sentence_array[0..1]
   end
 
