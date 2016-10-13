@@ -65,9 +65,7 @@ class Header extends React.Component {
               <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>
-          <div className="nav-bar">
-            <NavBar topics={this.props.topics} fetchTopicsIndex={this.props.fetchTopicsIndex} fetchTopicShow={this.props.fetchTopicShow}/>
-          </div>
+
         </div>
       );
 

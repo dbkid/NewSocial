@@ -10,7 +10,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchRandomStories: (number) => dispatch(fetchRandomStories(number)),
-  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId))
+  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId)),
+  fetchTopicsIndex: () => dispatch(fetchTopicsIndex())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainFeed);

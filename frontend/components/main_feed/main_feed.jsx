@@ -4,6 +4,7 @@ import  StoryIndex  from '../reusable/story_index';
 import Header from "./../header/header_container";
 import TopicDisplayPage from './topic_display_page';
 import GetStartedFormContainer from './get_started_form_container';
+import NavBar from "./../header/nav_bar";
 
 
 
@@ -57,6 +58,9 @@ class MainFeed extends React.Component {
 
     return(
       <div>
+        <div className="nav-bar">
+          <NavBar topics={this.props.topics} fetchTopicsIndex={this.props.fetchTopicsIndex} fetchTopicShow={this.props.fetchTopicShow}/>
+        </div>
         <div className = "main-feed-border">
           <div className="main-feed">
             <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories}/>

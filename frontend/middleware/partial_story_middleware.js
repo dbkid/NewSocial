@@ -5,6 +5,7 @@ import { createLike } from '../util/like_api_util';
 import { CREATE_LIKE } from '../actions/like_actions';
 import { FETCH_TOPIC_SHOW, selectMainTopic } from '../actions/topic_actions';
 import { fetchTopicShow } from '../util/topic_api_util';
+import { hashHistory } from 'react-router';
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -15,6 +16,7 @@ export default ({ getState, dispatch }) => next => action => {
     const topicShowSuccess = (data) => {
           dispatch(receivePartialStories(data.partialStories));
           dispatch(selectMainTopic(data.topic));
+          hashHistory.push("/");
           return;
         };
 
