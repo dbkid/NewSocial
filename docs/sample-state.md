@@ -61,7 +61,8 @@ session: {
         name:     
 	  },
     errors: [],
-    followedTopics: 
+    followedTopics:
+    followedUsers:
   }
 
 }

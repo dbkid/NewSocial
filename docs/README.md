@@ -85,7 +85,7 @@ Weekend:
 
 - fix like button formatting
 
-- delete receiveFollowedTopics 
+- delete receiveFollowedTopics
 
 - responses: if checking current user id : logged in state
 - story page: if checking current user id: logged in state
@@ -134,6 +134,9 @@ Friday/Weekend:
 - likes
 - bookmarks
 - follows
+
+
+- maybe load topic follows from stories instead of session
 
 
     return(

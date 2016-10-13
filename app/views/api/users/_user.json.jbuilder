@@ -9,3 +9,8 @@ json.followedTopics user.topics do |topic|
   json.id topic.id
   json.title topic.title
 end
+
+json.followedUsers user.follows do |follow|
+  json.id follow.id
+  json.name follow.name
+end
