@@ -9,6 +9,7 @@ import * as SELECTED_STORY_ACTION from "./actions/selected_story_actions";
 import * as AUTHOR_ACTIONS from './actions/author_actions';
 import * as TOPIC_TAG_ACTIONS from './actions/topic_tag_actions';
 import * as TOPIC_ACTIONS from './actions/topic_actions';
+import * as FOLLOW_ACTIONS from './actions/follow_actions';
 
 window.SIGNUP = ACTION.SIGNUP;
 window.signup = ACTION.signup;
@@ -28,6 +29,8 @@ window.EDIT_USER = AUTHOR_ACTIONS.EDIT_USER;
 window.editUser = AUTHOR_ACTIONS.editUser;
 window.createTopicTags = TOPIC_TAG_ACTIONS.createTopicTags;
 window.fetchTopicShow = TOPIC_ACTIONS.fetchTopicShow;
+window.createFollow = FOLLOW_ACTIONS.createFollow;
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;

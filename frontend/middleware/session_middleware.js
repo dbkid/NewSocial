@@ -3,6 +3,8 @@ import { LOGIN, LOGOUT, SIGNUP, RECEIVE_ERRORS, DELETE_USER } from '../actions/s
 import { receiveCurrentUser, receiveErrors, receiveUserDeletion } from '../actions/session_actions';
 import { login, logout, signup, deleteUser } from '../util/session_api_util.js'
 import { receiveFollowedTopics } from '../actions/topic_actions';
+import { createFollow } from '../util/follow_api_util';
+import { CREATE_FOLLOW } from '../actions/follow_actions';
 
 export default ({ getState, dispatch }) => next => action => {
 
@@ -28,6 +30,9 @@ export default ({ getState, dispatch }) => next => action => {
     case(DELETE_USER):
       let callback = dispatch(receiveUserDeletion());
       deleteUser(action.user, callback);
+      return next(action);
+    case(CREATE_FOLLOW):
+      createFollow(action.followerId, action.followedId, success);
       return next(action);
     default:
       return next(action);
