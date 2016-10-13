@@ -18,10 +18,12 @@ class TopicDisplayPage extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className="group">
         <TopicHeader topics={this.props.topics}/>
         <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
-        <StoryIndex partialStories={this.props.partialStories}/>
+        <div className="logged-in-story-index">
+          <StoryIndex partialStories={this.props.partialStories}/>
+        </div>
 
       </div>
     );

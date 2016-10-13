@@ -15,7 +15,7 @@ class SideBar extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className="sidebar">
         <TopicBox session={this.props.session} fetchTopicShow={this.props.fetchTopicShow}/>
       </div>
     );

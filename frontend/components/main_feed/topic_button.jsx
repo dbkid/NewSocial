@@ -23,7 +23,7 @@ class TopicButton extends React.Component {
   render(){
     return(
       <div>
-        <button onClick={this.fetchTopicShow}>{this.props.topic.title}</button>
+        <button onClick={this.fetchTopicShow} className="topic-button">{this.props.topic.title}</button>
       </div>
     );
 

@@ -16,12 +16,12 @@ class TopicBox extends React.Component {
   render(){
 
     let buttons = this.props.session.currentUser.followedTopics.map((topic) => {
-      return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>
+      return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>;
     });
 
     return(
       <div>
-        <h1>Topics you follow:</h1>
+        <h1 className="topics-you-follow">Topics you follow:</h1>
           <ul >
             {buttons}
           </ul>
