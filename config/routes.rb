@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :likes, only: [:create, :destroy]
       resources :bookmarks, only: [:create, :destroy]
     end
-    resources :topics, only: [:create, :destroy, :show]
+    resources :topics, only: [:create, :destroy, :show, :index]
     resources :topictags, only: [:create, :destroy]
     resources :topicfollows, only: [:create, :destroy]
     resources :follows, only: [:create, :destroy, :show]

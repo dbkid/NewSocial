@@ -6,3 +6,12 @@ export const fetchTopicShow = (topicId, success) => {
     }
   );
 };
+
+export const fetchTopicsIndex = (success) => {
+  $.ajax({
+    method: "GET",
+    url: `/api/topics`,
+    success
+    }
+  );
+};

@@ -30,6 +30,8 @@ window.editUser = AUTHOR_ACTIONS.editUser;
 window.createTopicTags = TOPIC_TAG_ACTIONS.createTopicTags;
 window.fetchTopicShow = TOPIC_ACTIONS.fetchTopicShow;
 window.createFollow = FOLLOW_ACTIONS.createFollow;
+window.fetchTopicsIndex = TOPIC_ACTIONS.fetchTopicsIndex;
+window.FETCH_TOPICS_INDEX = TOPIC_ACTIONS.FETCH_TOPICS_ACTIONS;
 
 
 document.addEventListener('DOMContentLoaded', () => {

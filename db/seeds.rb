@@ -162,3 +162,10 @@ Abeunt studia in mores.
 [“practices zealously pursued pass into habits.”—Merriam-Webster definition]
 
 Nay, there is no ston[e] or impediment in the wit, but may be wrought out by fit studies; like as diseases of the body, may have appropriate exercises. Bowling is good for the stone and reins; shooting for the lungs and breast; gentle walking for the stomach; riding for the head; and the like. So if a man’s wit be wandering, let him study the mathematics; for in demonstrations, if his wit be called away never so little, he must begin again. If his wit be not apt to distinguish or find differences, let him study the Schoolmen; for they are cymini sectores. If he be not apt to beat over matters, and to call up one thing to prove and illustrate another, let him study the lawyers’ cases. So every defect of the mind, may have a special receipt.")
+
+
+Topic.destroy_all
+news = Topic.create!(title: "News")
+essays = Topic.create!(title: "Essays")
+fiction = Topic.create!(title: "Fiction")
+election = Topic.create!(title: "Election")
