@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import SignInFormContainer from './sign_in_form_container';
 import SignUpFormContainer from './sign_up_form_container';
 import AvatarDropdown from './avatar_dropdown';
+import NavBar from './nav_bar';
 
 
 
@@ -64,7 +65,9 @@ class Header extends React.Component {
               <AvatarDropdown currentUser={this.props.currentUser} logout={this.props.logout}/>
             </ul>
           </div>
-          <div className="nav-bar"></div>
+          <div className="nav-bar">
+            <NavBar topics={this.props.topics} fetchTopicsIndex={this.props.fetchTopicsIndex} fetchTopicShow={this.props.fetchTopicShow}/>
+          </div>
         </div>
       );
 

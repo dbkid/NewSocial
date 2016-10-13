@@ -7,7 +7,8 @@ import { clearSelectedStory } from '../../actions/selected_story_actions';
 const mapStateToProps = (state, ownProps) => {
   return ({
   currentUser: state.session.currentUser,
-  loggedIn: Boolean(state.session.currentUser)
+  loggedIn: Boolean(state.session.currentUser),
+  topics: state.topics
 });
 };
 
@@ -15,7 +16,9 @@ const mapDispatchToProps = dispatch => ({
   login: (user) => dispatch(login(user)),
   signup: (user) => dispatch(signup(user)),
   logout: () => dispatch(logout()),
-  clearSelectedStory: () => dispatch(clearSelectedStory())
+  clearSelectedStory: () => dispatch(clearSelectedStory()),
+  fetchTopicsIndex: () => dispatch(fetchTopicsIndex()),
+  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));
