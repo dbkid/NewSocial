@@ -3,6 +3,11 @@
   float: right;
 }
 
+.float-left{
+  float: left;
+
+}
+
 .logged-in-story-index{
   float: left;
 }
@@ -33,11 +38,18 @@
 .topic-header{
   width: 660px;
   height: 59px;
-  float: left;
-  display: block;
+  position: relative;
   margin-top: 20px;
   border-bottom: 1px solid rgba(0,0,0,.0785);
   padding-bottom: 40px;
+}
+
+.follow-button{
+  vertical-align: center;
+  position: absolute;
+  bottom: 42%;
+  right: 0;
+
 }
 
 .tagged-in{

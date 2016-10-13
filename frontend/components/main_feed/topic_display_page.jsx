@@ -20,11 +20,15 @@ class TopicDisplayPage extends React.Component {
     if(this.props.topics.mainTopic){
     return(
       <div className="group">
-        <TopicHeader topics={this.props.topics}/>
-        <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
-        <div className="logged-in-story-index">
-          <StoryIndex partialStories={this.props.partialStories}/>
+        <div className="float-left">
+          <TopicHeader topics={this.props.topics}/>
+          <div className="logged-in-story-index">
+            <StoryIndex partialStories={this.props.partialStories}/>
+          </div>
         </div>
+
+        <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
+
 
       </div>
     );
