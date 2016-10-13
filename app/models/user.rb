@@ -36,7 +36,24 @@ class User < ActiveRecord::Base
     through: :topic_follows,
     source: :topic
 
-    
+  has_many :follow_mes,
+    primary_key: :id,
+    foreign_key: :followed_id,
+    class_name: "Follow"
+
+  has_many :follow_yous,
+    primary_key: :id,
+    foreign_key: :follower_id,
+    class_name: "Follow"
+
+  has_many :followers,
+    through: :follow_mes,
+    source: :follower
+
+  has_many :follows,
+    through: :follow_yous,
+    source: :followed
+
 
 
   has_attached_file :image, default_url: "default-avatar.png"
