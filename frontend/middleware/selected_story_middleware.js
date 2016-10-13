@@ -29,7 +29,7 @@ export default ({ getState, dispatch }) => next => action => {
         fetchSelectedStory(action.storyId, success, error);
         return next(action);
       case(CREATE_STORY):
-        createStory(action.story, action.topicTitles, reroutesuccess, error);
+        createStory(action.story, action.topicTitles, action.authorId, reroutesuccess, error);
         return next(action);
       case(CREATE_RESPONSE):
         createResponse(action.response, action.response.storyId, success);

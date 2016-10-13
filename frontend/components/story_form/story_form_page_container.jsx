@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  createStory: (story, topicTitles) => dispatch(createStory(story, topicTitles)),
+  createStory: (story, topicTitles, authorId) => dispatch(createStory(story, topicTitles, authorId)),
   passStory: (story) => dispatch(passStory(story)),
   logout: () => dispatch(logout()),
   createTopicTags: (storyId, topicTitles) => dispatch(createTopicTags(storyId, topicTitles))

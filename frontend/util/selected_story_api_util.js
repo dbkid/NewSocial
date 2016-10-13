@@ -8,11 +8,11 @@ export const fetchSelectedStory = (storyId, success) => {
   );
 };
 
-export const createStory = (story, topicTitles, success) => {
+export const createStory = (story, topicTitles, authorId, success) => {
   $.ajax({
     method: "POST",
     url: "/api/stories",
-    data: { story: {title: story.title, content: story.content, author_id: story.author.id, topic_titles: topicTitles} },
+    data: { story: {title: story.title, content: story.content, author_id: authorId, topic_titles: topicTitles} },
     success
     }
   );

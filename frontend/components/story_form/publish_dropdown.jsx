@@ -8,7 +8,7 @@ class PublishDropdown extends React.Component {
     super(props);
 
     this.state = {
-      modalIsOpen: false,
+      dropdown: false,
       topicTitle1: "",
       topicTitle2: "",
       topicTitle3: "",
@@ -16,9 +16,6 @@ class PublishDropdown extends React.Component {
       topictitle5: "",
       submit: 0
     };
-
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
 
     this.createStory = this.createStory.bind(this);
     this.createTopicTag = this.createTopicTag.bind(this);
@@ -30,14 +27,18 @@ class PublishDropdown extends React.Component {
 
     this.submitTopicTitle = this.submitTopicTitle.bind(this);
     this.topicArray = this.topicArray.bind(this);
+
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+
   }
 
-  openModal(){
-    this.setState({modalIsOpen: true});
-  }
-
-  closeModal(){
-    this.setState({modalIsOpen: false});
+  toggleDropdown(e){
+    e.preventDefault();
+    if(this.state.dropdown === false){
+      this.setState({dropdown: true});
+    }else{
+      this.setState({dropdown: false});
+    }
   }
 
   topicArray(){
@@ -48,7 +49,7 @@ class PublishDropdown extends React.Component {
 
   createStory(e){
     e.preventDefault();
-    this.props.createStory(this.props.story, this.topicArray());
+    this.props.createStory(this.props.story, this.topicArray(), this.props.currentUser.id);
 
   }
 
@@ -91,16 +92,14 @@ class PublishDropdown extends React.Component {
 
   render(){
 
-    if(this.state.submit === 0){
+    if(this.state.dropdown === true){
 
-      return(
-        <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-              <Modal
-                isOpen={this.state.modalIsOpen}
-                onRequestClose={this.closeModal}
-                className="avatar-dropdown-popup group"
-                overlayClassName="avatar-dropdown-overlay"
-                >
+      if(this.state.submit === 0){
+
+        return(
+          <div>
+            <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
+              <div className="avatar-dropdown-group">
                   <div className="avatar-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
@@ -109,54 +108,78 @@ class PublishDropdown extends React.Component {
                   </form>
 
                   <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-              </Modal>
-          </Link>
-        </li>
-
-    );
-
-  }
-  else if (this.state.submit === 1){
-    return(
-      <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onRequestClose={this.closeModal}
-              className="avatar-dropdown-popup group"
-              overlayClassName="avatar-dropdown-overlay"
-              >
-                <div className="avatar-dropdown-arrow"></div>
-                <h2 className="ready-to-publish">Ready to publish?</h2>
-                <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <form onSubmit={this.submitTopicTitle}>
-                  <input type="text" onChange={this.updateTopicTitle2}></input>
-                </form>
-
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-            </Modal>
-        </Link>
-      </li>
-
-    );
-
-  }
+                </div>
+          </div>
 
 
-    else if(this.state.submit === 2){
+      );
+
+    }
+    else if (this.state.submit === 1){
+      return(
+        <div>
+          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish </Link></li>
+          <div className="avatar-dropdown-group">
+                  <div className="avatar-dropdown-arrow"></div>
+                  <h2 className="ready-to-publish">Ready to publish?</h2>
+                  <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
+
+                  <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
+                  <form onSubmit={this.submitTopicTitle}>
+                    <input type="text" onChange={this.updateTopicTitle2}></input>
+                  </form>
+
+                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+              </div>
+          </div>
+
+
+      );
+
+    }
+
+
+      else if(this.state.submit === 2){
+
+        return(
+          <div>
+            <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
+            <div className="avatar-dropdown-group">
+                    <div className="avatar-dropdown-arrow"></div>
+                    <h2 className="ready-to-publish">Ready to publish?</h2>
+                    <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
+
+                    <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
+                      <text className="button-x">x</text>
+                    </button>
+
+                    <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
+                      <text className="button-x">x</text>
+                    </button>
+
+                    <form onSubmit={this.submitTopicTitle}>
+                      <input type="text" onChange={this.updateTopicTitle3}></input>
+                    </form>
+
+                    <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+                </div>
+            </div>
+
+
+      );
+
+    }
+
+    else if(this.state.submit === 3){
 
       return(
-        <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-              <Modal
-                isOpen={this.state.modalIsOpen}
-                onRequestClose={this.closeModal}
-                className="avatar-dropdown-popup group"
-                overlayClassName="avatar-dropdown-overlay"
-                >
+        <div>
+          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
+          <div className="avatar-dropdown-group">
+
                   <div className="avatar-dropdown-arrow"></div>
                   <h2 className="ready-to-publish">Ready to publish?</h2>
                   <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
@@ -169,147 +192,108 @@ class PublishDropdown extends React.Component {
                     <text className="button-x">x</text>
                   </button>
 
+                  <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
                   <form onSubmit={this.submitTopicTitle}>
-                    <input type="text" onChange={this.updateTopicTitle3}></input>
+                    <input type="text" onChange={this.updateTopicTitle4}></input>
                   </form>
 
                   <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-              </Modal>
-          </Link>
-        </li>
+              </div>
+          </div>
+
+
+    );
+
+    }
+
+    else if(this.state.submit === 4){
+
+      return(
+        <div>
+          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish  </Link></li>
+          <div className="avatar-dropdown-group">
+                  <div className="avatar-dropdown-arrow"></div>
+                  <h2 className="ready-to-publish">Ready to publish?</h2>
+                  <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
+
+                  <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
+                  <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
+                  <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
+                  <button className="submitted-topic-title">{`${this.state.topicTitle4}   `}
+                    <text className="button-x">x</text>
+                  </button>
+
+
+                  <form onSubmit={this.submitTopicTitle}>
+                    <input type="text" onChange={this.updateTopicTitle5}></input>
+                  </form>
+
+
+                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+              </div>
+          </div>
+
 
     );
 
   }
 
-  else if(this.state.submit === 3){
 
-    return(
-      <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onRequestClose={this.closeModal}
-              className="avatar-dropdown-popup group"
-              overlayClassName="avatar-dropdown-overlay"
-              >
-                <div className="avatar-dropdown-arrow"></div>
-                <h2 className="ready-to-publish">Ready to publish?</h2>
-                <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
+    else if(this.state.submit === 5){
 
-                <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
-                  <text className="button-x">x</text>
-                </button>
+      return(
+        <div>
+          <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
+              <div className="avatar-dropdown-group">
+                  <div className="avatar-dropdown-arrow"></div>
+                  <h2 className="ready-to-publish">Ready to publish?</h2>
+                  <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
 
-                <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
-                  <text className="button-x">x</text>
-                </button>
+                  <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
+                    <text className="button-x">x</text>
+                  </button>
 
-                <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
-                  <text className="button-x">x</text>
-                </button>
+                  <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
+                    <text className="button-x">x</text>
+                  </button>
 
-                <form onSubmit={this.submitTopicTitle}>
-                  <input type="text" onChange={this.updateTopicTitle4}></input>
-                </form>
+                  <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
+                    <text className="button-x">x</text>
+                  </button>
 
+                  <button className="submitted-topic-title">{`${this.state.topicTitle4}   `}
+                    <text className="button-x">x</text>
+                  </button>
 
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-            </Modal>
-        </Link>
-      </li>
+                  <button className="submitted-topic-title">{`${this.state.topicTitle5}   `}
+                    <text className="button-x">x</text>
+                  </button>
 
-  );
-
-  }
-
-  else if(this.state.submit === 4){
-
-    return(
-      <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onRequestClose={this.closeModal}
-              className="avatar-dropdown-popup group"
-              overlayClassName="avatar-dropdown-overlay"
-              >
-                <div className="avatar-dropdown-arrow"></div>
-                <h2 className="ready-to-publish">Ready to publish?</h2>
-                <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle4}   `}
-                  <text className="button-x">x</text>
-                </button>
+                  <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
+              </div>
+            </div>
 
 
-                <form onSubmit={this.submitTopicTitle}>
-                  <input type="text" onChange={this.updateTopicTitle5}></input>
-                </form>
 
-
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-            </Modal>
-        </Link>
-      </li>
-
-  );
-
-}
-
-
-  else if(this.state.submit === 5){
-
-    return(
-      <li onClick={this.openModal}><Link className="greenlink writestory">Publish
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onRequestClose={this.closeModal}
-              className="avatar-dropdown-popup group"
-              overlayClassName="avatar-dropdown-overlay"
-              >
-                <div className="avatar-dropdown-arrow"></div>
-                <h2 className="ready-to-publish">Ready to publish?</h2>
-                <text className="add-or-change-tags">Add or change tags (up to 5) so your story reaches more people:</text>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle1}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle2}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle3}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle4}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <button className="submitted-topic-title">{`${this.state.topicTitle5}   `}
-                  <text className="button-x">x</text>
-                </button>
-
-                <li onClick={this.createStory} className="save-button round-button publish-dropdown-button greenlink">Publish</li>
-            </Modal>
-        </Link>
-      </li>
-
-  );
-
-  }
+        );
+      }
+    } else{
+      return(
+        <li onClick={this.toggleDropdown}><Link className="greenlink writestory">Publish</Link></li>
+      );
+    }
 }
 }
 

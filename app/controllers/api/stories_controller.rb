@@ -22,14 +22,16 @@ class Api::StoriesController < ApplicationController
     render "api/stories/show"
   end
 
+
+
   def create
-    @story = Story.new(story_params)
+    @story = Story.new(title: params[:story][:title], content: params[:story][:content], author_id: params[:story][:author_id])
     @responses = @story.responses
     @liked = false
     @bookmarked = false
     @topics = []
     if @story.save
-      unless params[:story][:topic_titles] == ["", "", "", "", ""]
+      unless params[:story][:topic_titles].nil?
         params[:story][:topic_titles].each do |topic_title|
           if Topic.find_by(title: topic_title).nil?
             topic = Topic.create(title: topic_title)
@@ -51,8 +53,12 @@ class Api::StoriesController < ApplicationController
     end
   end
 
+  private
+
   def story_params
     params.require(:story).permit(:title, :content, :author_id, :topic_titles, :story_id)
   end
+
+
 
 end
