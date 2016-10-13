@@ -22,7 +22,7 @@ class Api::SessionsController < ApplicationController
     @user = current_user
     if @user
       logout
-      render json: ["logged out"]
+      render "api/users/current_user"
     else
       render(
         json: ["Nobody signed in"],
