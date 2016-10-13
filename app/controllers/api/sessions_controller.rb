@@ -8,6 +8,7 @@ class Api::SessionsController < ApplicationController
 
     if @user
       login(@user)
+      @topics = @user.topics
       render "api/users/current_user.json.jbuilder"
     else
       render(

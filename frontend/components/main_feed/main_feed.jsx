@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import  StoryIndex  from '../reusable/story_index';
 import Header from "./../header/header_container";
+import TopicDisplayPage from './topic_display_page';
 
 
 
@@ -54,13 +55,14 @@ class MainFeed extends React.Component {
     else {
 
     return(
-        <div>
-          <div className = "main-feed-border">
-            <div className="main-feed">
-              <StoryIndex partialStories={this.props.partialStories}/>
-            </div>
+      <div>
+        <div className = "main-feed-border">
+          <div className="main-feed">
+            <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories}/>
           </div>
         </div>
+      </div>
+
       );
 
     }

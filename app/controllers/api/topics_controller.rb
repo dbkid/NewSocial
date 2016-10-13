@@ -9,7 +9,7 @@ class Api::TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id].to_i)
     @stories = @topic.stories
-    render "api/stories/index"
+    render "api/topics/show"
   end
 
   private

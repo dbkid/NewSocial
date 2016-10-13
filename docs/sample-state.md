@@ -20,7 +20,7 @@ STATE:
         response count:   ,
         bookmarked: ,
         created_at: ,
-        liked: 
+        liked:
   	  }
     ],
 
@@ -60,7 +60,8 @@ session: {
         id:   ,
         name:     
 	  },
-    errors: []
+    errors: [],
+    followedTopics: 
   }
 
 }

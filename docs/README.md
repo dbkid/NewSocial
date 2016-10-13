@@ -85,6 +85,7 @@ Weekend:
 
 - fix like button formatting
 
+- delete receiveFollowedTopics 
 
 - responses: if checking current user id : logged in state
 - story page: if checking current user id: logged in state
@@ -157,3 +158,13 @@ Friday/Weekend:
     <form onSubmit={this.updateTopicTitle5}>
       <input type="text" ></input>
     </form>
+
+
+
+    <div>
+      <div className = "main-feed-border">
+        <div className="main-feed">
+          <StoryIndex partialStories={this.props.partialStories}/>
+        </div>
+      </div>
+    </div>
