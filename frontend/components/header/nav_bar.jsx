@@ -9,22 +9,29 @@ class NavBar extends React.Component {
     this.state = {
     };
 
+    this.fetchTopicShow = this.fetchTopicShow.bind(this);
+
   }
 
   componentDidMount(){
     this.props.fetchTopicsIndex();
   }
 
+  fetchTopicShow(e){
+    e.preventDefault();
+    this.props.fetchTopicShow(e.target.value);
+  }
+
 
   render(){
 
     let topics = this.props.topics.randomTopics.map((topic) => {
-      return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>;
+      return <li className="nav-bar-button" onClick={this.fetchTopicShow} value={topic.id}>{topic.title}</li>;
     });
 
     return(
       <div >
-        <ul>
+        <ul className = "group nav-bar-container">
           {topics}
         </ul>
       </div>
