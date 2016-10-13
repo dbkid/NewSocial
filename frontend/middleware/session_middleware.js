@@ -5,6 +5,8 @@ import { login, logout, signup, deleteUser } from '../util/session_api_util.js'
 import { receiveFollowedTopics } from '../actions/topic_actions';
 import { createFollow } from '../util/follow_api_util';
 import { CREATE_FOLLOW } from '../actions/follow_actions';
+import { hashHistory } from 'react-router';
+
 
 export default ({ getState, dispatch }) => next => action => {
 
@@ -17,13 +19,17 @@ export default ({ getState, dispatch }) => next => action => {
         return;
       };
 
+  const logoutSuccess = () => {
+    hashHistory.push("/");
+  }
+
   switch(action.type){
     case(LOGIN):
       login(action.user, success, error);
       return next(action);
     case(LOGOUT):
-      logout(()=>next(action));
-      break;
+      logout(logoutSuccess);
+      return next(action);
     case(SIGNUP):
       signup(action.user, success, error);
       return next(action);
