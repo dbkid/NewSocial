@@ -17,6 +17,7 @@ class TopicDisplayPage extends React.Component {
 
 
   render(){
+    if(this.props.topics.mainTopic){
     return(
       <div className="group">
         <TopicHeader topics={this.props.topics}/>
@@ -27,6 +28,17 @@ class TopicDisplayPage extends React.Component {
 
       </div>
     );
+  } else{
+      return(
+      <div className="group">
+        <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
+        <div className="logged-in-story-index">
+          <StoryIndex partialStories={this.props.partialStories}/>
+        </div>
+      </div>
+      );
+
+  }
 
   }
 
