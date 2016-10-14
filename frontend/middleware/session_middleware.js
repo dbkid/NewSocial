@@ -7,6 +7,7 @@ import { createFollow } from '../util/follow_api_util';
 import { CREATE_FOLLOW } from '../actions/follow_actions';
 import { hashHistory } from 'react-router';
 import { fetchRandomStories } from '../actions/partial_story_actions';
+import { fetchTopicFollows } from '../actions/topic_follow_actions';
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -18,6 +19,7 @@ export default ({ getState, dispatch }) => next => action => {
         dispatch(receiveCurrentUser(data));
         // dispatch(receiveFollowedTopics(data.followedTopics));
         dispatch(fetchRandomStories());
+        dispatch(fetchTopicFollows());
         return;
       };
 

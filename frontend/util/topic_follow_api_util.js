@@ -7,3 +7,12 @@ export const createTopicFollow = (topicId, success) => {
     }
   );
 };
+
+export const fetchTopicFollows = (success) => {
+  $.ajax({
+    method: "GET",
+    url: "/api/topicfollows",
+    success
+    }
+  );
+};

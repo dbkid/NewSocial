@@ -7,15 +7,16 @@ import TopicButton from './topic_button';
 class TopicBox extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-    };
+  }
 
+  componentDidMount(){
+    this.props.fetchTopicFollows();
   }
 
 
   render(){
 
-    let buttons = this.props.session.currentUser.followedTopics.map((topic, index) => {
+    let buttons = this.props.followedTopics.map((topic, index) => {
       return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow} key={index}/>;
     });
 

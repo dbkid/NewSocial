@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     end
     resources :topics, only: [:create, :destroy, :show, :index]
     resources :topictags, only: [:create, :destroy]
-    resources :topicfollows, only: [:create, :destroy]
+    resources :topicfollows, only: [:create, :destroy, :index]
     resources :follows, only: [:create, :destroy, :show]
   end
 

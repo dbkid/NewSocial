@@ -19,6 +19,7 @@ export const SessionReducer = (state = { currentUser: null, errors: [] }, action
       return { currentUser: null, errors: [] };
     case(RECEIVE_USER_DELETION):
       return { currentUser: null, errors: [] };
+
     default:
       return state;
   }

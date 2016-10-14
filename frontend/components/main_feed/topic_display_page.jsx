@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import  StoryIndex  from '../reusable/story_index';
 import TopicHeader from './topic_header';
-import SideBar from './sidebar';
+import SideBarContainer from './sidebar_container';
 
 
 
@@ -27,7 +27,7 @@ class TopicDisplayPage extends React.Component {
           </div>
         </div>
 
-        <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
+        <SideBarContainer />
 
 
       </div>
@@ -35,7 +35,7 @@ class TopicDisplayPage extends React.Component {
   } else{
       return(
       <div className="group">
-        <SideBar fetchTopicShow={this.props.fetchTopicShow} session={this.props.session}/>
+        <SideBarContainer />
         <div className="logged-in-story-index">
           <StoryIndex partialStories={this.props.partialStories}/>
         </div>

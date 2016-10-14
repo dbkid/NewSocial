@@ -1,5 +1,7 @@
 export const CREATE_TOPIC_FOLLOW = "CREATE_TOPIC_FOLLOW";
 export const RECEIVE_TOPIC_FOLLOW = "RECEIVE_TOPIC_FOLLOW";
+export const FETCH_TOPIC_FOLLOWS = "FETCH_TOPIC_FOLLOWS";
+export const RECEIVE_TOPIC_FOLLOWS = "RECEIVE_TOPIC_FOLLOWS";
 
 export const createTopicFollow = (topicId) => {
   return ({
@@ -14,3 +16,15 @@ export const receiveTopicFollow = (topic) => {
   topic: topic
 });
 };
+
+export const fetchTopicFollows = () => {
+  return ({
+  type: FETCH_TOPIC_FOLLOWS
+});
+};
+
+export const receiveTopicFollows = (topics) => ({
+  type: RECEIVE_TOPIC_FOLLOWS,
+  topics: topics
+}
+);

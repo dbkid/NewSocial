@@ -9,6 +9,7 @@ import MainFeed from "./main_feed/main_feed_container";
 import AuthorDisplayPageContainer from "./author_display/author_display_page_container";
 import StoryFormPageContainer from './story_form/story_form_page_container';
 import {fetchTopicsIndex} from './../actions/topic_actions';
+import {fetchTopicFollows} from './../actions/topic_follow_actions';
 
 
 
@@ -23,12 +24,16 @@ const Root = ({ store }) => {
     store.dispatch(fetchAuthorShow(nextState.params.authorId));
   };
 
+  const fetchTopicFollowsOnEnter = (nextState) => {
+    store.dispatch(fetchTopicFollows());
+  };
+
 
   return(
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
-            <IndexRoute component={MainFeed}/>
+            <IndexRoute component={MainFeed} onEnter={fetchTopicFollowsOnEnter}/>
             <Route path="stories/:storyId" component={StoryDisplayPageContainer} onEnter={fetchSelectedStoryOnEnter}></Route>
             <Route path="authors/:authorId" component={AuthorDisplayPageContainer} onEnter={fetchAuthorShowOnEnter}></Route>
         </Route>

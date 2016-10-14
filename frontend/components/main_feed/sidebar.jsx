@@ -16,7 +16,7 @@ class SideBar extends React.Component {
   render(){
     return(
       <div className="sidebar">
-        <TopicBox session={this.props.session} fetchTopicShow={this.props.fetchTopicShow}/>
+        <TopicBox followedTopics={this.props.followedTopics} fetchTopicShow={this.props.fetchTopicShow} fetchTopicFollows={this.props.fetchTopicFollows}/>
       </div>
     );
 
@@ -25,5 +25,6 @@ class SideBar extends React.Component {
 
 
 }
+
 
 export default SideBar;

@@ -22,11 +22,11 @@ export const SelectedStoryReducer = (state = defaultState, action) => {
     case(RECEIVE_SELECTED_STORY):
       return action.story;
     case(PASS_STORY):
-      return merge(state, action.story);
+      return merge({}, state, action.story);
     case(CLEAR_SELECTED_STORY):
       return defaultState;
     case(RECEIVE_TOPIC_TAGS):
-      return merge(state, action.topics);
+      return merge({}, state, action.topics);
     default:
       return state;
   }
