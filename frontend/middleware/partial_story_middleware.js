@@ -29,7 +29,6 @@ export default ({ getState, dispatch }) => next => action => {
 
     switch(action.type){
       case(FETCH_RANDOM_STORIES):
-      debugger
         fetchRandomStories(action.number, fetchRandomSuccess, error);
         return next(action);
       case(FETCH_TOPIC_SHOW):

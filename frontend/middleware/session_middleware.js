@@ -15,8 +15,8 @@ export default ({ getState, dispatch }) => next => action => {
   const error = (errors) => dispatch(receiveErrors(errors));
 
   const loginSuccess = (data) => {
-        dispatch(receiveCurrentUser(currentUser));
-        dispatch(receiveFollowedTopics(data.followedTopics));
+        dispatch(receiveCurrentUser(data));
+        // dispatch(receiveFollowedTopics(data.followedTopics));
         dispatch(fetchRandomStories());
         return;
       };
@@ -27,7 +27,7 @@ export default ({ getState, dispatch }) => next => action => {
 
   switch(action.type){
     case(LOGIN):
-      login(action.user, success, error);
+      login(action.user, loginSuccess, error);
       return next(action);
     case(LOGOUT):
       logout(logoutSuccess);
