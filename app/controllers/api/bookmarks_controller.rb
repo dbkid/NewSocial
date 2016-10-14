@@ -6,6 +6,7 @@ class Api::BookmarksController < ApplicationController
       @story = @bookmark.story
       @responses = @story.responses
       @bookmarked = true
+      @topics = @story.topics 
       if logged_in?
         if (current_user.likes.find_by(story_id: @story.id))
           @liked = true

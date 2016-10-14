@@ -21,7 +21,7 @@ class MainFeed extends React.Component {
   }
 
   componentDidMount(){
-    if(this.props.session.currentUser === null){
+    if(this.props.session.currentUser === null || this.props.topics.mainTopic === null ){
       this.fetchRandomStories();}
   }
 
