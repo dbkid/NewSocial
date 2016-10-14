@@ -9,11 +9,14 @@ export default ({ getState, dispatch }) => next => action => {
 
     const success = (data) => {
       dispatch(receiveTopicsIndex(data));
+      hashHistory.push("/");
+
     };
 
     const topicFollowSuccess = (topic) => {
       dispatch(receiveTopicFollow(topic));
       hashHistory.push("/");
+
       return;
 
     };

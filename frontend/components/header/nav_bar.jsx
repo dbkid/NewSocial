@@ -14,6 +14,7 @@ class NavBar extends React.Component {
 
   componentDidMount(){
     this.props.fetchTopicsIndex();
+
   }
 
   fetchTopicShow(e){

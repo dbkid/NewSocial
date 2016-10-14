@@ -26,7 +26,7 @@ class StoryDisplayFooter extends React.Component {
     if (this.props.topics){
 
       this.props.topics.forEach((topic) => {
-        topicLinks.push(<TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>);
+        topicLinks.push(<li className="topic-position"><TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/></li>);
       });
     }
 
@@ -38,16 +38,14 @@ class StoryDisplayFooter extends React.Component {
         <div className="story-display-footer">
           <div className="story-display-footer-content group">
 
-            <ul className="story-display-topic-bar">
+            <ul className="story-display-topic-bar group">
               {topicLinks}
             </ul>
 
-            <ul className="like-container">
-              <li><LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/></li>
-              <li><text className="like-count">{this.props.likeCount}</text></li>
-            </ul>
-            <ul className="bookmark-container">
-              <li><BookmarkButton storyId={this.props.storyId} user={this.props.user} bookmarked={this.props.bookmarked} createBookmark={this.props.createBookmark}/></li>
+            <ul className="like-bookmark-container group">
+              <li className="like"><LikeButton storyId={this.props.storyId} user={this.props.user} liked={this.props.liked} createLike={this.props.createLike}/></li>
+              <li className="count"><text className="like-count">{this.props.likeCount}</text></li>
+              <li className="bookmark"><BookmarkButton storyId={this.props.storyId} user={this.props.user} bookmarked={this.props.bookmarked} createBookmark={this.props.createBookmark}/></li>
             </ul>
           </div>
         </div>

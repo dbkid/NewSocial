@@ -16,6 +16,7 @@ class TopicHeader extends React.Component {
   createTopicFollow(e){
     e.preventDefault();
     this.props.createTopicFollow(e.target.value);
+    
   }
 
 

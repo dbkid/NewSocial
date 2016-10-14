@@ -55,20 +55,36 @@
 .heart{
   width: 29px;
   height: 29px;
-  float: right;
+
 }
+
+.like-bookmark-container{
+  height: 50px;
+}
+
+.like{
+  float: left;
+  margin-right: 10px;
+}
+.count{
+  float: left;
+  line-height: 50px;
+}
+.bookmark{
+  float:right;
+}
+
+
+
 
 
 .hidden-like-button{
   visibility: hidden;
-  float: right;
   display: block;
 }
 
 .like-container{
-  height: 40px;
-  float: left;
-  display: block;
+
 }
 
 .story-display-image-thumb{
@@ -126,6 +142,10 @@
   margin-right: 8px;
   margin-bottom: 8px;
   line-height: 22px;
+}
+
+.topic-position{
+  float: left;
 }
 
 .story-display-topic-bar{
