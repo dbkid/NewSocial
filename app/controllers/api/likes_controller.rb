@@ -6,6 +6,7 @@ class Api::LikesController < ApplicationController
       @story = @like.story
       @responses = @story.responses
       @liked = true
+      @topics = @story.topics 
       if logged_in?
         if (current_user.bookmarks.find_by(story_id: @story.id))
           @bookmarked = true
@@ -18,7 +19,7 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-  end 
+  end
 
   private
 
