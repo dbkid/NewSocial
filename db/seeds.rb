@@ -15,8 +15,412 @@ Francis_Bacon = User.create!(name: "Francis Bacon", email: "fb@fb.com", password
 Guest = User.create!(name: "Guest", email: "guest@guest.com", password: "password")
 
 Eric_Lichtblau = User.create!(name: "Eric Lichtblau", email: "el@el.com", password: "password")
+MICHAEL_KIMMELMAN = User.create!(name: "Michael Kimmelman", email: "mk@mk.com", password: "password")
+JESS_BIDGOOD = User.create!(name: "Jess Bidgood", email: "jb@jb.com", password: "password")
+
+Paul_Krugman = User.create!(name: "Paul Krugman", email: "pk@pk.com", password: "password")
+
+Vladimir_Nabokov = User.create!(name: "Vladimir Nabokov", email: "vn@vn.com", password: "password")
+
+Ray_Bradbury = User.create!(name: "Ray Bradbury", email: "rb@rb.com", password: "password")
+
 
 Story.destroy_all
+
+fiction2 = Ray_Bradbury.stories.create!(title: "The Last Night of the World", content: %Q(What would you do if you knew this was the last night of the world?"
+
+"What would I do; you mean, seriously?"
+
+"Yes, seriously."
+
+"I don't know — I hadn't thought. She turned the handle of the silver coffeepot toward him and placed the two cups in their saucers.
+
+He poured some coffee. In the background, the two small girls were playing blocks on the parlor rug in the light of the green hurricane lamps. There was an easy, clean aroma of brewed coffee in the evening air.
+
+"Well, better start thinking about it," he said.
+
+"You don't mean it?" said his wife.
+
+He nodded.
+
+"A war?"
+
+He shook his head.
+
+"Not the hydrogen or atom bomb?"
+
+"No."
+
+"Or germ warfare?"
+
+"None of those at all," he said, stirring his coffee slowly and staring into its black depths. "But just the closing of a book, let's say."
+
+"I don't think I understand."
+
+"No, nor do I really. It's jut a feeling; sometimes it frightens me, sometimes I'm not frightened at all — but peaceful." He glanced in at the girls and their yellow hair shining in the bright lamplight, and lowered his voice. "I didn't say anything to you. It first happened about four nights ago."
+
+"What?"
+
+"A dream I had. I dreamt that it was all going to be over and a voice said it was; not any kind of voice I can remember, but a voice anyway, and it said things would stop here on Earth. I didn't think too much about it when I awoke the next morning, but then I went to work and the feeling as with me all day. I caught Stan Willis looking out the window in the middle of the afternoon and I said, 'Penny for your thoughts, Stan,' and he said, 'I had a dream last night,' and before he even told me the dream, I knew what it was. I could have told him, but he told me and I listened to him."
+
+"It was the same dream?"
+
+"Yes. I told Stan I had dreamed it, too. He didn't seem surprised. He relaxed, in fact. Then we started walking through offices, for the hell of it. It wasn't planned. We didn't say, let's walk around. We just walked on our own, and everywhere we saw people looking at their desks or their hands or out the windows and not seeing what was in front of their eyes. I talked to a few of them; so did Stan."
+
+"And all of them had dreamed?"
+
+"All of them. The same dream, with no difference."
+
+"Do you believe in the dream?"
+
+"Yes. I've never been more certain."
+
+"And when will it stop? The world, I mean."
+
+"Sometime during the night for us, and then, as the night goes on around the world, those advancing portions will go, too. It'll take twenty-four hours for it all to go."
+
+They sat awhile not touching their coffee. Then they lifted it slowly and drank, looking at each other.
+
+"Do we deserve this?" she said.
+
+"It's not a matter of deserving, it's just that things didn't work out. I notice you didn't even argue about this. Why not?"
+
+"I guess I have a reason," she said.
+
+"The same reason everyone at the office had?"
+
+She nodded. "I didn't want to say anything. It happened last night. And the women on the block are talking about it, just among themselves." She picked up the evening paper and held it toward him. "There's nothing in the news about it."
+
+"No, everyone knows, so what's the need?" He took the paper and sat back in his chair, looking at the girls and then at her. "Are you afraid?"
+
+"No. Not even for the children. I always thought I would be frightened to death, but I'm not."
+
+"Where's that spirit of self-preservation the scientists talk about so much?"
+
+"I don't know. You don't get too excited when you feel things are logical. This is logical. Nothing else but this could have happened from the way we've lived."
+
+"We haven't been too bad, have we?"
+
+"No, nor enormously good. I suppose that's the trouble. We haven't been very much of anything except us, while a big part of the world was busy being lots of quite awful things."
+
+The girls were laughing in the parlor as they waved their hands and tumbled down their house of blocks.
+
+"I always imagined people would be screaming in the streets at a time like this."
+
+"I guess not. You don't scream about the real thing."
+
+"Do you know, I won't miss anything but you and the girls. I never liked cities or autos or factories or my work or anything except you three. I won't miss a thing except my family and perhaps the change in the weather and a glass of cool water when the weather's hot, or the luxury of sleeping. Just little things, really. How can we sit here and talk this way?"
+
+"Because there's nothing else to do."
+
+"That's it, of course, for if there were, we'd be doing it. I suppose this is the first time in the history of the world that everyone has really known just what they were going to be doing during the last night."
+
+"I wonder what everyone else will do now, this evening, for the next few hours."
+
+"Go to a show, listen to the radio, watch the TV, play cards, put the children to bed, get to bed themselves, like always."
+
+"In a way that's something to be proud of — like always."
+
+"We're not all bad."
+
+They sat a moment and then he poured more coffee. "Why do you suppose it's tonight?"
+
+"Because."
+
+"Why not some night in the past ten years of in the last century, or five centuries ago or ten?"
+
+"Maybe it's because it was never February 30, 1951, ever before in history, and now it is and that's it, because this date means more than any other date ever meant and because it's the year when things are as they are all over the world and that's why it's the end."
+
+"There are bombers on their course both ways across the ocean tonight that'll never see land again."
+
+"That's part of the reason why."
+
+"Well," he said. "What shall it be? Wash the dishes?"
+
+They washed the dishes carefully and stacked them away with especial neatness. At eight-thirty the girls were put to bed and kissed good night and the little lights by their beds turned on and the door left a trifle open.
+
+"I wonder," said the husband, coming out and looking back, standing there with his pipe for a moment."
+
+"What?"
+
+"If the door should be shut all the way or if it should be left just a little ajar so we can hear them if they call."
+
+"I wonder if the children know — if anyone mentioned anything to them?"
+
+"No, of course not. They'd have asked us about it."
+
+They sat and read the papers and talked and listened to some radio music and then sat together by the fireplace looking at the charcoal embers as the clock struck ten-thirty and eleven and eleven-thirty. They thought of all the other people in the world who had spent their evening, each in their own special way.
+
+"Well," he said at last. He kissed his wife for a long time.
+
+"We've been good for each other, anyway."
+
+"Do you want to cry?" he asked.
+
+"I don't think so."
+
+They went through the house and turned out the lights and locked the doors, and went into the bedroom and stood in the night cool darkness undressing. She took the spread from the bed and folded it carefully over a chair, as always, and pushed back the covers. "The sheets are so cool and clean and nice," she said.
+
+"I'm tired."
+
+"We're both tired."
+
+They got into bed and lay back.
+
+"Wait a moment," she said.
+
+He heard her get up and go out into the back of the house, and then he heard the soft shuffling of a swinging door. A moment later she was back. "I left the water running in the kitchen," she said. "I turned the faucet off."
+
+Something about this was so funny that he had to laugh.
+
+She laughed with him, knowing what it was that she had done that was so funny. They stopped laughing at last and lay in their cool night bed, their hands clasped, their heads together.
+
+"Good night," he said, after a moment.
+
+"Good night," she said, adding softly, "dear..."))
+
+
+fiction1 = Vladimir_Nabokov.stories.create!(title: "Symbols And Signs", content: 'For the fourth time in as many years, they were confronted with the problem of what birthday present to take to a young man who was incurably deranged in his mind. Desires he had none. Man-made objects were to him either hives of evil, vibrant with a malignant activity that he alone could perceive, or gross comforts for which no use could be found in his abstract world. After eliminating a number of articles that might offend him or frighten him (anything in the gadget line, for instance, was taboo), his parents chose a dainty and innocent trifle—a basket with ten different fruit jellies in ten little jars.
+
+At the time of his birth, they had already been married for a long time; a score of years had elapsed, and now they were quite old. Her drab gray hair was pinned up carelessly. She wore cheap black dresses. Unlike other women of her age (such as Mrs. Sol, their next-door neighbor, whose face was all pink and mauve with paint and whose hat was a cluster of brookside flowers), she presented a naked white countenance to the faultfinding light of spring. Her husband, who in the old country had been a fairly successful businessman, was now, in New York, wholly dependent on his brother Isaac, a real American of almost forty years’ standing. They seldom saw Isaac and had nicknamed him the Prince.
+
+That Friday, their son’s birthday, everything went wrong. The subway train lost its life current between two stations and for a quarter of an hour they could hear nothing but the dutiful beating of their hearts and the rustling of newspapers. The bus they had to take next was late and kept them waiting a long time on a street corner, and when it did come, it was crammed with garrulous high-school children. It began to rain as they walked up the brown path leading to the sanitarium. There they waited again, and instead of their boy, shuffling into the room, as he usually did (his poor face sullen, confused, ill-shaven, and blotched with acne), a nurse they knew and did not care for appeared at last and brightly explained that he had again attempted to take his life. He was all right, she said, but a visit from his parents might disturb him. The place was so miserably understaffed, and things got mislaid or mixed up so easily, that they decided not to leave their present in the office but to bring it to him next time they came.
+
+Outside the building, she waited for her husband to open his umbrella and then took his arm. He kept clearing his throat, as he always did when he was upset. They reached the bus-stop shelter on the other side of the street and he closed his umbrella. A few feet away, under a swaying and dripping tree, a tiny unfledged bird was helplessly twitching in a puddle.
+
+During the long ride to the subway station, she and her husband did not exchange a word, and every time she glanced at his old hands, clasped and twitching upon the handle of his umbrella, and saw their swollen veins and brown-spotted skin, she felt the mounting pressure of tears. As she looked around, trying to hook her mind onto something, it gave her a kind of soft shock, a mixture of compassion and wonder, to notice that one of the passengers—a girl with dark hair and grubby red toenails—was weeping on the shoulder of an older woman. Whom did that woman resemble? She resembled Rebecca Borisovna, whose daughter had married one of the Soloveichiks—in Minsk, years ago.
+
+The last time the boy had tried to do it, his method had been, in the doctor’s words, a masterpiece of inventiveness; he would have succeeded had not an envious fellow-patient thought he was learning to fly and stopped him just in time. What he had really wanted to do was to tear a hole in his world and escape.
+
+The system of his delusions had been the subject of an elaborate paper in a scientific monthly, which the doctor at the sanitarium had given to them to read. But long before that, she and her husband had puzzled it out for themselves. “Referential mania,” the article had called it. In these very rare cases, the patient imagines that everything happening around him is a veiled reference to his personality and existence. He excludes real people from the conspiracy, because he considers himself to be so much more intelligent than other men. Phenomenal nature shadows him wherever he goes. Clouds in the staring sky transmit to each other, by means of slow signs, incredibly detailed information regarding him. His in- most thoughts are discussed at nightfall, in manual alphabet, by darkly gesticulating trees. Pebbles or stains or sun flecks form patterns representing, in some awful way, messages that he must intercept. Everything is a cipher and of everything he is the theme. All around him, there are spies. Some of them are detached observers, like glass surfaces and still pools; others, such as coats in store windows, are prejudiced witnesses, lynchers at heart; others, again (running water, storms), are hysterical to the point of insanity, have a distorted opinion of him, and grotesquely misinterpret his actions. He must be always on his guard and devote every minute and module of life to the decoding of the undulation of things. The very air he exhales is indexed and filed away. If only the interest he provokes were limited to his immediate surroundings, but, alas, it is not! With distance, the torrents of wild scandal increase in volume and volubility. The silhouettes of his blood corpuscles, magnified a million times, flit over vast plains; and still farther away, great mountains of unbearable solidity and height sum up, in terms of granite and groaning firs, the ultimate truth of his being.
+
+When they emerged from the thunder and foul air of the subway, the last dregs of the day were mixed with the street lights. She wanted to buy some fish for supper, so she handed him the basket of jelly jars, telling him to go home. Accordingly, he returned to their tenement house, walked up to the third landing, and then remembered he had given her his keys earlier in the day.
+
+In silence he sat down on the steps and in silence rose when, some ten minutes later, she came trudging heavily up the stairs, smiling wanly and shaking her head in deprecation of her silliness. They entered their two-room flat and he at once went to the mirror. Straining the corners of his mouth apart by means of his thumbs, with a horrible, mask-like grimace, he removed his new, hopelessly uncomfortable dental plate. He read his Russian-language newspaper while she laid the table. Still reading, he ate the pale victuals that needed no teeth. She knew his moods and was also silent.
+
+When he had gone to bed, she remained in the living room with her pack of soiled playing cards and her old photograph albums. Across the narrow courtyard, where the rain tinkled in the dark against some ash cans, windows were blandly alight, and in one of them a black-trousered man, with his hands clasped under his head and his elbows raised, could he seen lying supine on an untidy bed. She pulled the blind down and examined the photographs. As a baby, he looked more surprised than most babies. A photograph of a German maid they had had in Leipzig and her fat-faced fiancé fell out of a fold of the album. She turned the pages of the book: Minsk, the Revolution, Leipzig, Berlin, Leipzig again, a slanting house front, badly out of focus. Here was the boy when he was four years old, in a park, shyly, with puckered forehead, looking away from an eager squirrel, as he would have from any other stranger. Here was Aunt Rosa, a fussy, angular, wild-eyed old lady, who had lived in a tremulous world of bad news, bankruptcies, train accidents, and cancerous growths until the Germans put her to death, together with all the people she had worried about. The boy, aged six—that was when he drew wonderful birds with human hands and feet, and suffered from insomnia like a grown-up man. His cousin, now a famous chess player. The boy again, aged about eight, already hard to understand, afraid of the wallpaper in the passage, afraid of a certain picture in a book, which merely showed an idyllic landscape with rocks on a hillside and an old cart wheel hanging from the one branch of a leafless tree. Here he was at ten—the year they left Europe. She remembered the shame, the pity, the humiliating difficulties of the journey, and the ugly, vicious, backward children he was with in the special school where he had been placed after they arrived in America. And then came a time in his life, coinciding with a long convalescence after pneumonia, when those little phobias of his, which his parents had stubbornly regarded as the eccentricities of a prodigiously gifted child, hardened, as it were, into a dense tangle of logically interacting illusions, making them totally inaccessible to normal minds.
+
+All this, and much more, she had accepted, for, after all, living does mean accepting the loss of one joy after another, not even joys in her case, mere possibilities of improvement. She thought of the recurrent waves of pain that for some reason or other she and her husband had had to endure; of the in visible giants hurting her boy in some unimaginable fashion; of the incalculable amount of tenderness contained in the world; of the fate of this tenderness, which is either crushed or wasted, or transformed into madness; of neglected children humming to themselves in unswept corners; of beautiful weeds that cannot hide from the farmer.
+
+It was nearly midnight when, from the living room, she heard her husband moan, and presently he staggered in, wearing over his nightgown the old overcoat with the astrakhan collar that he much preferred to his nice blue bathrobe.
+
+“I can’t sleep!” he cried.
+
+“Why can’t you sleep?” she asked. “You were so tired.”
+
+“I can’t sleep because I am dying,” he said, and lay down on the couch.
+
+“Is it your stomach? Do you want me to call Dr. Solov?”
+
+“No doctors, no doctors,” he moaned. “To the devil with doctors! We must get him out of there quick. Otherwise, we’ll be responsible…. Responsible!” He hurled himself into a sitting position, both feet on the floor, thumping his forehead with his clenched fist.
+
+“All right,” she said quietly. “We will bring him home tomorrow morning.”
+
+“I would like some tea,” said her husband and went out to the bathroom.
+
+Bending with difficulty, she retrieved some playing cards and a photograph or two that had slipped to the floor—the knave of hearts, the nine of spades, the ace of spades, the maid Elsa and her bestial beau. He returned in high spirits, saying in a loud voice, “I have it all figured out. We will give him the bedroom. Each of us will spend part of the night near him and the other part on this couch. We will have the doctor see him at least twice a week. It does not matter what the Prince says. He won’t have much to say anyway, because it will come out cheaper.”
+
+The telephone rang. It was an unusual hour for it to ring. He stood in the middle of the room, groping with his foot for one slipper that had come off, and childishly, toothlessly, gaped at his wife. Since she knew more English than he, she always attended to the calls.
+
+”Can I speak to Charlie?” a girl’s dull little voice said to her now.
+
+“What number do you want? . . . No. You have the wrong number.”
+
+She put the receiver down gently and her hand went to her heart. “It frightened me,” she said.
+
+He smiled a quick smile and immediately resumed his excited monologue. They would fetch him as soon as it was day. For his own protection, they would keep all the knives in a locked drawer. Even at his worst, he presented no danger to other people.
+
+The telephone rang a second time.
+
+The same toneless, anxious young voice asked for Charlie.
+
+“You have the incorrect number. I will tell you what you are doing. You are turning the letter ‘o’ instead of the zero.” She hung up again.
+
+They sat down to their unexpected, festive midnight tea. He sipped noisily; his face was flushed; every now and then he raised his glass with a circular motion, so as to make the sugar dissolve more thoroughly. The vein on the side of his bald head stood out conspicuously, and silvery bristles showed on his chin. The birthday present stood on the table. While she poured him another glass of tea, he put on his spectacles and reëxamined with pleasure the luminous yellow, green, and red little jars. His clumsy, moist lips spelled out their eloquent labels—apricot, grape, beach plum, quince. He had got to crab apple when the telephone rang again.')
+
+
+election1 = Paul_Krugman.stories.create!(title: "The Clinton Agenda", content: 'It ain’t over until the portly gentleman screams, but it is, as intelligence analysts say, highly likely that Hillary Clinton will win this election. Poll-based models put her chances at around 90 percent earlier this week — and that was before the campaign turned totally X-rated.
+
+But what will our first female president actually be able to accomplish? That depends on how big a victory she achieves.
+
+I’m not talking about the size of her “mandate,” which means nothing: If the Obama years are any indication, Republicans will oppose anything she proposes no matter how badly they lose. The question, instead, is what happens to Congress.
+
+Consider, first, the effects of a minimal victory: Mrs. Clinton becomes president, but Republicans hold on to both houses of Congress.
+
+Such a victory wouldn’t be meaningless. It would avert the nightmare of a Trump presidency, and it would also block the radical tax-cutting, privatizing agenda that Paul Ryan, the speaker of the House, has made clear he will steamroll through if Mr. Trump somehow wins. But it would leave little room for positive action.
+
+Things will be quite different if Democrats retake the Senate. Poll-based models give this outcome only around a 50-50 chance, but people betting on the election give it much better odds, two or three to one.
+
+Now, even a Democratic Senate wouldn’t enable Mrs. Clinton to pass legislation in the face of an implacably obstructionist Republican majority in the House. It would, however, allow her to fill the Supreme Court seat left vacant by the death of Antonin Scalia.
+
+Doing that would have huge consequences, for environmental policy in particular. In his final years in office, President Obama has made a major environmental push using his regulatory powers, for example by sharply tightening emission standards for heavy trucks.
+
+But the most important piece of his push — the Clean Power Plan, which would greatly reduce greenhouse gas emissions from coal-fired power plants — is currently on hold, thanks to a stay imposed by the Supreme Court. Democratic capture of the Senate would remove this roadblock.
+
+And bear in mind that climate change is by far the most important issue facing America and the world, even if the people selecting questions for the presidential debates for some reason refuse to bring it up. Quite simply, if Democrats take the Senate, we might take the minimum action needed to avoid catastrophe; if they don’t, we won’t.
+
+What about the House? All, and I mean all, of the Obama administration’s legislative achievements took place during the two-year period when Democrats controlled both houses of Congress. Can that happen again?
+
+Until the last few days, the chances of flipping the House seemed low, even if, as now seems all but certain, Democratic candidates in total receive more votes than Republicans. Partly that’s because G.O.P.-controlled state governments have engaged in pervasive gerrymandering; partly it’s because minority voters, who overwhelmingly favor Democrats, are clustered in a relatively small number of urban districts.
+
+But a sufficiently big Clinton victory could change that, especially if suburban women desert a G.O.P. that has turned into the gropers-owned party. And that would let her pursue a much more expansive agenda.
+
+There’s not much mystery about what that agenda would be. I don’t know why so many pundits claim that Mrs. Clinton lacks a vision for America, when she has actually provided an unusual level of detail on her website and in speeches.
+
+Broadly speaking, she would significantly strengthen the social safety net, especially for the very poor and children, with an emphasis on family-related issues like parental leave. Such programs would cost money, although not as much as critics claim; she proposes, credibly, to raise that money with higher taxes on top incomes, so that the overall effect would be to reduce inequality.
+
+Democratic control of the House would also open the door for large-scale infrastructure investment. If that seems feasible, I know that many progressive economists — myself included — will urge Mrs. Clinton to go significantly bigger than she is currently proposing.
+
+If all of this sounds to you like a second round of what President Obama did in 2009-2010, that’s because it is. And why not? Despite Republican obstruction, Mr. Obama has presided over a remarkable rise in the number of Americans with health insurance, a significant decline in poverty and the creation of more than 11 million private-sector jobs.
+
+In any case, the bottom line is that if you’re thinking of staying home on Election Day because the outcome is assured, don’t. Barring the political equivalent of a meteor strike, Hillary Clinton will be our next president, but the size of her victory will determine what kind of president she can be.
+
+')
+
+
+
+news3 = JESS_BIDGOOD.stories.create!(title: "Poor, Displaced and Anxious in North Carolina as Floods Climb After Hurricane", content: 'At a community college turned hurricane shelter, Frednesa Pope, 37, wondered on Wednesday if the floodwaters from Hurricane Matthew, which are expected to crest here on Friday, would force her and her family out of an apartment they could barely afford.
+
+This week, Gregory King-Yates, 58, who lives on a fixed income and was taking shelter from the flooding in Fair Bluff, N.C., to the southwest, knew that the truck he had just bought was flooded.
+
+And over the weekend, Ethel and Austin Chavis of Lumberton, N.C., ripped the carpets out of their flooded home and wondered how much it would cost to make things right again and where they would find the money.
+
+“We’ve got to find some assistance,” Ms. Chavis, 66, said as she looked at the floorboards buckling around her, “because we definitely need it.”
+
+Hurricane Matthew spawned ferocious wind and rain across North Carolina, dumping more than a foot of water in parts of the state and touching off a creeping disaster that had killed 22 people in the state by Thursday. Day after day, in town after town, swollen rivers have transformed thoroughfares into canals and homes into sodden islands, in some cases with only the roof or the windows peeking above the water.
+
+And the water has risen in some of the state’s poorest areas, upending the lives of many already living on the financial edge.
+
+“The poorest of the poor in North Carolina are the ones who are being hurt the most by these floods,” Gov. Pat McCrory said at an otherwise upbeat news conference on Thursday. “These people have nothing,” he added, urging people to donate to a state disaster fund.
+
+By Thursday, $2.6 million in aid from the Federal Emergency Management Agency had been disbursed and 14,000 people had applied for aid.
+
+Individual assistance from FEMA, which has averaged about $2,000 a family in recent years, is designed to help with immediate needs — like temporary rental housing, repairs not covered by insurance, and the replacement of critical personal items — but those grants are somewhat limited.
+
+“It’s not designed to make survivors whole again,” said Rafael Lemaitre, a spokesman for the agency. “It’s more of a life vest, rather than a lifeboat.”
+
+Mr. McCrory’s administration said that disaster unemployment assistance, which can cover wages lost because of a storm, would be available in 20 counties.
+
+But even when state and federal officials work to disburse flood aid, experts said, it is often harder for families living on the margins to bounce back. The Food Bank of Central and Eastern North Carolina estimated that 356,000 people in the 21 counties it was monitoring for storm and flood effects did not have access to enough healthy food, even before the floods.
+
+Floodwaters have left downtown Lumberton, a city where a third of residents live in poverty, underwater. They crested at more than a foot above the record on Tuesday in Goldsboro, N.C., where the poverty rate is 25 percent. And in Kinston, residents waited in shelters for the Neuse River to crest on Friday.
+
+“Sometimes, you just have to think that God is piling on with these storms,” said Gene Nichol, a law professor at the University of North Carolina who researches poverty.
+
+Poverty in the region, he said, goes back to the time of slavery, but he added that the state’s Republican-controlled Legislature had further eroded the social safety net by winnowing unemployment benefits, cutting the state’s earned-income tax credit and largely refusing to expand Medicaid.
+
+“There are challenging legacies,” Professor Nichol said. “The want of investment and opportunity in eastern North Carolina is made only more difficult by tragedies like this.”
+
+Some natural disasters, like tornadoes, seem genuinely indiscriminate, as likely to damage wealthy neighborhoods as to damage poor ones. But in Kinston, the pain from the floods — which were preceded by days of warning — seem to a certain extent linked to economics.
+
+Those with cars have been able to take their valuables, or even their furniture, and leave town for hotel rooms or to stay with family. Those who earn more are more likely to have paid time off, and to have savings to cushion the financial blow from a storm. And floods often play out in low-lying areas where the residents are disproportionately poor.
+
+The shelter here at Lenoir Community College, which by Thursday had become a temporary home for about 200 people, was full of residents with no money to spare — even among those working full time — and a sense of dread as the water rose.
+
+Ms. Pope, a cabinet sprayer in a local plant, evacuated her home in Kinston this week when fire officials told her it was almost certain to flood when the river crested.
+
+“I put my clothes up as high as I could,” she said. “I don’t have a car; I wasn’t able to get a U-Haul like everyone else in the neighborhood. I live from paycheck to paycheck.”
+
+Ms. Pope’s apartment had flooded during the devastation from Hurricane Floyd in 1999, and her landlord had told her it was unlikely to withstand a second event that forecasters said could be even worse.
+
+“I’ll have to start all the way back over,” said Ms. Pope, who already pays her $400 rent in two installments so she can pay the bills in the middle of the month. “Everything in there, it’s paid for. If it floods, I’m through.”
+
+Wesley Turner, 71, a Vietnam veteran who retired from a rubber stopper plant in town, said his home seemed close to flooding even before the river’s crest.
+
+“I worked for years and years to make money for a double-wide, which I thought would be home for the rest of my life,” Mr. Turner said. “I can’t afford another trailer. I can’t afford a pup tent.”
+
+Inside the shelter, LaVonda Hamilton, 42, was wondering whether she would need to take on a short-term, high-interest loan to make ends meet. She had been unable to get to her job as an account specialist at an outsourcing firm near the coast for a week.
+
+“I have two kids, you know, in high school,” Ms. Hamilton said. “It sets you back.”
+
+And in Lumberton, where floodwaters were just beginning to recede, Billie Thompson, 36, returned to her home to take stock of what she had lost — “It’s in a shamble right now,” she said — and scrambled to get to her job at the Butterball factory for the first time since last week. A single mother, Ms. Thompson tried to figure out how to replace ruined items, like school clothes that she bought in August for her daughter.
+
+“My daughter has started planning a birthday party next month; I might have to cancel that,” Ms. Thompson said, adding, “She needs clothes more than she needs the party.”
+
+')
+
+
+
+news2 = MICHAEL_KIMMELMAN.stories.create!(title: "Berlin, 1945; Grozny, 2000; Aleppo, 2016", content: 'The destruction is so complete that it obliterates even a sense of time. At a glance, the video could show Berlin in 1945 or Grozny, 2000. Mass death erases all distinctions.
+
+The place is Aleppo, Syria, the al-Mashhad district, or what remains of it after recent attacks by Syrian government forces and their Russian allies. Toppled rooftop satellite dishes, choked by plaster dust, resemble wilted flowers. Figures move through the pulverized rubble but are hard to make out.
+
+“Would you really feel any pity if one of those dots stopped moving forever?” Harry Lime asked on the Ferris wheel in “The Third Man,” the classic noir film set in postwar Vienna. This is drone footage, after all, shot from the same detached, superior perspective of the bombers who committed this atrocity in the name of fighting non-jihadist rebels. The video was made to document the devastation and bear witness, but it inevitably reduces people on the streets to Lime’s dots.
+
+After the Second World War, Auschwitz survivors helped organize a display to memorialize the camp and came up with the archetypal piles of shoes and hair, prostheses and suitcases. The hope was to convey the scale of killing at a time when much of the world still didn’t know, or didn’t want to know, how many people the Nazis had murdered. Survivors declined to focus on stories of individual victims. They reckoned that nearly everyone in Europe had witnessed death up close and had their own stories to tell, whereas the industrial nature of murder was something else, something new, unfathomable and essential to record.
+
+Today we are assaulted online, on television and in newspapers with big, senseless numbers: At least 140 killed in the Saudi-led bombing of a funeral in Yemen; hundreds slain by car bombs in Baghdad; thousands upon thousands slaughtered in Aleppo. The tallies blur together even while it can be nearly unbearable to glance at the photograph of Alan Kurdi, the dead 2-year-old refugee on the Turkish beach, or the video of Omran Daqneesh, the stunned little boy from Aleppo, pulled from the ashes, sitting in the ambulance, wiping blood from his face.
+
+Once seen, these images become impossible to forget. More than the specter of endless shelters and the staggering numbers of displaced people, what comes to mind whenever I read about the war are the dusty, hopeful faces of six small, barefoot siblings I photographed with my phone while standing outside their windblown tent in Zaatari, a Syrian refugee camp, just across the border in Jordan. I wonder how they are doing.
+
+There are now some 65 million displaced people around the world, equivalent in number to the entire population of the United Kingdom or France. Refugees spend 17 years on average in camps. The children at that Syrian camp fled their home just ahead of the guns and rockets.
+
+I wonder what “home” will ever mean to them.
+
+To those more fortunate, it promises safety, family. The ruined landscape in the drone video, reminiscent of that earlier Russian military campaign in Grozny, had been a community of shops, noisy streets — and homes. Now so hard to decipher, these crumbling apartment houses were, until lately, particular to the people who filled them with children and mementos. With raised voices and the whispered exchanges of love and heartbreak. With music, prayers, friends, the smells of food cooking on the stove. With dreams of a better life.
+
+This used to be a neighborhood, in other words. A neighborhood is more than an assortment of buildings and streets. It is life, shared and rooted in place, passed down through generations — nowhere more so than in an ancient city like Aleppo, where some years ago I was taken to the home of a man who lived on a street that bore his family name.
+
+“How long has your family lived here?” I asked him.
+
+“On the street or in Aleppo?” he replied.
+
+Before I could answer, he told me: “On the street, 800 years. In Aleppo, 1,200.”
+
+Communities incubate hope. Extinguishing this is the goal of mass murderers and tyrants.
+
+That is what the drone video shows.')
+
+news1 = Eric_Lichtblau.stories.create!(title: "Justice Department to Track Use of Force by Police Across U.S.", content: 'The Justice Department said Thursday that it would start collecting nationwide data early next year on police shootings and other violent encounters with the public, after a series of protests and investigations since 2014 spurred by a string of deadly episodes.
+
+The project, the most ambitious the federal government has undertaken in tracking the use of force by police officers, is meant to fill what officials say is a huge and frustrating void in publicly available data on the shootings that have roiled the country.
+
+Under the plan, the Justice Department will gather more data on the use of force by federal agents and help local departments report information on a wider range of police encounters.
+
+But a number of the reporting steps will rely on local police officials to voluntarily submit data, and some civil rights advocates said the Justice Department had not made clear how it would impose financial penalties set by Congress to encourage the reporting of police shootings.
+
+“I can’t believe two years into this crisis that we’re still having conversations about data,” said Kanya Bennett, a lawyer in Washington for the American Civil Liberties Union, which met with the Justice Department to discuss the plan.
+
+With President Obama leaving office in three months, Ms. Bennett said, “this is essentially being punted to the next administration.”
+
+After a series of fatal encounters in places like Ferguson, Mo.; Charlotte, N.C.; Tulsa, Okla.; Baton Rouge, La.; Cleveland; Milwaukee; Baltimore; and Staten Island — many involving unarmed black men and caught on video — officials have struggled to gather basic information about how often such episodes occur and what can be done.
+
+The most comprehensive records on police shootings have come from the news media, particularly The Washington Post and The Guardian, which have created running databases.
+
+James B. Comey, the director of the F.B.I., told lawmakers last year that it was “embarrassing” that the news media could produce better data than his own agency on such an important issue.
+
+“We can’t have an informed discussion because we don’t have data,” Mr. Comey told the House Judiciary Committee last October.
+
+“People have data about who went to a movie last weekend, or how many books were sold, or how many cases of the flu walked into the emergency room,” he said, “and I cannot tell you how many people were shot by police in the United States last month, last year, or anything about the demographic. And that’s a very bad place to be.”
+
+According to the Post database, 991 people were fatally shot by the police last year, and 754 have been so far this year.
+
+Under the Justice Department plan, the F.B.I. is to begin a pilot program early next year to assemble data on the use of force by about 178,000 agents at major federal law enforcement agencies including the Drug Enforcement Administration, the Marshals Service, the Bureau of Alcohol, Tobacco, Firearms and Explosives, and the F.B.I. itself.
+
+In addition, the Justice Department plans to begin collecting data from local and state law enforcement departments on “in custody” deaths — not just in shootings, but in cases of suicide and natural death as well.
+
+A measure passed by Congress in 2014 called the Death in Custody Reporting Act required local departments to report only fatal encounters. Justice Department officials said they would rely on local police officials to voluntarily report nonlethal encounters as well.
+
+Under a third part of the plan, the Justice Department said it was authorizing $750,000 for a “police data initiative” designed to help local departments collect and publicly release information on a wider range of actions, including stops of citizens, searches, the use of force, shootings and other encounters.
+
+Attorney General Loretta E. Lynch said in announcing the plan Thursday that comprehensive and accurate data on police encounters was essential in “increasing transparency and building trust between law enforcement and the communities we serve.”
+
+Lacking better data has made it “very, very hard” to determine the causes of police shootings, or even whether there was an actual increase in such episodes or simply more publicity about them, Ms. Lynch said at an event Thursday night at Georgetown University.
+
+The law passed by Congress in 2014 for reporting in-custody deaths allows the attorney general to impose financial penalties on states that do not report data.
+
+But Ms. Bennett, the A.C.L.U. lawyer, faulted the Justice Department for failing to explain how that would happen under the new plan.
+
+In a letter to the Justice Department last week, the A.C.L.U. and 95 other groups pushing for greater accountability in police shootings wrote that imposing financial penalties was critical to the success of the program. In the past, the letter said, “voluntary reporting programs on police-community encounters have failed.
+
+The steps announced by the Justice Department grew out of a presidential commission appointed by Mr. Obama in 2014 to study ways of reducing conflict and tensions between police departments and the communities they serve.
+
+Announcing a series of recommendations from the commission in March 2015, Mr. Obama said that the country needed to seize the opportunity to “transform” police-community relations.
+
+“We have a great opportunity, coming out of some great conflict and tragedy, so that everybody feels safer and our law enforcement officers feel, rather than being embattled, feel fully supported,” he said.')
+
+
+
 essay1 = Jonathan_Swift.stories.create!(title: "A Modest Proposal", content: "It is a melancholy object to those, who walk through this great town, or travel in the country, when they see the streets, the roads and cabbin-doors crowded with beggars of the female sex, followed by three, four, or six children, all in rags, and importuning every passenger for an alms. These mothers instead of being able to work for their honest livelihood, are forced to employ all their time in stroling to beg sustenance for their helpless infants who, as they grow up, either turn thieves for want of work, or leave their dear native country, to fight for the Pretender in Spain, or sell themselves to the Barbadoes.
 
 I think it is agreed by all parties, that this prodigious number of children in the arms, or on the backs, or at the heels of their mothers, and frequently of their fathers, is in the present deplorable state of the kingdom, a very great additional grievance; and therefore whoever could find out a fair, cheap and easy method of making these children sound and useful members of the common-wealth, would deserve so well of the publick, as to have his statue set up for a preserver of the nation.
@@ -178,3 +582,11 @@ TopicTag.create!(topic_id: essays.id, story_id: essay2.id)
 TopicTag.create!(topic_id: essays.id, story_id: essay3.id)
 TopicTag.create!(topic_id: essays.id, story_id: essay4.id)
 TopicTag.create!(topic_id: essays.id, story_id: essay5.id)
+
+TopicTag.create!(topic_id: news.id, story_id: news1.id)
+TopicTag.create!(topic_id: news.id, story_id: news2.id)
+TopicTag.create!(topic_id: news.id, story_id: news3.id)
+
+TopicTag.create!(topic_id: election.id, story_id: election1.id)
+
+TopicTag.create!(topic_id: fiction.id, story_id: fiction1.id)
