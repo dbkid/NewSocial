@@ -590,3 +590,5 @@ TopicTag.create!(topic_id: news.id, story_id: news3.id)
 TopicTag.create!(topic_id: election.id, story_id: election1.id)
 
 TopicTag.create!(topic_id: fiction.id, story_id: fiction1.id)
+
+TopicTag.create!(topic_id: fiction.id, story_id: fiction2.id)

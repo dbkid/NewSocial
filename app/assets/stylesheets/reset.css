@@ -31,7 +31,7 @@ img {
 }
 body {
   box-sizing: content-box;
-	background: #fafafa!important;
+	/*background: #fafafa!important;*/
 }
 ol, ul {
 	list-style: none;

@@ -35,6 +35,7 @@ class StoryDisplayFooter extends React.Component {
     }
     else{
       return(
+        <div className="story-display-footer-background">
         <div className="story-display-footer">
           <div className="story-display-footer-content group">
 
@@ -48,6 +49,7 @@ class StoryDisplayFooter extends React.Component {
               <li className="bookmark"><BookmarkButton storyId={this.props.storyId} user={this.props.user} bookmarked={this.props.bookmarked} createBookmark={this.props.createBookmark}/></li>
             </ul>
           </div>
+        </div>
         </div>
       );
 

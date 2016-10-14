@@ -13,6 +13,7 @@ class StoryDisplayAuthorHeader extends React.Component {
   render(){
 
     return(
+      <div className="story-display-author-header-background">
       <div className="story-display-author-header group">
         <div className="story-display-image-thumb-container">
           <Link to={`/authors/${this.props.author.id}`}>
@@ -23,6 +24,7 @@ class StoryDisplayAuthorHeader extends React.Component {
             <Link to={`/authors/${this.props.author.id}`} className="story-display-author-name">{this.props.author.name}</Link>
             <text className="story-display-date">{this.props.date}</text>
         </div>
+      </div>
       </div>
     );
 
