@@ -173,8 +173,7 @@ Friday/Weekend:
 
 
     MORNING:
-    - fix topic follows
     - fix drop one letter on publish
     - seed
     - fix new social font
-    - fix coloring !! 
+    - fix coloring !!
