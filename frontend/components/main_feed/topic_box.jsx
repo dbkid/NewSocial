@@ -15,8 +15,8 @@ class TopicBox extends React.Component {
 
   render(){
 
-    let buttons = this.props.session.currentUser.followedTopics.map((topic) => {
-      return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>;
+    let buttons = this.props.session.currentUser.followedTopics.map((topic, index) => {
+      return <TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow} key={index}/>;
     });
 
     return(

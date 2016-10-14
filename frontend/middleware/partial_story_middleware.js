@@ -20,9 +20,16 @@ export default ({ getState, dispatch }) => next => action => {
           return;
         };
 
+    const fetchRandomSuccess = (stories) => {
+      dispatch(receivePartialStories(stories));
+      dispatch(selectMainTopic(null));
+      hashHistory.push("/");
+      return;
+    };
+
     switch(action.type){
       case(FETCH_RANDOM_STORIES):
-        fetchRandomStories(action.number, success, error);
+        fetchRandomStories(action.number, fetchRandomSuccess, error);
         return next(action);
       case(FETCH_TOPIC_SHOW):
         fetchTopicShow(action.topicId, topicShowSuccess, error);
