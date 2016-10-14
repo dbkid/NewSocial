@@ -18,7 +18,8 @@ const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
   clearSelectedStory: () => dispatch(clearSelectedStory()),
   fetchTopicsIndex: () => dispatch(fetchTopicsIndex()),
-  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId))
+  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId)),
+  fetchRandomStories: () => dispatch(fetchRandomStories())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));

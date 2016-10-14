@@ -15,11 +15,17 @@ class Header extends React.Component {
 
     this.clearSelectedStory = this.clearSelectedStory.bind(this);
     this.guestLogin = this.guestLogin.bind(this);
+    this.fetchRandomStories = this.fetchRandomStories.bind(this);
   }
 
   clearSelectedStory(e){
     e.preventDefault();
     this.props.clearSelectedStory();
+  }
+
+  fetchRandomStories(e){
+    e.preventDefault();
+    this.props.fetchRandomStories();
   }
 
   guestLogin(e){
@@ -35,9 +41,9 @@ class Header extends React.Component {
         <div className="group homepageheader">
           <div className="group topbar">
             <ul className="group logolist">
-              <Link to="/">
-                <li className="newsocial">NewSocial</li>
-              </Link>
+
+                <li className="newsocial" onClick={this.fetchRandomStories}>NewSocial</li>
+
             </ul>
 
             <ul className="group loginlist">
@@ -56,9 +62,9 @@ class Header extends React.Component {
           <div className="group topbar">
             <ul className="group logolist">
               <li><img className="logo"></img></li>
-                <Link to="/">
-                  <li className="NewSocial">NewSocial</li>
-                </Link>
+
+                  <li className="NewSocial" onClick={this.fetchRandomStories}>NewSocial</li>
+
             </ul>
             <ul className="group logged-in-list">
               <li onClick={this.clearSelectedStory}><Link to="/writestory" className="greenlink writestory">Write a story</Link></li>
