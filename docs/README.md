@@ -170,3 +170,11 @@ Friday/Weekend:
         </div>
       </div>
     </div>
+
+
+    MORNING:
+    - fix topic follows
+    - fix drop one letter on publish
+    - seed
+    - fix new social font
+    - fix coloring !! 
