@@ -2,6 +2,7 @@ import React from 'react';
 import LikeButton from "./../reusable/like_button";
 import BookmarkButton from "./../reusable/bookmark_button";
 import { Link } from 'react-router';
+import TopicButton from "./../main_feed/topic_button";
 
 class StoryDisplayFooter extends React.Component {
   constructor(props){
@@ -25,7 +26,7 @@ class StoryDisplayFooter extends React.Component {
     if (this.props.topics){
 
       this.props.topics.forEach((topic) => {
-        topicLinks.push(<Link to="#" className="story-display-topic">{topic.title}</Link>);
+        topicLinks.push(<TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/>);
       });
     }
 

@@ -21,7 +21,7 @@ class TopicDisplayPage extends React.Component {
     return(
       <div className="group">
         <div className="float-left">
-          <TopicHeader topics={this.props.topics}/>
+          <TopicHeader topics={this.props.topics} createTopicFollow={this.props.createTopicFollow}/>
           <div className="logged-in-story-index">
             <StoryIndex partialStories={this.props.partialStories}/>
           </div>

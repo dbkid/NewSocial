@@ -11,7 +11,7 @@ Jonathan_Swift = User.create!(name: "Jonathan Swift", email: "js@js.com", passwo
 G_K_Chesterton = User.create!(name: "G K Chesterton", email: "gkc@gck.com", password: "password")
 Christopher_Morley = User.create!(name: "Christopher Morley", email: "cm@cm.com", password: "password")
 Ann_Plato = User.create!(name: "Ann Plato", email: "ap@ap.com", password: "password")
-Francis_Bacon = User.create!(name: "Francis_Bacon", email: "fb@fb.com", password: "password")
+Francis_Bacon = User.create!(name: "Francis Bacon", email: "fb@fb.com", password: "password")
 Guest = User.create!(name: "Guest", email: "guest@guest.com", password: "password")
 
 Story.destroy_all

@@ -55,15 +55,15 @@ class MainFeed extends React.Component {
     }
 
     else {
-
     return(
+
       <div>
-        <div className="nav-bar">
+        <div className="nav-bar group">
           <NavBar topics={this.props.topics} fetchTopicsIndex={this.props.fetchTopicsIndex} fetchTopicShow={this.props.fetchTopicShow}/>
         </div>
         <div className = "main-feed-border">
           <div className="main-feed">
-            <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories}/>
+            <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories} createTopicFollow={this.props.createTopicFollow}/>
           </div>
         </div>
       </div>

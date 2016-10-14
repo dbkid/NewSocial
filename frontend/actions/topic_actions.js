@@ -5,10 +5,12 @@ export const FETCH_TOPICS_INDEX = "FETCH_TOPICS_INDEX";
 export const RECEIVE_TOPICS_INDEX = "RECEIVE_TOPICS_INDEX";
 
 
-export const fetchTopicShow = (topicId) => ({
+export const fetchTopicShow = (topicId) => {
+  return ({
   type: FETCH_TOPIC_SHOW,
   topicId: topicId
 });
+};
 
 export const selectMainTopic = (topic) => ({
   type: SELECT_MAIN_TOPIC,
@@ -22,9 +24,11 @@ export const receiveFollowedTopics = (followedTopics) => {
 });
 };
 
-export const fetchTopicsIndex = () => ({
+export const fetchTopicsIndex = () => {
+  return ({
   type: FETCH_TOPICS_INDEX
 });
+};
 
 export const receiveTopicsIndex = (topics) => ({
   type: RECEIVE_TOPICS_INDEX,

@@ -8,6 +8,7 @@ import { fetchAuthorShow } from './../actions/author_actions';
 import MainFeed from "./main_feed/main_feed_container";
 import AuthorDisplayPageContainer from "./author_display/author_display_page_container";
 import StoryFormPageContainer from './story_form/story_form_page_container';
+import {fetchTopicsIndex} from './../actions/topic_actions';
 
 
 

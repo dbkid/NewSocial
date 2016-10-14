@@ -46,7 +46,7 @@ class Header extends React.Component {
               <SignUpFormContainer/>
             </ul>
           </div>
-          <div className="nav-bar"></div>
+          <div className="space-bar"></div>
         </div>
       );
     } else {

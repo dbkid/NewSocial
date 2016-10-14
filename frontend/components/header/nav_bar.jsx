@@ -1,5 +1,4 @@
 import React from 'react';
-import TopicButton from './../main_feed/topic_button';
 
 
 
@@ -24,7 +23,6 @@ class NavBar extends React.Component {
 
 
   render(){
-
     let topics = this.props.topics.randomTopics.map((topic) => {
       return <li className="nav-bar-button" onClick={this.fetchTopicShow} value={topic.id}>{topic.title}</li>;
     });

@@ -9,6 +9,13 @@ class TopicHeader extends React.Component {
     this.state = {
     };
 
+  this.createTopicFollow = this.createTopicFollow.bind(this);
+
+  }
+
+  createTopicFollow(e){
+    e.preventDefault();
+    this.props.createTopicFollow(e.target.value);
   }
 
 
@@ -17,7 +24,7 @@ class TopicHeader extends React.Component {
       <div className="topic-header group">
         <h1 className="tagged-in">TAGGED IN</h1>
         <h1 className="topic-title">{this.props.topics.mainTopic.title}</h1>
-        <button className="save-button round-button  follow-button">Follow</button>
+        <button className="save-button round-button  follow-button" value={this.props.topics.mainTopic.id} onClick={this.createTopicFollow}>Follow</button>
       </div>
     );
 

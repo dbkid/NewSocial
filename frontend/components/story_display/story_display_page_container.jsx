@@ -16,7 +16,8 @@ const mapDispatchToProps = dispatch => ({
   fetchSelectedStory: (storyId) => dispatch(fetchSelectedStory(storyId)),
   createResponse: (response) => dispatch(createResponse(response)),
   createLike: (storyId, userId) => dispatch(createLike(storyId, userId)),
-  createBookmark: (storyId, userId) => dispatch(createBookmark(storyId, userId))
+  createBookmark: (storyId, userId) => dispatch(createBookmark(storyId, userId)),
+  fetchTopicShow: (topicId) => dispatch(fetchTopicShow(topicId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StoryDisplayPage);
