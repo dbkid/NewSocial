@@ -14,6 +14,7 @@ export default ({ getState, dispatch }) => next => action => {
     const topicFollowSuccess = (topic) => {
       dispatch(receiveTopicFollow(topic));
       hashHistory.push("/");
+      return;
 
     };
 

@@ -8,7 +8,9 @@ export const createTopicFollow = (topicId) => {
 });
 };
 
-export const receiveTopicFollow = (topic) => ({
+export const receiveTopicFollow = (topic) => {
+  return ({
   type: RECEIVE_TOPIC_FOLLOW,
-  topics: topic
+  topic: topic
 });
+};

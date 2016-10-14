@@ -20,7 +20,7 @@ export const TopicsReducer = (state = defaultState, action) => {
     case(RECEIVE_TOPICS_INDEX):
       return merge(state, {followedTopics: action.topics.followedTopics, randomTopics: action.topics.randomTopics});
     case(RECEIVE_TOPIC_FOLLOW):
-      return merge(state, {mainTopic: action.topic, followedTopics: [state.followedTopics, action.topic] });
+      return merge(state, {mainTopic: action.topic.topic, followedTopics: [state.followedTopics].concat[(action.topic.topic)] });
 
     default:
       return state;
