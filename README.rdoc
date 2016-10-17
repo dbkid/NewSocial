@@ -1,4 +1,4 @@
-_NewSocial_ is clone of https://medium.com.
+__NewSocial__ is clone of https://medium.com.
 
 * Users can create an account and log in/log out. 
 * Logged in users can write and publish stories.
