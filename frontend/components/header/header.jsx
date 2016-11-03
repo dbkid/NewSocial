@@ -63,7 +63,7 @@ class Header extends React.Component {
             <ul className="group logolist">
               <li><img className="logo"></img></li>
 
-                  <li className="NewSocial" onClick={this.fetchRandomStories}>NewSocial</li>
+                  <li className="newsocial" onClick={this.fetchRandomStories}>NewSocial</li>
 
             </ul>
             <ul className="group logged-in-list">

@@ -105,7 +105,7 @@ class Header extends React.Component {
           <div className="group topbar">
             <ul className="group logolist">
               <li><img className="logo"></img></li>
-              <li className="NewSocial">NewSocial</li>
+              <li className="newsocial">NewSocial</li>
             </ul>
             <ul className="group loginlist">
               <li><Link to="/#/writestory" className="greenlink">Write a story</Link></li>

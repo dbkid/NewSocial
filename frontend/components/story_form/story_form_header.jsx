@@ -23,7 +23,7 @@ class StoryFormHeader extends React.Component {
             <ul className="group logolist">
               <li><img className="logo"></img></li>
                 <Link to="/">
-                  <li className="NewSocial">NewSocial</li>
+                  <li className="newsocial">NewSocial</li>
                 </Link>
             </ul>
             <ul className="group logged-in-list">
