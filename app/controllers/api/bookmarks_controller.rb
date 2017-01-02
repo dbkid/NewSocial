@@ -6,7 +6,7 @@ class Api::BookmarksController < ApplicationController
       @story = @bookmark.story
       @responses = @story.responses
       @bookmarked = true
-      @topics = @story.topics 
+      @topics = @story.topics
       if logged_in?
         if (current_user.likes.find_by(story_id: @story.id))
           @liked = true
@@ -16,6 +16,12 @@ class Api::BookmarksController < ApplicationController
     else
       render json: @user.errors.full_messages, status: 422
     end
+  end
+
+  def index
+    user = current_user
+    @bookmarks = Bookmark.find_by(user_id: user.id)
+    render 
   end
 
   def destroy

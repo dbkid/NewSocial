@@ -7,3 +7,12 @@ export const createBookmark = (storyId, userId, success) => {
     }
   );
 };
+
+export const fetchBookmarks = (success) => {
+  $.ajax({
+    method: "POST",
+    url: `/api/stories/${storyId}/bookmarks`,
+    success
+    }
+  );
+};
