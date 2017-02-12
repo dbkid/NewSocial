@@ -1,4 +1,4 @@
-_NewSocial_ is a clone of https://medium.com.
+[**NewSocial**](https://newsocial.herokuapp.com) is a clone of [**Medium**](https://medium.com).
 
 ![Homepage Screenshot](app/assets/screenshots/homepage_screenshot.png)
 
