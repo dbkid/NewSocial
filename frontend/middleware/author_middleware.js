@@ -2,7 +2,7 @@ import { FETCH_AUTHOR_SHOW, EDIT_USER } from '../actions/author_actions';
 import { fetchAuthorShow, editUser } from '../util/author_api_util.js';
 import { receivePartialStories } from '../actions/partial_story_actions';
 import { receiveAuthorInfo } from '../actions/author_actions';
-
+import { receiveCurrentUser } from '../actions/session_actions';
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -13,6 +13,12 @@ export default ({ getState, dispatch }) => next => action => {
       return;
     };
 
+    const editUserSuccess = (data) => {
+      dispatch(receiveCurrentUser(data));
+      return;
+    }
+
+
     const error = (errors) => dispatch(receiveErrors(errors));
 
     switch(action.type){
@@ -20,7 +26,7 @@ export default ({ getState, dispatch }) => next => action => {
         fetchAuthorShow(action.authorId, success, error);
         return next(action);
       case(EDIT_USER):
-        editUser(action.formData, action.authorId, success);
+        editUser(action.formData, action.authorId, editUserSuccess);
         return next(action);
       default:
         return next(action);

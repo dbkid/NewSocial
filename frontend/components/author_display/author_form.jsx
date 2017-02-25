@@ -24,6 +24,7 @@ class AuthorForm extends React.Component {
     let formData = new FormData();
     formData.append("user[image]", this.state.imageFile);
     this.props.editUser(formData, this.props.author.id);
+    this.setState({ toggleForm: false });
 
   }
 
@@ -67,7 +68,7 @@ class AuthorForm extends React.Component {
       );
     }
     else return(
-      <AuthorFormHeader author={this.props.author}/>
+      <AuthorFormHeader author={this.props.author} editUser={this.props.editUser}/>
     );
 
   }
