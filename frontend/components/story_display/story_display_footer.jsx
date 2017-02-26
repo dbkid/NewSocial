@@ -25,8 +25,8 @@ class StoryDisplayFooter extends React.Component {
     let topicLinks = [];
     if (this.props.topics){
 
-      this.props.topics.forEach((topic) => {
-        topicLinks.push(<li className="topic-position"><TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow}/></li>);
+      this.props.topics.forEach((topic, index) => {
+        topicLinks.push(<li className="topic-position" key={index}><TopicButton topic={topic} fetchTopicShow={this.props.fetchTopicShow} /></li>);
       });
     }
 

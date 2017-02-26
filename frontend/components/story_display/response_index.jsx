@@ -3,8 +3,8 @@ import ResponseDisplay from './response_display';
 
 const ResponseIndex = ({ responses, storyId }) => {
 
-  let boxes = responses.map((response) => {
-    return <ResponseDisplay response={response} storyId={storyId}/>
+  let boxes = responses.map((response, index) => {
+    return <ResponseDisplay response={response} storyId={storyId} key={index}/>
   });
 
 

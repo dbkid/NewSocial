@@ -2,7 +2,9 @@ class Api::TopicfollowsController < ApplicationController
 
   def index
     user = current_user
-    @followed_topics = user.topics
+    if current_user
+      @followed_topics = user.topics
+    end
     render "api/topic_follows/index.json.jbuilder"
   end
 

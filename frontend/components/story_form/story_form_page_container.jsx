@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import StoryFormPage from './story_form_page';
 import { createStory, passStory } from '../../actions/selected_story_actions';
 import { createTopicTags } from '../../actions/topic_tag_actions';
+import { logout } from '../../actions/session_actions';
 
 
 const mapStateToProps = state => ({

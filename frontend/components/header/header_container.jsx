@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import Header from './header';
 import { withRouter } from 'react-router';
 import { clearSelectedStory } from '../../actions/selected_story_actions';
-
+import { fetchRandomStories } from '../../actions/partial_story_actions';
+import { fetchTopicsIndex, fetchTopicShow } from '../../actions/topic_actions';
+import { logout, login, signup } from '../../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return ({

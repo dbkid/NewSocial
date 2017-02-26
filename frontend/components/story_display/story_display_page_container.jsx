@@ -5,6 +5,7 @@ import { fetchSelectedStory } from '../../actions/selected_story_actions';
 import { createResponse } from '../../actions/response_actions';
 import { createLike } from '../../actions/like_actions';
 import { createBookmark } from '../../actions/bookmark_actions';
+import { fetchTopicShow } from '../../actions/topic_actions';
 
 
 const mapStateToProps = state => ({

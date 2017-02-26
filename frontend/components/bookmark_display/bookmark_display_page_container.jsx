@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import BookmarkDisplayPage from './bookmark_display_page';
-
+import { editUser } from '../../actions/author_actions';
 
 const mapStateToProps = state => ({
   partialStories: state.partialStories,
