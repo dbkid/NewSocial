@@ -8,11 +8,15 @@ class Api::TopicfollowsController < ApplicationController
 
   def create
     user_id = current_user.id
-    @topic_follow = TopicFollow.new(topic_id: params[:topic_follow][:topic_id], user_id: user_id)
-    if @topic_follow.save
-      @topic = @topic_follow.topic
-      @followed_topics = current_user.topics
-      render "api/topic_follows/index.json.jbuilder"
+    @topic = Topic.find(params[:topic_follow][:topic_id])
+    @followed_topics = current_user.topics
+    if @followed_topics.include?(@topic) == false
+        @topic_follow = TopicFollow.new(topic_id: params[:topic_follow][:topic_id], user_id: user_id)
+        if @topic_follow.save
+          render "api/topic_follows/index.json.jbuilder"
+        else
+          render json: @topic_follow.errors.full_messages, status: 422
+        end
     else
       render json: @topic_follow.errors.full_messages, status: 422
     end
