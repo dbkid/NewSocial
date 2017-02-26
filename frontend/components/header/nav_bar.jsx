@@ -24,8 +24,8 @@ class NavBar extends React.Component {
 
 
   render(){
-    let topics = this.props.topics.randomTopics.map((topic) => {
-      return <li className="nav-bar-button" onClick={this.fetchTopicShow} value={topic.id}>{topic.title}</li>;
+    let topics = this.props.topics.randomTopics.map((topic, index) => {
+      return <li className="nav-bar-button" onClick={this.fetchTopicShow} value={topic.id} key={index}>{topic.title}</li>;
     });
 
     return(

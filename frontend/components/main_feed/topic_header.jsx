@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-var _ = require('lodash');
 
 
 class TopicHeader extends React.Component {
@@ -29,7 +28,7 @@ class TopicHeader extends React.Component {
   checkIfTopicFollowed(){
     var followed = false;
     this.props.topics.followedTopics.forEach(topic => {
-      if (_.isEqual(topic, this.props.topics.mainTopic)){
+      if (topic.id === this.props.topics.mainTopic.id){
         followed = true;
       }
     })
@@ -38,16 +37,7 @@ class TopicHeader extends React.Component {
 
 
   render(){
-    if (this.checkIfTopicFollowed()){
-      return(
-        <div className="topic-header group">
-          <h1 className="tagged-in">TAGGED IN</h1>
-          <h1 className="topic-title">{this.props.topics.mainTopic.title}</h1>
-          <button className="save-button round-button  follow-button" value={this.props.topics.mainTopic.id} onClick={this.deleteTopicFollow}>Unfollow</button>
-        </div>
-      );
-    }
-    else{
+
       return(
         <div className="topic-header group">
           <h1 className="tagged-in">TAGGED IN</h1>
@@ -55,7 +45,7 @@ class TopicHeader extends React.Component {
           <button className="save-button round-button  follow-button" value={this.props.topics.mainTopic.id} onClick={this.createTopicFollow}>Follow</button>
         </div>
       );
-    }
+
 
 
   }

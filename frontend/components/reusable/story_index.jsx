@@ -3,8 +3,8 @@ import StoryBox from './story_box';
 
 const StoryIndex = ({ partialStories }) => {
 
-  let boxes = partialStories.map((story) => {
-    return <StoryBox story={story}/>
+  let boxes = partialStories.map((story, index) => {
+    return <StoryBox story={story} key={index}/>
   });
 
 
