@@ -1,3 +1,13 @@
+export const deleteTopicFollow = (topicId, success) => {
+  $.ajax({
+    method: "DELETE",
+    url: `/api/topicfollows/${topicId}`,
+    data: { topic_follow: {topic_id: topicId} },
+    success
+    }
+  );
+};
+
 export const createTopicFollow = (topicId, success) => {
   $.ajax({
     method: "POST",

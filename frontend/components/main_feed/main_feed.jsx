@@ -64,7 +64,7 @@ class MainFeed extends React.Component {
         </div>
         <div className = "main-feed-border">
           <div className="main-feed">
-            <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories} createTopicFollow={this.props.createTopicFollow}/>
+            <TopicDisplayPage topics={this.props.topics} session={this.props.session} partialStories={this.props.partialStories} fetchTopicShow={this.props.fetchTopicShow} fetchRandomStories={this.props.fetchRandomStories} createTopicFollow={this.props.createTopicFollow} deleteTopicFollow={this.props.deleteTopicFollow}/>
           </div>
         </div>
       </div>

@@ -2,6 +2,15 @@ export const CREATE_TOPIC_FOLLOW = "CREATE_TOPIC_FOLLOW";
 export const RECEIVE_TOPIC_FOLLOW = "RECEIVE_TOPIC_FOLLOW";
 export const FETCH_TOPIC_FOLLOWS = "FETCH_TOPIC_FOLLOWS";
 export const RECEIVE_TOPIC_FOLLOWS = "RECEIVE_TOPIC_FOLLOWS";
+export const DELETE_TOPIC_FOLLOW = "DELETE_TOPIC_FOLLOW";
+
+
+export const deleteTopicFollow = (topicId) => {
+  return ({
+    type: DELETE_TOPIC_FOLLOW,
+    topicId: topicId
+  });
+};
 
 export const createTopicFollow = (topicId) => {
   return ({

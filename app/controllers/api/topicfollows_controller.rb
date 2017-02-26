@@ -18,11 +18,20 @@ class Api::TopicfollowsController < ApplicationController
           render json: @topic_follow.errors.full_messages, status: 422
         end
     else
-      render json: @topic_follow.errors.full_messages, status: 422
+      render json: ["already following topic"]
     end
   end
 
   def destroy
+    user_id = current_user.id
+    topic_id = params[:id]
+    topic_follow = TopicFollow.find_by(topic_id: topic_id, user_id: user_id)
+    if topic_follow.delete
+      @followed_topics = current_user.topics
+      render "api/topic_follows/index.json.jbuilder"
+    else
+      render render json: @topic_follow.errors.full_messages, status: 422
+    end
   end
 
   def topic_follow_params
