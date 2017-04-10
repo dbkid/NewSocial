@@ -22,7 +22,7 @@ class TopicHeader extends React.Component {
 
   deleteTopicFollow(e){
     e.preventDefault();
-    this.props.deleteTopicFollow(e.target.value);
+    this.props.deleteTopicFollow(e.currentTarget.value);
   }
 
   checkIfTopicFollowed(){
@@ -37,7 +37,15 @@ class TopicHeader extends React.Component {
 
 
   render(){
-
+    if (this.checkIfTopicFollowed()){
+      return(
+        <div className="topic-header group">
+          <h1 className="tagged-in">TAGGED IN</h1>
+          <h1 className="topic-title">{this.props.topics.mainTopic.title}</h1>
+          <button className="save-button round-button  follow-button" value={this.props.topics.mainTopic.id}>Following</button>
+        </div>
+      )
+    } else{
       return(
         <div className="topic-header group">
           <h1 className="tagged-in">TAGGED IN</h1>
@@ -45,6 +53,10 @@ class TopicHeader extends React.Component {
           <button className="save-button round-button  follow-button" value={this.props.topics.mainTopic.id} onClick={this.createTopicFollow}>Follow</button>
         </div>
       );
+
+    }
+
+
 
 
 
