@@ -27,6 +27,10 @@ class User < ActiveRecord::Base
     foreign_key: :user_id,
     class_name: "Bookmark"
 
+  has_many :bookmarked_stories,
+    through: :bookmarks,
+    source: :story
+
   has_many :topic_follows,
     primary_key: :id,
     foreign_key: :user_id,
