@@ -9,6 +9,8 @@ export const createBookmark = (storyId, userId) => ({
 });
 
 
-export const fetchBookmarks = () => ({
+export const fetchBookmarks = () => {
+  return({
   type: FETCH_BOOKMARKS
-});
+})
+};

@@ -38,6 +38,7 @@ class AvatarDropdown extends React.Component {
                 <div className="avatar-dropdown-arrow"></div>
                 <ul>
                   <li className="dropdown-list-item" onClick={this.toggleDropdown}><Link to={`/authors/${this.props.currentUser.id}`}>Profile</Link></li>
+                  <li className="dropdown-list-item" onClick={this.toggleDropdown}><Link to={`/authors/${this.props.currentUser.id}/bookmarks`}>Bookmarks</Link></li>
                   <li className="dropdown-list-item" onClick={this.props.logout}><Link>Sign Out</Link></li>
                 </ul>
             </div>

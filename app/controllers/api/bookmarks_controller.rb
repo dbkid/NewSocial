@@ -20,8 +20,8 @@ class Api::BookmarksController < ApplicationController
 
   def index
     user = current_user
-    @bookmarks = Bookmark.find_by(user_id: user.id)
-    render 
+    @stories = user.bookmarked_stories
+    render "api/stories/index"
   end
 
   def destroy

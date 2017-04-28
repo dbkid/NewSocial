@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     resources :stories, only: [:create, :destroy, :show, :update, :index] do
       resources :responses, only: [:create, :destroy, :update]
       resources :likes, only: [:create, :destroy]
-      resources :bookmarks, only: [:create, :destroy]
     end
+    resources :bookmarks, only: [:create, :index, :destroy]
     resources :topics, only: [:create, :destroy, :show, :index]
     resources :topictags, only: [:create, :destroy]
     resources :topicfollows, only: [:create, :destroy, :index]

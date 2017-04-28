@@ -6,6 +6,8 @@ import { CREATE_LIKE } from '../actions/like_actions';
 import { FETCH_TOPIC_SHOW, selectMainTopic } from '../actions/topic_actions';
 import { fetchTopicShow } from '../util/topic_api_util';
 import { hashHistory } from 'react-router';
+import { FETCH_BOOKMARKS } from "../actions/bookmark_actions";
+import { fetchBookmarks } from "../util/bookmark_api_util";
 
 
 export default ({ getState, dispatch }) => next => action => {
@@ -33,6 +35,9 @@ export default ({ getState, dispatch }) => next => action => {
         return next(action);
       case(FETCH_TOPIC_SHOW):
         fetchTopicShow(action.topicId, topicShowSuccess, error);
+        return next(action);
+      case(FETCH_BOOKMARKS):
+        fetchBookmarks(success, error);
         return next(action);
       default:
         return next(action);

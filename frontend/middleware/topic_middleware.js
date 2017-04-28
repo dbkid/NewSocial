@@ -9,7 +9,7 @@ export default ({ getState, dispatch }) => next => action => {
 
     const success = (data) => {
       dispatch(receiveTopicsIndex(data));
-      hashHistory.push("/");
+      // hashHistory.push("/");
 
     };
 

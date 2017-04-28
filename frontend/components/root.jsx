@@ -10,7 +10,8 @@ import AuthorDisplayPageContainer from "./author_display/author_display_page_con
 import StoryFormPageContainer from './story_form/story_form_page_container';
 import {fetchTopicsIndex} from './../actions/topic_actions';
 import {fetchTopicFollows} from './../actions/topic_follow_actions';
-
+import BookmarkDisplayPageContainer from "./bookmark_display/bookmark_display_page_container";
+import { fetchBookmarks } from "./../actions/bookmark_actions";
 
 
 
@@ -28,6 +29,12 @@ const Root = ({ store }) => {
     store.dispatch(fetchTopicFollows());
   };
 
+  const fetchBookmarksOnEnter = (nextState) => {
+    store.dispatch(fetchBookmarks());
+  };
+
+
+
 
   return(
     <Provider store={store}>
@@ -36,6 +43,7 @@ const Root = ({ store }) => {
             <IndexRoute component={MainFeed} onEnter={fetchTopicFollowsOnEnter}/>
             <Route path="stories/:storyId" component={StoryDisplayPageContainer} onEnter={fetchSelectedStoryOnEnter}></Route>
             <Route path="authors/:authorId" component={AuthorDisplayPageContainer} onEnter={fetchAuthorShowOnEnter}></Route>
+            <Route path="authors/:authorId/bookmarks" component={BookmarkDisplayPageContainer} onEnter={fetchBookmarksOnEnter} ></Route>
         </Route>
         <Route path="/writestory" component={StoryFormPageContainer}></Route>
       </Router>
